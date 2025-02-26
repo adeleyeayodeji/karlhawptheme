@@ -40,7 +40,7 @@ class Home_Banner_Widget extends \Elementor\Widget_Base
      */
     public function get_title()
     {
-        return __('Home Banner', 'karlhawptheme');
+        return __('Home Banner - Karlha', 'karlhawptheme');
     }
 
     /**

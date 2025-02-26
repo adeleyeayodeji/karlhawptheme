@@ -39,5 +39,11 @@ class KarlhaElementor
 
         //register terminal hero widget
         \Elementor\Plugin::instance()->widgets_manager->register(new Home_Banner_Widget());
+        //register featured product widget
+        \Elementor\Plugin::instance()->widgets_manager->register(new Featured_Product_Widget());
+        //register about us widget
+        \Elementor\Plugin::instance()->widgets_manager->register(new About_Us_Widget());
+        //register best sellers widget
+        \Elementor\Plugin::instance()->widgets_manager->register(new Best_Sellers_Widget());
     }
 }

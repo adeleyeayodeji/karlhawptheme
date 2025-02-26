@@ -117,10 +117,10 @@ class KarlhawpTheme
      */
     public function enqueue_styles()
     {
-        //enqueue styles
-        wp_enqueue_style('karlha-jewels-webflow', KARLHA_ASSETS_URL . '/css/karlha-jewels.webflow.css', array(), KARLHA_THEME_VERSION);
         //add build css
         wp_enqueue_style('karlha-jewels-build', KARLHA_DIR_URL . '/build/karlhawptheme.css', array(), KARLHA_THEME_VERSION);
+        //enqueue styles
+        wp_enqueue_style('karlha-jewels-webflow', KARLHA_ASSETS_URL . '/css/karlha-jewels.webflow.css', array(), KARLHA_THEME_VERSION);
         //add script
         wp_enqueue_script('karlha-jewels-build', KARLHA_DIR_URL . '/build/karlhawptheme.js', array('jquery'), KARLHA_THEME_VERSION, true);
         //add localize script
