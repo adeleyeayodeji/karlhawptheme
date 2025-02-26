@@ -41,7 +41,7 @@
   width: 300px;
   height: 300px;
   max-width: none;
-  background-image: url("images/pic13.JPG");
+  background-image: url("../../../images/pic13.JPG");
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -384,7 +384,7 @@
 
 .top-header-icon-text.currency {
   padding-right: 20px;
-  background-image: url("images/output-onlinepngtools-14.png");
+  background-image: url("../../../images/output-onlinepngtools-14.png");
   background-position: 100% 50%;
   background-size: 10px;
   background-repeat: no-repeat;
@@ -407,7 +407,7 @@
   height: 35px;
   margin-right: 0px;
   margin-left: 0px;
-  background-image: url("images/bag-icon-thin.svg");
+  background-image: url("../../../images/bag-icon-thin.svg");
   background-position: 0px 0px;
   background-size: contain;
   background-repeat: no-repeat;
@@ -416,21 +416,21 @@
 .top-header-icon.account {
   width: 30px;
   height: 30px;
-  background-image: url("images/user-icon-thin.svg");
+  background-image: url("../../../images/user-icon-thin.svg");
 }
 
 .top-header-icon.search {
   display: block;
   width: 35px;
   height: 35px;
-  background-image: url("images/search-icon.svg");
+  background-image: url("../../../images/search-icon.svg");
 }
 
 .top-header-icon.search {
   display: block;
   width: 40px;
   height: 40px;
-  background-image: url("images/search-icon.svg");
+  background-image: url("../../../images/search-icon.svg");
 }
 
 .div-block-45 {
@@ -595,7 +595,7 @@
 .nav-brand-2 {
   width: 150px;
   height: 50px;
-  background-image: url("images/LOGO-hd__2_-removebg-preview_1.png");
+  background-image: url("../../../images/LOGO-hd__2_-removebg-preview_1.png");
   background-position: 50% 50%;
   background-size: contain;
   background-repeat: no-repeat;
@@ -691,7 +691,7 @@
   width: 200px;
   height: 300px;
   max-width: none;
-  background-image: url("images/photo_2020-09-23-21.52.11.jpeg");
+  background-image: url("../../../images/photo_2020-09-23-21.52.11.jpeg");
   background-position: 50% 50%;
   background-size: contain;
   background-repeat: no-repeat;
@@ -867,7 +867,7 @@
 
 .top-header-icon-text-2.currency {
   padding-right: 20px;
-  background-image: url("images/5f1c3305296808ce7386aee8_down-thin-arrow-angle.svg");
+  background-image: url("../../../images/5f1c3305296808ce7386aee8_down-thin-arrow-angle.svg");
   background-position: 100% 50%;
   background-size: 10px;
   background-repeat: no-repeat;
@@ -906,7 +906,7 @@
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background-image: url("images/Hero-Image.jpg");
+  background-image: url("../../../images/Hero-Image.jpg");
   background-position: 50% 0%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1106,7 +1106,7 @@
   padding: 20px 30px;
   border: 1px solid #c9c9c9;
   background-color: transparent;
-  background-image: url("images/output-onlinepngtools-12.png");
+  background-image: url("../../../images/output-onlinepngtools-12.png");
   background-position: 95% 50%;
   background-size: 35px;
   background-repeat: no-repeat;
@@ -1125,7 +1125,7 @@
 }
 
 .learn-more-btn.buy-now {
-  background-image: url("images/output-onlinepngtools-49.png");
+  background-image: url("../../../images/output-onlinepngtools-49.png");
   background-position: 95% 50%;
   background-size: 35px;
 }
@@ -1549,7 +1549,7 @@
   height: 100px;
   margin-right: auto;
   margin-left: auto;
-  background-image: url("images/img_571301.png");
+  background-image: url("../../../images/img_571301.png");
   background-position: 50% 50%;
   background-size: auto 98%;
   background-repeat: no-repeat;
@@ -1644,7 +1644,7 @@
   border-style: solid;
   border-width: 0.5px;
   border-color: #dbdbdb;
-  background-image: url("images/Very-Basic-Search-icon.png");
+  background-image: url("../../../images/Very-Basic-Search-icon.png");
   background-position: 98% 50%;
   background-size: auto 65%;
   background-repeat: no-repeat;
@@ -1727,7 +1727,7 @@
   border-width: 1px;
   border-color: #f8f8f8;
   background-color: #fff;
-  background-image: url("images/5f1c3305296808ce7386aee8_down-thin-arrow-angle.svg");
+  background-image: url("../../../images/5f1c3305296808ce7386aee8_down-thin-arrow-angle.svg");
   background-position: 98% 50%;
   background-size: 10px;
   background-repeat: no-repeat;
@@ -1743,13 +1743,13 @@
 
 .policy-accordion:hover {
   background-color: #fafafa;
-  background-image: url("images/output-onlinepngtools-28.png");
+  background-image: url("../../../images/output-onlinepngtools-28.png");
   color: #000;
 }
 
 .policy-accordion.active {
   background-color: #c89c6c;
-  background-image: url("images/output-onlinepngtools-28.png");
+  background-image: url("../../../images/output-onlinepngtools-28.png");
   color: #fff;
   line-height: 1.5em;
   font-weight: 400;
@@ -2051,7 +2051,7 @@
   display: inline-block;
   width: 60px;
   height: 15px;
-  background-image: url("images/img_119411.png");
+  background-image: url("../../../images/img_119411.png");
   background-position: 50% 50%;
   background-size: contain;
   background-repeat: no-repeat;
@@ -2209,7 +2209,7 @@
   width: 30px;
   height: 30px;
   padding-top: 10px;
-  background-image: url("images/5c7505129b5a57388bc7a95d_geekuninstaller_390369.png");
+  background-image: url("../../../images/5c7505129b5a57388bc7a95d_geekuninstaller_390369.png");
   background-position: 0px 0px;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -2219,7 +2219,7 @@
   padding: 20px 80px 20px 40px;
   border: 1px none #c3ad84;
   background-color: #c89c6c;
-  background-image: url("images/locked-padlock-security-interface-symbol-pngrepo-com-1.png");
+  background-image: url("../../../images/locked-padlock-security-interface-symbol-pngrepo-com-1.png");
   background-position: 90% 50%;
   background-size: 30px;
   background-repeat: no-repeat;
@@ -3014,7 +3014,7 @@
   border-width: 0.5px;
   border-color: #f4f4f4;
   border-radius: 5px;
-  background-image: url("images/calendar.png");
+  background-image: url("../../../images/calendar.png");
   background-position: 95% 50%;
   background-size: 25px;
   background-repeat: no-repeat;
@@ -3322,7 +3322,7 @@
   padding: 15px 60px 15px 20px;
   border-radius: 5px;
   background-color: #c89c6c;
-  background-image: url("images/output-onlinepngtools-13.png");
+  background-image: url("../../../images/output-onlinepngtools-13.png");
   background-position: 92.5% 50%;
   background-size: 25px;
   background-repeat: no-repeat;
@@ -3534,7 +3534,7 @@
 
 .about-banner-section {
   height: 80vh;
-  background-image: url("images/About-Us-Hero.png");
+  background-image: url("../../../images/About-Us-Hero.png");
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -3620,19 +3620,19 @@
 .display-image-block {
   height: 100%;
   min-height: 500px;
-  background-image: url("images/About-Us-Image-2.png");
+  background-image: url("../../../images/About-Us-Image-2.png");
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .display-image-block.second-box {
-  background-image: url("images/About-Us-Image-1.png");
+  background-image: url("../../../images/About-Us-Image-1.png");
 }
 
 .display-image {
   display: none;
-  background-image: url("images/About-Us-Image-2.png");
+  background-image: url("../../../images/About-Us-Image-2.png");
   background-position: 0px 0px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -3656,7 +3656,7 @@
   padding-top: 10%;
   padding-right: 10%;
   padding-left: 10%;
-  background-image: url("images/Contact-Page-Banner.png");
+  background-image: url("../../../images/Contact-Page-Banner.png");
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -3835,7 +3835,7 @@
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background-image: url("images/plain-white-background.jpg");
+  background-image: url("../../../images/plain-white-background.jpg");
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -4322,7 +4322,7 @@
   margin-right: 20px;
   padding: 25px 45px 25px 25px;
   background-color: #c89c6c;
-  background-image: url("images/download-9.svg");
+  background-image: url("../../../images/download-9.svg");
   background-position: 95% 50%;
   background-size: 35px;
   background-repeat: no-repeat;
@@ -4345,7 +4345,7 @@
 .add-to-cart-button.buy-now {
   margin-bottom: 20px;
   background-color: #000;
-  background-image: url("images/output-onlinepngtools-49.png");
+  background-image: url("../../../images/output-onlinepngtools-49.png");
 }
 
 .add-to-cart-button.buy-now:hover {
@@ -4353,11 +4353,11 @@
 }
 
 .add-to-cart-button.out-of-stock {
-  background-image: url("images/15972340571535698998.svg");
+  background-image: url("../../../images/15972340571535698998.svg");
 }
 
 .add-to-cart-button.pre-order {
-  background-image: url("images/call-icon.svg");
+  background-image: url("../../../images/call-icon.svg");
   background-size: 30px;
 }
 
@@ -4623,7 +4623,7 @@
 
 .header-nav-link-3 {
   padding: 10px;
-  background-image: url("images/5f1c3305296808ce7386aee8_down-thin-arrow-angle.svg");
+  background-image: url("../../../images/5f1c3305296808ce7386aee8_down-thin-arrow-angle.svg");
   background-position: 0px 0px;
   background-size: auto;
   color: #cfcfcf;
@@ -4642,7 +4642,7 @@
 .header-nav-link-3.shop {
   padding-right: 20px;
   padding-left: 0px;
-  background-image: url("images/output-onlinepngtools-28.png");
+  background-image: url("../../../images/output-onlinepngtools-28.png");
   background-position: 100% 50%;
   background-size: 10px;
   background-repeat: no-repeat;
@@ -5009,7 +5009,7 @@
 .side-cart-product-image {
   width: 100px;
   height: 100px;
-  background-image: url("images/Rectangle-13.png");
+  background-image: url("../../../images/Rectangle-13.png");
   background-position: 50% 50%;
   background-size: contain;
   background-repeat: no-repeat;
@@ -5122,7 +5122,7 @@
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  background-image: url("images/Product-Page-Image.png");
+  background-image: url("../../../images/Product-Page-Image.png");
   background-position: 50% 50%;
   background-size: cover;
 }
@@ -7471,7 +7471,7 @@
   .nav-brand-2 {
     width: 35px;
     height: 35px;
-    background-image: url("images/LOGO-hd__2_-removebg-preview.png");
+    background-image: url("../../../images/LOGO-hd__2_-removebg-preview.png");
   }
 
   .menu-button {
@@ -8407,7 +8407,7 @@
 
   .mobile-logo {
     width: 100%;
-    background-image: url("images/KARHLA.png");
+    background-image: url("../../../images/KARHLA.png");
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
