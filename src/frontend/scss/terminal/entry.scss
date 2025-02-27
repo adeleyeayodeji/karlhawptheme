@@ -1,3 +1,47 @@
 @import "css/normalize";
+@import "css/store-front";
+@import "css/store-front-dashboard";
 @import "css/webflow";
 @import "css/style";
+
+.wp-block-woocommerce-cart.alignwide.wc-block-cart {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  margin-top: 4rem;
+  padding: 0 2rem;
+}
+
+.woocommerce.wp-block-group.alignwide {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  margin-top: 4rem;
+  padding: 0 2rem;
+
+  .product-name {
+    font-weight: 600;
+    padding: 1em 1.41575em;
+    text-align: left;
+    vertical-align: top;
+    margin-top: 30px;
+    font-family: "Vultura", sans-serif;
+    color: #000;
+    font-size: 15px;
+    line-height: 1.2em;
+    font-weight: 400;
+    text-transform: capitalize;
+  }
+}
+
+.karlha-jewels-store-front-account {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 4rem;
+  padding: 0 2rem;
+}
+
+.footer-section {
+  clear: both;
+}

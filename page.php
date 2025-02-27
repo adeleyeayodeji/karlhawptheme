@@ -32,8 +32,4 @@ while (have_posts()) :
 	}
 endwhile; // End of the loop.
 
-?>
-
-
-<?php
 get_footer();

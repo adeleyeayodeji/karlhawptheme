@@ -164,32 +164,61 @@ class Featured_Product_Widget extends \Elementor\Widget_Base
         //get product image
         $product_image = get_the_post_thumbnail_url($settings['product_id']);
 ?>
+        <script>
+            window.productVariations = [];
+        </script>
         <div class="home-featured-product" id="feature-title-block">
             <div class="main-box-first-box"></div>
             <h1 class="featured-product-header"><?php echo esc_html($settings['title']); ?></h1>
             <div class="featured-product-wrapper">
                 <div class="featured-product-display-wrapper">
                     <div class="featured-product-display-image-block">
-                        <img id="main-image-1" loading="lazy" alt="" class="featured-product-display-image" src="<?php echo esc_url($product_image); ?>">
+                        <img id="main-image-1" loading="lazy" alt="" class="featured-product-display-image product-body-image" src="<?php echo esc_url($product_image); ?>">
                     </div>
                 </div>
                 <div class="featured-product-text-wrapper">
                     <h1 class="featured-product-name"><?php echo esc_html($product->get_name()); ?></h1>
                     <div class="feature-product-price-block">
-                        <div id="product-price" class="feature-product-price price"><?php echo esc_html($product->get_price()); ?></div>
+                        <div id="product-price" class="feature-product-price price"><?php echo wc_price($product->get_price()); ?></div>
                         <div id="product-sale-price" class="feature-product-price sale-price"></div>
                     </div>
                     <h1 class="details-header">Description &amp; Details</h1>
                     <p class="details-text">
                         <?php echo esc_html($product->get_description()); ?>
                     </p>
-                    <div class="feature-product-variants-block">
-                        <div class="w-embed">
-
+                    <!-- Variant area -->
+                    <?php if ($product->is_type('variable')) :
+                        $variations = $product->get_available_variations();
+                        //loop through variations and convert prices to naira
+                        foreach ($variations as $key => $variation) {
+                            $variations[$key]['display_price'] = wc_price($variation['display_price']);
+                            //convert regular price to naira
+                            $variations[$key]['display_regular_price'] = wc_price($variation['display_regular_price']);
+                        }
+                        $attributes = $product->get_variation_attributes();
+                    ?>
+                        <div class="product-variant-block" id="product-variant-block">
+                            <?php foreach ($attributes as $attribute_name => $options) : ?>
+                                <div class="product-variant-selector-block">
+                                    <div class="feature-product-variant-label"><?php echo wc_attribute_label($attribute_name); ?></div>
+                                    <div class="w-embed">
+                                        <select class="feature-product-variant-select" data-attribute="<?php echo esc_attr($attribute_name); ?>">
+                                            <option value="">Select <?php echo wc_attribute_label($attribute_name); ?></option>
+                                            <?php foreach ($options as $option) : ?>
+                                                <option value="<?php echo esc_attr($option); ?>"><?php echo esc_html($option); ?></option>
+                                            <?php endforeach; ?>
+                                        </select>
+                                    </div>
+                                </div>
+                            <?php endforeach; ?>
                         </div>
-                    </div>
-                    <a href="<?php echo esc_url($product->get_permalink()); ?>" class="learn-more-btn buy-now w-button" data-name="<?php echo esc_html($product->get_name()); ?>" data-id="<?php echo esc_html($product->get_id()); ?>" data-imageurl="<?php echo esc_url($product->get_image()); ?>" data-cartbutton="buy">BUY IT NOW</a>
-                    <a href="#" data-name="<?php echo esc_html($product->get_name()); ?>" data-id="<?php echo esc_html($product->get_id()); ?>" data-imageurl="<?php echo esc_url($product->get_image()); ?>" data-variants-required="0" data-variant-1="" data-variant-1id="" data-variant-0="" data-variant-0id="" data-inventory="1000000" data-track-inventory="false" data-price="<?php echo esc_html($product->get_price()); ?>" data-weight="3.55555555555" data-cartbutton="cart" data-quantity="1" class="learn-more-btn w-button">ADD TO CART</a>
+
+                        <script>
+                            productVariations = <?php echo json_encode($variations); ?>;
+                        </script>
+                    <?php endif; ?>
+                    <a class="add-to-cart-button buy-now w-button" id="buy-button" data-product-id="<?php echo $product->get_id(); ?>" data-product-is-in-stock="<?php echo $product->is_in_stock(); ?>" data-is-buy-now="true">Buy it Now</a>
+                    <a class="add-to-cart-button w-button" id="add-item-cart" data-product-id="<?php echo $product->get_id(); ?>" data-product-is-in-stock="<?php echo $product->is_in_stock(); ?>" data-is-buy-now="false">Add to Cart</a>
                     <div class="feature-product-details-block">
                         <a href="<?php echo esc_url($product->get_permalink()); ?>" class="feature-product-link">Full Details</a>
                     </div>

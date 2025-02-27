@@ -139,13 +139,7 @@ class Best_Sellers_Widget extends \Elementor\Widget_Base
             'posts_per_page' => 4,
             'orderby' => 'meta_value_num',
             'meta_key' => 'total_sales',
-            'order' => 'DESC',
-            // 'date_query' => array(
-            //     array(
-            //         'after' => date('Y-m-d', strtotime('-30 days')),
-            //         'inclusive' => true,
-            //     ),
-            // ),
+            'order' => 'DESC'
         ));
 ?>
         <div class="best-sellers-section">
@@ -161,7 +155,7 @@ class Best_Sellers_Widget extends \Elementor\Widget_Base
                             </a>
                             <h1 class="product-name"><?php echo esc_html($product->get_name()); ?></h1>
                             <div class="product-listing-price-block">
-                                <div class="product-listing-price price"><?php echo esc_html($product->get_price()); ?></div>
+                                <div class="product-listing-price price"><?php echo wc_price($product->get_price()); ?></div>
                             </div>
 
                         </div>

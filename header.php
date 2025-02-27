@@ -52,11 +52,9 @@
 	<link href="https://ucarecdn.com/d777b7a8-4202-45a5-ad7b-df00a85cf1d0/6050a11d0859b001f06d9bce_KARHLA.png" rel="shortcut icon" type="image/x-icon">
 	<link href="https://ucarecdn.com/d777b7a8-4202-45a5-ad7b-df00a85cf1d0/6050a11d0859b001f06d9bce_KARHLA.png" rel="apple-touch-icon">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.11/css/intlTelInput.css" rel="stylesheet" type="text/css">
-	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
-
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.1.4/js.cookie.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
 	<link id="terminal-sweet-alert-stylesheet" rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.min.css" media="all">
 </head>
 
@@ -66,18 +64,17 @@
 		<div class="main-navigation w-nav" data-collapse="medium" data-animation="default" data-duration="400" role="banner">
 			<div class="nav-container">
 				<div class="top-header-block">
-					<div class="header-shipping-block">
-						<div class="shipping-location-embed w-embed"><a class="header-shipping-text" data-shippingtext="shipping" onclick="TerminalStore.displayCurrencySelector(event)">Shipping to: Nigeria</a></div>
-					</div>
-					<div class="nav-brand-block"><a class="nav-brand w-nav-brand w--current" href="/" aria-label="home"><img class="nav-brand-logo" src="<?php echo KARLHA_ASSETS_URL; ?>images/Karhla-Jewels-Logo.png" loading="lazy" alt=""><img class="mobile-nav-brand-logo" src="<?php echo KARLHA_ASSETS_URL; ?>images/KARHLA.png" loading="lazy" alt=""></a></div>
+					<div class="nav-brand-block"><a class="nav-brand w-nav-brand w--current" href="<?php echo home_url(); ?>" aria-label="home"><img class="nav-brand-logo" src="<?php echo KARLHA_ASSETS_URL; ?>images/Karhla-Jewels-Logo.png" loading="lazy" alt=""><img class="mobile-nav-brand-logo" src="<?php echo KARLHA_ASSETS_URL; ?>images/KARHLA.png" loading="lazy" alt=""></a></div>
 					<div class="top-header-icon-wrapper">
 						<div class="top-header-icon-block search"><a class="top-header-icon search w-inline-block" href="/search"></a></div>
-						<div class="top-header-icon-block currency">
-							<div class="top-header-icon-text currency" data-currency-text="currency" style="cursor: pointer;">NGN</div>
-						</div>
-						<div class="top-header-icon-block account"><a class="top-header-icon account w-inline-block" data-account-link="" href="/account/login"></a></div>
-						<div class="top-header-icon-block cart"><a class="top-header-icon w-inline-block" data-cartlink="" href="/cart/?id=8xWbgIG06g4HwQvwhSGnyriB"></a>
-							<div class="cart-count" data-cart-count="cart-count">0</div>
+						<div class="top-header-icon-block account"><a class="top-header-icon account w-inline-block" data-account-link="" href="<?php echo wc_get_account_endpoint_url('dashboard'); ?>"></a></div>
+						<div class="top-header-icon-block cart"><a class="top-header-icon w-inline-block" data-cartlink="" href="<?php echo wc_get_cart_url(); ?>"></a>
+							<div class="cart-count" data-cart-count="cart-count">
+								<?php
+								$cart_count = WC()->cart->get_cart();
+								echo $cart_count > 0 ? count($cart_count) : '';
+								?>
+							</div>
 						</div>
 						<div class="top-header-icon-block searchform" style="display: none;">
 							<form action="" method="get">
@@ -135,3 +132,8 @@
 			<div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div>
 		</div>
 	</div>
+	<?php if (is_page('my-account')) : ?>
+		<div class="karlha-jewels-store-front-dashboard karlha-jewels-store-front-account">
+			<div class="hentry">
+				<div class="entry-content">
+				<?php endif; ?>
