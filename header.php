@@ -79,110 +79,53 @@
 						<div class="top-header-icon-block cart"><a class="top-header-icon w-inline-block" data-cartlink="" href="/cart/?id=8xWbgIG06g4HwQvwhSGnyriB"></a>
 							<div class="cart-count" data-cart-count="cart-count">0</div>
 						</div>
+						<div class="top-header-icon-block searchform" style="display: none;">
+							<form action="" method="get">
+								<span>X</span>
+								<input type="text" name="search" placeholder="Search">
+								<button type="submit">Search</button>
+							</form>
+						</div>
 					</div>
 				</div>
-				<div class="bottom-menu-block">
+				<div class=" bottom-menu-block">
+					<?php
+					$menu_items = wp_get_nav_menu_items('karlha');
+					$menu_tree = [];
+
+					foreach ($menu_items as $item) {
+						if ($item->menu_item_parent == 0) {
+							$menu_tree[$item->ID] = [
+								'title' => $item->title,
+								'url'   => $item->url,
+								'children' => []
+							];
+						} else {
+							$menu_tree[$item->menu_item_parent]['children'][] = [
+								'title' => $item->title,
+								'url'   => $item->url
+							];
+						}
+					}
+					?>
 					<nav class="nav-menu w-nav-menu" role="navigation">
-						<div class="header-nav-link-block" data-w-id="f85bd51c-be44-a2bc-2de4-613f8f72daf0"><a class="header-nav-link w-nav-link" href="/category/watches">NECKLACES</a>
-							<div class="header-nav-dropdown">
-								<div class="nav-dropdown-container">
-									<div class="nav-dropdown-link-block"><a class="nav-dropdown-link" href="/category/watches/ladies">Ladies</a></div>
-									<div class="nav-dropdown-link-block"><a class="nav-dropdown-link" href="/category/watches/gents">Gents</a></div>
-								</div>
+						<?php foreach ($menu_tree as $item) : ?>
+							<div class="header-nav-link-block" data-w-id="f85bd51c-be44-a2bc-2de4-613f8f72daf0"><a class="header-nav-link w-nav-link" href="<?php echo $item['url']; ?>"><?php echo $item['title']; ?></a>
+								<?php if (!empty($item['children'])) : ?>
+									<div class="header-nav-dropdown">
+										<div class="nav-dropdown-container">
+											<?php foreach ($item['children'] as $child) : ?>
+												<div class="nav-dropdown-link-block">
+													<a class="nav-dropdown-link" href="<?php echo $child['url']; ?>">
+														<?php echo $child['title']; ?>
+													</a>
+												</div>
+											<?php endforeach; ?>
+										</div>
+									</div>
+								<?php endif; ?>
 							</div>
-						</div>
-						<div class="header-nav-link-block" data-w-id="f85bd51c-be44-a2bc-2de4-613f8f72daf0"><a class="header-nav-link w-nav-link" href="/category/bracelets">BRACELETS</a>
-							<div class="header-nav-dropdown" style="display: none; opacity: 0;">
-								<div class="nav-dropdown-container">
-									<div class="nav-dropdown-link-block"><a class="nav-dropdown-link" href="/category/bracelets/ladies">Ladies</a></div>
-									<div class="nav-dropdown-link-block"><a class="nav-dropdown-link" href="/category/bracelets/gents">Gents</a></div>
-								</div>
-							</div>
-						</div>
-						<div class="header-nav-link-block" data-w-id="f85bd51c-be44-a2bc-2de4-613f8f72daf0"><a class="header-nav-link w-nav-link" href="/category/rings-copy">RINGS</a>
-							<div class="header-nav-dropdown">
-								<div class="nav-dropdown-container">
-									<div class="nav-dropdown-link-block"><a class="nav-dropdown-link" href="/category/rings-copy/engagement-rings">Engagement Rings</a></div>
-									<div class="nav-dropdown-link-block"><a class="nav-dropdown-link" href="/category/rings-copy/cocktail-rings">Cocktail Rings</a></div>
-									<div class="nav-dropdown-link-block"><a class="nav-dropdown-link" href="/category/rings-copy/band-rings">Band Rings</a></div>
-								</div>
-							</div>
-						</div>
-						<div class="header-nav-link-block" data-w-id="f85bd51c-be44-a2bc-2de4-613f8f72daf0"><a class="header-nav-link w-nav-link" href="/category/accessories-8">ACCESSORIES</a></div>
-						<div class="header-nav-link-block" data-w-id="f85bd51c-be44-a2bc-2de4-613f8f72daf0"><a class="header-nav-link w-nav-link" href="/category/sets-3">SETS</a></div>
-						<div class="header-nav-link-block" data-w-id="f85bd51c-be44-a2bc-2de4-613f8f72daf0"><a class="header-nav-link w-nav-link" href="/category/earrings-2">EARRINGS</a>
-							<div class="header-nav-dropdown">
-								<div class="nav-dropdown-container">
-									<div class="nav-dropdown-link-block"><a class="nav-dropdown-link" href="/category/earrings-2/stud-earrings">Stud earrings</a></div>
-									<div class="nav-dropdown-link-block"><a class="nav-dropdown-link" href="/category/earrings-2/dangle-earrings">Dangle earrings</a></div>
-									<div class="nav-dropdown-link-block"><a class="nav-dropdown-link" href="/category/earrings-2/hoop-earrings">Hoop earrings</a></div>
-								</div>
-							</div>
-						</div>
-						<div class="header-nav-link-block" data-w-id="f85bd51c-be44-a2bc-2de4-613f8f72daf0"><a class="header-nav-link w-nav-link" href="/category/val-s-day">VAL'S DAY</a></div>
-						<div class="mobile-nav-link-block">
-							<div class="mobile-dropdown-link w-dropdown" data-hover="" data-delay="0">
-								<div class="mobile-dropdown-toggle w-dropdown-toggle" id="w-dropdown-toggle-0" aria-controls="w-dropdown-list-0" aria-haspopup="menu" aria-expanded="false" role="button" tabindex="0">
-									<div class="w-icon-dropdown-toggle"></div>
-									<div class="link-text">Necklaces</div>
-								</div>
-								<nav class="mobile-dropdown-list-block w-dropdown-list" id="w-dropdown-list-0" aria-labelledby="w-dropdown-toggle-0"><a class="mobile-sub-category-link w-dropdown-link" href="/category/watches" tabindex="0">Necklaces</a><a class="mobile-sub-category-link w-dropdown-link" href="/category/watches/ladies" tabindex="0">Ladies</a><a class="mobile-sub-category-link w-dropdown-link" href="/category/watches/gents" tabindex="0">Gents</a></nav>
-							</div>
-						</div>
-						<div class="mobile-nav-link-block">
-							<div class="mobile-dropdown-link w-dropdown" data-hover="" data-delay="0">
-								<div class="mobile-dropdown-toggle w-dropdown-toggle" id="w-dropdown-toggle-1" aria-controls="w-dropdown-list-1" aria-haspopup="menu" aria-expanded="false" role="button" tabindex="0">
-									<div class="w-icon-dropdown-toggle"></div>
-									<div class="link-text">Bracelets</div>
-								</div>
-								<nav class="mobile-dropdown-list-block w-dropdown-list" id="w-dropdown-list-1" aria-labelledby="w-dropdown-toggle-1"><a class="mobile-sub-category-link w-dropdown-link" href="/category/bracelets" tabindex="0">Bracelets</a><a class="mobile-sub-category-link w-dropdown-link" href="/category/bracelets/ladies" tabindex="0">Ladies</a><a class="mobile-sub-category-link w-dropdown-link" href="/category/bracelets/gents" tabindex="0">Gents</a></nav>
-							</div>
-						</div>
-						<div class="mobile-nav-link-block">
-							<div class="mobile-dropdown-link w-dropdown" data-hover="" data-delay="0">
-								<div class="mobile-dropdown-toggle w-dropdown-toggle" id="w-dropdown-toggle-2" aria-controls="w-dropdown-list-2" aria-haspopup="menu" aria-expanded="false" role="button" tabindex="0">
-									<div class="w-icon-dropdown-toggle"></div>
-									<div class="link-text">Rings</div>
-								</div>
-								<nav class="mobile-dropdown-list-block w-dropdown-list" id="w-dropdown-list-2" aria-labelledby="w-dropdown-toggle-2"><a class="mobile-sub-category-link w-dropdown-link" href="/category/rings-copy" tabindex="0">Rings</a><a class="mobile-sub-category-link w-dropdown-link" href="/category/rings-copy/engagement-rings" tabindex="0">Engagement Rings</a><a class="mobile-sub-category-link w-dropdown-link" href="/category/rings-copy/cocktail-rings" tabindex="0">Cocktail Rings</a><a class="mobile-sub-category-link w-dropdown-link" href="/category/rings-copy/band-rings" tabindex="0">Band Rings</a></nav>
-							</div>
-						</div>
-						<div class="mobile-nav-link-block">
-							<div class="mobile-dropdown-link w-dropdown" data-hover="" data-delay="0">
-								<div class="mobile-dropdown-toggle w-dropdown-toggle" id="w-dropdown-toggle-3" aria-controls="w-dropdown-list-3" aria-haspopup="menu" aria-expanded="false" role="button" tabindex="0">
-									<div class="w-icon-dropdown-toggle"></div>
-									<div class="link-text">Accessories</div>
-								</div>
-								<nav class="mobile-dropdown-list-block w-dropdown-list" id="w-dropdown-list-3" aria-labelledby="w-dropdown-toggle-3"><a class="mobile-sub-category-link w-dropdown-link" href="/category/accessories-8" tabindex="0">Accessories</a></nav>
-							</div>
-						</div>
-						<div class="mobile-nav-link-block">
-							<div class="mobile-dropdown-link w-dropdown" data-hover="" data-delay="0">
-								<div class="mobile-dropdown-toggle w-dropdown-toggle" id="w-dropdown-toggle-4" aria-controls="w-dropdown-list-4" aria-haspopup="menu" aria-expanded="false" role="button" tabindex="0">
-									<div class="w-icon-dropdown-toggle"></div>
-									<div class="link-text">Sets</div>
-								</div>
-								<nav class="mobile-dropdown-list-block w-dropdown-list" id="w-dropdown-list-4" aria-labelledby="w-dropdown-toggle-4"><a class="mobile-sub-category-link w-dropdown-link" href="/category/sets-3" tabindex="0">Sets</a></nav>
-							</div>
-						</div>
-						<div class="mobile-nav-link-block">
-							<div class="mobile-dropdown-link w-dropdown" data-hover="" data-delay="0">
-								<div class="mobile-dropdown-toggle w-dropdown-toggle" id="w-dropdown-toggle-5" aria-controls="w-dropdown-list-5" aria-haspopup="menu" aria-expanded="false" role="button" tabindex="0">
-									<div class="w-icon-dropdown-toggle"></div>
-									<div class="link-text">Earrings</div>
-								</div>
-								<nav class="mobile-dropdown-list-block w-dropdown-list" id="w-dropdown-list-5" aria-labelledby="w-dropdown-toggle-5"><a class="mobile-sub-category-link w-dropdown-link" href="/category/earrings-2" tabindex="0">Earrings</a><a class="mobile-sub-category-link w-dropdown-link" href="/category/earrings-2/stud-earrings" tabindex="0">Stud earrings</a><a class="mobile-sub-category-link w-dropdown-link" href="/category/earrings-2/dangle-earrings" tabindex="0">Dangle earrings</a><a class="mobile-sub-category-link w-dropdown-link" href="/category/earrings-2/hoop-earrings" tabindex="0">Hoop earrings</a></nav>
-							</div>
-						</div>
-						<div class="mobile-nav-link-block">
-							<div class="mobile-dropdown-link w-dropdown" data-hover="" data-delay="0">
-								<div class="mobile-dropdown-toggle w-dropdown-toggle" id="w-dropdown-toggle-6" aria-controls="w-dropdown-list-6" aria-haspopup="menu" aria-expanded="false" role="button" tabindex="0">
-									<div class="w-icon-dropdown-toggle"></div>
-									<div class="link-text">Val's Day</div>
-								</div>
-								<nav class="mobile-dropdown-list-block w-dropdown-list" id="w-dropdown-list-6" aria-labelledby="w-dropdown-toggle-6"><a class="mobile-sub-category-link w-dropdown-link" href="/category/val-s-day" tabindex="0">Val's Day</a></nav>
-							</div>
-						</div>
+						<?php endforeach; ?>
 					</nav>
 					<div class="menu-button w-nav-button" style="-webkit-user-select: text;" aria-label="menu" role="button" tabindex="0" aria-controls="w-nav-overlay-0" aria-haspopup="menu" aria-expanded="false">
 						<div class="w-icon-nav-menu"></div>

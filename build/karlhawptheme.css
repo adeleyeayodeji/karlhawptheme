@@ -5209,4 +5209,74 @@ body.swal2-toast-column .swal2-toast .swal2-validation-message {
   top: 20px;
 }
 
+.header-nav-link-block {
+  width: 100%;
+}
+
+.nav-dropdown-container {
+  justify-content: space-between;
+}
+
+.top-header-icon-block.searchform {
+  padding-right: 0;
+}
+.top-header-icon-block.searchform form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.top-header-icon-block.searchform form span {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000000;
+  background-color: transparent;
+  border-radius: 20px;
+  padding: 10px;
+  border: 1px solid #000;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.top-header-icon-block.searchform form span:hover {
+  background-color: lightgray;
+  color: #000;
+}
+.top-header-icon-block.searchform form input {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #000;
+  border-radius: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+  background-color: transparent;
+  font-family: "Vultura", sans-serif;
+}
+.top-header-icon-block.searchform form button {
+  padding: 10px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  background-color: #000;
+  font-family: "Vultura", sans-serif;
+  border-radius: 0;
+  transition: all 0.3s ease;
+}
+.top-header-icon-block.searchform form button:hover {
+  background-color: lightgray;
+  color: #000;
+}
+
 /*# sourceMappingURL=karlhawptheme.css.map*/
