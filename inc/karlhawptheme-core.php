@@ -110,8 +110,8 @@ class KarlhawpTheme
         //enqueue styles
         add_action('wp_enqueue_scripts', array($this, 'enqueue_styles'));
         //add ajax 
-        add_action('wp_ajax_add_to_cart', array($this, 'add_to_cart'));
-        add_action('wp_ajax_nopriv_add_to_cart', array($this, 'add_to_cart'));
+        add_action('wp_ajax_add_to_cart_karlha_jewels', array($this, 'add_to_cart'));
+        add_action('wp_ajax_nopriv_add_to_cart_karlha_jewels', array($this, 'add_to_cart'));
         //add action woocommerce_before_cart
         add_action('woocommerce_before_cart', array($this, 'before_cart'));
         //add action woocommerce_after_cart
@@ -128,7 +128,26 @@ class KarlhawpTheme
         add_action('woocommerce_before_customer_register_form', array($this, 'before_customer_login_form'));
         //woocommerce_after_customer_register_form
         add_action('woocommerce_after_customer_register_form', array($this, 'after_customer_login_form'));
+        //init
+        add_action('wp', array($this, 'init_terminal'));
     }
+
+
+    /**
+     * init_terminal
+     * 
+     */
+    public function init_terminal()
+    {
+        //check if page is cart
+        if (is_cart()) {
+            //add class to body
+
+        }
+    }
+
+
+
     /**
      * before_customer_login_form
      * 

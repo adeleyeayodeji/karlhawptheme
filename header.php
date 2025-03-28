@@ -56,6 +56,9 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.1.4/js.cookie.js"></script>
 	<link id="terminal-sweet-alert-stylesheet" rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.min.css" media="all">
+	<!-- include izitoast -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js"></script>
 </head>
 
 <body <?php body_class(); ?>>
@@ -77,15 +80,15 @@
 							</div>
 						</div>
 						<div class="top-header-icon-block searchform" style="display: none;">
-							<form action="" method="get">
+							<form action="<?php echo wc_get_account_endpoint_url('shop'); ?>?post_type=product" method="get">
 								<span>X</span>
-								<input type="text" name="search" placeholder="Search">
+								<input type="text" name="s" placeholder="Search">
 								<button type="submit">Search</button>
 							</form>
 						</div>
 					</div>
 				</div>
-				<div class=" bottom-menu-block">
+				<div class="khala-desktop-menu bottom-menu-block">
 					<?php
 					$menu_items = wp_get_nav_menu_items('karlha');
 					$menu_tree = [];
@@ -129,7 +132,33 @@
 					</div>
 				</div>
 			</div>
-			<div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div>
+			<div class="w-nav-overlay khala-mobile-menu" data-wf-ignore="" id="w-nav-overlay-0">
+				<nav class="nav-menu w-nav-menu" role="navigation" data-nav-menu-open="">
+					<?php foreach ($menu_tree as $item) : ?>
+						<div class="mobile-nav-link-block">
+							<div class="mobile-dropdown-link w-dropdown w--nav-dropdown-open" data-hover="" data-delay="0" style="">
+								<div class="mobile-dropdown-toggle w-dropdown-toggle w--nav-dropdown-toggle-open" id="w-dropdown-toggle-6" aria-controls="w-dropdown-list-6" aria-haspopup="menu" aria-expanded="false" role="button" tabindex="0">
+									<?php if (!empty($item['children'])) : ?>
+										<div class="w-icon-dropdown-toggle"></div>
+									<?php endif; ?>
+									<div class="link-text">
+										<a class="mobile-nav-link w-dropdown-link" href="<?php echo $item['url']; ?>" tabindex="0">
+											<?php echo $item['title']; ?>
+										</a>
+									</div>
+								</div>
+								<?php if (!empty($item['children'])) : ?>
+									<nav class="mobile-dropdown-list-block w-dropdown-list w--nav-dropdown-list-open" id="w-dropdown-list-6" aria-labelledby="w-dropdown-toggle-6">
+										<?php foreach ($item['children'] as $child) : ?>
+											<a class="mobile-sub-category-link w-dropdown-link" href="<?php echo $child['url']; ?>" tabindex="0"><?php echo $child['title']; ?></a>
+										<?php endforeach; ?>
+									</nav>
+								<?php endif; ?>
+							</div>
+						</div>
+					<?php endforeach; ?>
+				</nav>
+			</div>
 		</div>
 	</div>
 	<?php if (is_page('my-account')) : ?>

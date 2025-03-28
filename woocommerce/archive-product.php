@@ -75,7 +75,22 @@ get_header('shop');
 									</div>
 								<?php endif; ?>
 							</div>
-							<?php if (!$product->is_in_stock()) : ?>
+							<?php
+							//is stock
+							$is_stock = false;
+							//check if Stock management is enabled
+							if ($product->managing_stock()) {
+								//get stock quantity
+								$stock_quantity = $product->get_stock_quantity();
+								//check if stock quantity is greater than 0
+								if ($stock_quantity > 0) {
+									$is_stock = true;
+								}
+							} else {
+								$is_stock = true;
+							}
+							?>
+							<?php if (!$is_stock) : ?>
 								<div class="out-of-stock-box">
 									<div class="sold-out-text">SOLD OUT</div>
 								</div>

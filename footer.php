@@ -13,24 +13,41 @@
 if (is_page('my-account')) {
 	echo '</div> </div> </div>';
 }
+
+$menu_items = wp_get_nav_menu_items('karlha_footer');
+$menu_tree = [];
+
+foreach ($menu_items as $item) {
+	if ($item->menu_item_parent == 0) {
+		$menu_tree[$item->ID] = [
+			'title' => $item->title,
+			'url'   => $item->url,
+			'children' => []
+		];
+	} else {
+		$menu_tree[$item->menu_item_parent]['children'][] = [
+			'title' => $item->title,
+			'url'   => $item->url
+		];
+	}
+}
 ?>
 <div class="footer-section">
 	<div class="footer-block">
 		<div class="footer-flex-container">
 			<div class="footer-links-wrapper">
-				<div class="footer-links-block">
-					<h4 class="footer-links-block-header">Our Company</h4><a class="footer-link" href="/about">About Us</a><a class="footer-link" href="https://www.instagram.com/karlhajewels/">Instagram</a>
-				</div>
-				<div class="footer-links-block">
-					<h4 class="footer-links-block-header">Customer Service</h4><a class="footer-link" href="/contact">Contact Us</a><a class="footer-link" href="/faqs">FAQs</a><a class="footer-link" href="/shipping-returns">Shipping &amp; Returns</a>
-				</div>
-				<div class="footer-links-block">
-					<h4 class="footer-links-block-header">Policy</h4><a class="footer-link" href="/cookie-policy">Cookie Policy</a><a class="footer-link" href="/privacy-policy">Privacy Policy</a><a class="footer-link" href="/terms-conditions">Terms &amp; Conditions</a>
-				</div>
+				<?php foreach ($menu_tree as $item) : ?>
+					<div class="footer-links-block">
+						<h4 class="footer-links-block-header"><a href="<?php echo $item['url']; ?>" style="text-decoration: none; color: inherit;"><?php echo $item['title']; ?></a></h4>
+						<?php foreach ($item['children'] as $child) : ?>
+							<a class="footer-link" href="<?php echo $child['url']; ?>"><?php echo $child['title']; ?></a>
+						<?php endforeach; ?>
+					</div>
+				<?php endforeach; ?>
 			</div>
 		</div>
 		<div class="footer-text-block">
-			<div class="mini-text">© Karlha Lifestyle Limited 2025. | All Rights reserved.</div>
+			<div class="mini-text">© Karlha Lifestyle Limited <?php echo date('Y'); ?>. | All Rights reserved.</div>
 			<div class="mini-links-block"><a class="designs-by-es-link" href="https://www.theeclecticsource.com/" target="_blank">Designs by ES</a></div>
 		</div>
 	</div>
@@ -52,6 +69,7 @@ if (is_page('my-account')) {
 						var image = $('.product-body-image').first();
 						//set the src to the selected variant image
 						image.attr('src', variation.image.full_src);
+
 						//set the name to the selected variant
 						$('.product-name').text(variation.name);
 						// Update the price fields
@@ -59,9 +77,28 @@ if (is_page('my-account')) {
 
 						if (variation.display_regular_price !== variation.display_price) {
 							$('#product-sale-price').html(variation.display_regular_price).show();
+							//add product-strikethrough-price class
+							$('#product-price').addClass('product-strikethrough-price');
 						} else {
 							$('#product-sale-price').hide();
+							//remove product-strikethrough-price class
+							$('#product-price').removeClass('product-strikethrough-price');
 						}
+
+						//get buy-button
+						var buyButton = $('#buy-button');
+						//set the data-variation-id to the selected variant id
+						buyButton.data('variation-id', variation.variation_id);
+						//product-is-in-stock
+						buyButton.data('product-is-in-stock', variation.is_in_stock);
+
+
+						//get add-item-cart
+						var addItemCart = $('#add-item-cart');
+						//set the data-variation-id to the selected variant id
+						addItemCart.data('variation-id', variation.variation_id);
+						//product-is-in-stock
+						addItemCart.data('product-is-in-stock', variation.is_in_stock);
 					}
 				});
 			});
@@ -79,78 +116,87 @@ if (is_page('my-account')) {
 		 * Add to card ajax
 		 * 
 		 */
-		function addToCartAjax(productId, variationId = null, isBuyNow = false) {
+		function addToCartAjax(productId, variationId = null, isBuyNow = false, button) {
 			var data = {
-				action: 'add_to_cart',
+				action: 'add_to_cart_karlha_jewels',
 				nonce: karlha_jewels.nonce,
 				product_id: productId
 			};
 			if (variationId) {
 				data.variation_id = variationId;
 			}
+
+			//old button text
+			var oldButtonText = button.text();
+
 			//add to cart
 			$.ajax({
 				url: karlha_jewels.ajax_url,
 				type: 'POST',
 				data: data,
 				beforeSend: function() {
-					//swal adding to cart
-					Swal.fire({
-						title: 'Adding to cart...',
-						text: 'Please wait while we add the product to your cart',
-						icon: 'info',
-						confirmButtonColor: '#c89c6c',
-						showConfirmButton: false,
-						allowOutsideClick: false,
-						showCancelButton: false,
-						didOpen: function() {
-							Swal.showLoading();
-						}
+					//block button
+					button.css({
+						'opacity': 0.5,
+						'cursor': 'wait'
 					});
+					//change button text
+					button.text('Adding to cart...');
 				},
 				success: function(response) {
-					//close swal
-					Swal.close();
+					//unblock button
+					button.css({
+						'opacity': 1,
+						'cursor': 'auto',
+						'pointer-events': 'auto'
+					});
 					//check if response is json
 					if (response.success) {
 						if (isBuyNow) {
 							//redirect to checkout
 							window.location.href = '<?php echo wc_get_checkout_url(); ?>';
 						} else {
-							//swal success
-							Swal.fire({
+							//change button text
+							button.text(oldButtonText);
+
+							//iziToast success
+							iziToast.success({
 								title: 'Success',
-								text: 'Product added to cart',
-								icon: 'success',
-								confirmButtonColor: '#c89c6c',
-								confirmButtonText: 'Go to Cart',
-								allowOutsideClick: false,
-								//cancel button text
-								showCancelButton: true,
-								cancelButtonText: 'Continue Shopping',
-							}).then(function(isConfirmed) {
-								if (isConfirmed) {
-									//redirect to cart
-									window.location.href = '<?php echo wc_get_cart_url(); ?>';
-								}
+								message: 'Product added to cart',
+								position: 'topRight',
+								timeout: 5000,
+								buttons: [
+									['<button>View Cart</button>', function(instance, toast) {
+										window.location.href = '<?php echo wc_get_cart_url(); ?>';
+									}]
+								]
 							});
 						}
 					} else {
-						//swal error
-						Swal.fire({
+						//iziToast error
+						iziToast.error({
 							title: 'Error',
-							text: response.data.message,
-							icon: 'error',
+							message: response.data.message,
+							position: 'topRight',
+							timeout: 5000,
 						});
 					}
 				},
 				error: function(response) {
-					console.log(response);
-					Swal.fire({
+					//unblock button
+					button.css({
+						'opacity': 1,
+						'cursor': 'auto',
+						'pointer-events': 'auto'
+					});
+					//change button text
+					button.text(oldButtonText);
+					//iziToast error
+					iziToast.error({
 						title: 'Error',
-						text: 'An error occurred while adding to cart',
-						icon: 'error',
-						confirmButtonColor: '#c89c6c'
+						message: 'An error occurred while adding to cart',
+						position: 'topRight',
+						timeout: 5000,
 					});
 				}
 			});
@@ -160,52 +206,36 @@ if (is_page('my-account')) {
 		/**
 		 * Add to cart
 		 */
-		$('#add-item-cart, #buy-button').on('click', function() {
+		$('#add-item-cart, #buy-button').on('click', function(e) {
+			e.preventDefault();
+
 			var productId = $(this).data('product-id');
 			var productIsInStock = $(this).data('product-is-in-stock');
 			//check if data-is-buy-now is true
 			var isBuyNow = $(this).data('is-buy-now');
+			//variation id
+			var variationId = $(this).data('variation-id');
 
-			//check if product is variable
-			if (productVariations && productVariations.length > 0) {
-				//get selected variant
-				var selectedVariant = $('.feature-product-variant-select').val();
-				//get the variation that matches the selected variant
-				var variation = productVariations.find(function(variation) {
-					return variation.attributes['attribute_color'] === selectedVariant;
-				});
-				//is_in_stock
-				if (variation.is_in_stock) {
-					//variation_id
-					var variationId = variation.variation_id;
-					//add to cart
-					addToCartAjax(productId, variationId, isBuyNow);
-				} else {
-					//SweetAlert2
-					Swal.fire({
-						title: 'Out of Stock',
-						text: 'This product is out of stock',
-						icon: 'error',
-						confirmButtonColor: '#c89c6c'
-					});
-					return;
-				}
-			} else {
-				//is_in_stock
-				if (productIsInStock == 'true') {
-					//add to cart
-					addToCartAjax(productId, null, isBuyNow);
-				} else {
-					//SweetAlert2
-					Swal.fire({
-						title: 'Out of Stock',
-						text: 'This product is out of stock',
-						icon: 'error',
-						confirmButtonColor: '#c89c6c'
-					});
-					return;
-				}
+			//check if empty
+			if (variationId == '' || variationId == null || variationId == undefined) {
+				variationId = null;
 			}
+
+			//is_in_stock
+			if (productIsInStock) {
+				//add to cart
+				addToCartAjax(productId, variationId, isBuyNow, $(this));
+			} else {
+				//SweetAlert2
+				Swal.fire({
+					title: 'Out of Stock',
+					text: 'This product is out of stock',
+					icon: 'error',
+					confirmButtonColor: '#c89c6c'
+				});
+				return;
+			}
+
 		});
 	});
 </script>

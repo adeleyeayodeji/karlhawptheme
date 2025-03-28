@@ -206,6 +206,8 @@ get_header('shop'); ?>
 	$product = wc_get_product(get_the_ID());
 	$product_images = $product->get_gallery_image_ids();
 	$product_image = $product->get_image_id();
+	//merge product images and product image
+	$product_images = array_merge($product_images, array($product_image));
 	?>
 
 	<div class="product-body-wrapper">
@@ -230,9 +232,29 @@ get_header('shop'); ?>
 				<h1 class="name-box">
 					<?php the_title(); ?>
 				</h1>
+				<?php
+				//is stock
+				$is_stock = 'false';
+				//check if Stock management is enabled
+				if ($product->managing_stock()) {
+					//get stock quantity
+					$stock_quantity = $product->get_stock_quantity();
+					//check if stock quantity is greater than 0
+					if ($stock_quantity > 0) {
+						$is_stock = 'true';
+					}
+				} else {
+					$is_stock = 'true';
+				}
+				?>
+				<?php if ($is_stock == 'false') : ?>
+					<div class="out-of-stock-box" style="width: fit-content;position: static;margin: 0;padding: 8px 60px;">
+						<div class="sold-out-text">SOLD OUT</div>
+					</div>
+				<?php endif; ?>
 				<div class="product-spread-price-block">
 					<?php if ($product->is_on_sale()) : ?>
-						<h1 class="product-spread-price" id="product-price">
+						<h1 class="product-spread-price product-strikethrough-price" id="product-price">
 							<?php echo wc_price($product->get_regular_price()); ?>
 						</h1>
 						<h1 class="product-spread-price" id="product-sale-price">
@@ -283,8 +305,9 @@ get_header('shop'); ?>
 						<?php the_content(); ?>
 					</p>
 				</div>
-				<a class="add-to-cart-button buy-now w-button" id="buy-button" data-product-id="<?php echo $product->get_id(); ?>" data-product-is-in-stock="<?php echo $product->is_in_stock(); ?>" data-is-buy-now="true">Buy it Now</a>
-				<a class="add-to-cart-button w-button" id="add-item-cart" data-product-id="<?php echo $product->get_id(); ?>" data-product-is-in-stock="<?php echo $product->is_in_stock(); ?>">Add to Cart</a>
+
+				<a class="add-to-cart-button buy-now w-button" id="buy-button" data-product-id="<?php echo $product->get_id(); ?>" data-product-is-in-stock="<?php echo $is_stock; ?>" data-is-buy-now="true" data-variation-id="">Buy it Now</a>
+				<a class="add-to-cart-button w-button" id="add-item-cart" data-product-id="<?php echo $product->get_id(); ?>" data-product-is-in-stock="<?php echo $is_stock; ?>" data-is-buy-now="false" data-variation-id="">Add to Cart</a>
 			</div>
 		</div>
 	</div>

@@ -22,6 +22,8 @@ class KarlhaElementor
     {
         //register widgets
         add_action('elementor/widgets/widgets_registered', array($this, 'register_widgets'));
+        //elementor editor scripts
+        add_action('elementor/editor/before_enqueue_scripts', array($this, 'editor_scripts'));
     }
 
     /**
@@ -45,5 +47,17 @@ class KarlhaElementor
         \Elementor\Plugin::instance()->widgets_manager->register(new About_Us_Widget());
         //register best sellers widget
         \Elementor\Plugin::instance()->widgets_manager->register(new Best_Sellers_Widget());
+    }
+
+    /**
+     * editor_scripts
+     * 
+     */
+    public function editor_scripts()
+    {
+        //add build css
+        wp_enqueue_style('karlha-jewels-build', KARLHA_DIR_URL . '/build/karlhawptheme.css', array(), KARLHA_THEME_VERSION);
+        //add script
+        wp_enqueue_script('karlha-jewels-build', KARLHA_DIR_URL . '/build/karlhawptheme.js', array('jquery'), KARLHA_THEME_VERSION, true);
     }
 }

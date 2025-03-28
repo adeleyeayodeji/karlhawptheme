@@ -397,6 +397,9 @@ th {
   padding: 0;
 }
 
+.karlha-jewels-store-front * {
+  font-family: "Vultura", sans-serif;
+}
 .karlha-jewels-store-front audio:not([controls]) {
   display: none;
   height: 0;
@@ -553,14 +556,14 @@ th {
 .karlha-jewels-store-front input,
 .karlha-jewels-store-front textarea {
   color: #43454b;
-  font-family: "Source Sans Pro", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "Vultura", sans-serif;
   line-height: 1.618;
   text-rendering: optimizeLegibility;
   font-weight: 400;
 }
 .karlha-jewels-store-front select {
   color: initial;
-  font-family: "Source Sans Pro", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "Vultura", sans-serif;
   max-width: 100%;
 }
 .karlha-jewels-store-front summary {
@@ -692,7 +695,7 @@ th {
 }
 .karlha-jewels-store-front pre {
   background: rgba(0, 0, 0, 0.1);
-  font-family: "Courier 10 Pitch", Courier, monospace;
+  font-family: "Vultura", sans-serif;
   margin-bottom: 1.618em;
   padding: 1.618em;
   overflow: auto;
@@ -702,7 +705,7 @@ th {
 .karlha-jewels-store-front kbd,
 .karlha-jewels-store-front tt,
 .karlha-jewels-store-front var {
-  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+  font-family: "Vultura", sans-serif;
   background-color: rgba(0, 0, 0, 0.05);
   padding: 0.202em 0.5407911001em;
 }
@@ -757,7 +760,7 @@ th {
   outline: 2px solid #7f54b3;
 }
 .karlha-jewels-store-front .storefront-cute * {
-  font-family: "Comic Sans MS", sans-serif;
+  font-family: "Vultura", sans-serif;
 }
 .karlha-jewels-store-front * {
   box-sizing: border-box;
@@ -2487,6 +2490,4253 @@ th {
 }
 @media (max-width: 568px) {
   .karlha-jewels-store-front .col-full {
+    margin-left: 1.41575em;
+    margin-right: 1.41575em;
+    padding: 0;
+  }
+}
+
+.wp-block-woocommerce-cart * {
+  font-family: "Vultura", sans-serif;
+  font-size: 16px;
+}
+.wp-block-woocommerce-cart audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+.wp-block-woocommerce-cart [hidden],
+.wp-block-woocommerce-cart template {
+  display: none;
+}
+.wp-block-woocommerce-cart a {
+  background-color: rgba(0, 0, 0, 0);
+}
+.wp-block-woocommerce-cart a:active,
+.wp-block-woocommerce-cart a:hover {
+  outline: 0;
+}
+.wp-block-woocommerce-cart abbr[title] {
+  border-bottom: 1px dotted;
+}
+.wp-block-woocommerce-cart b,
+.wp-block-woocommerce-cart strong {
+  font-weight: bold;
+}
+.wp-block-woocommerce-cart dfn {
+  font-style: italic;
+}
+.wp-block-woocommerce-cart h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+.wp-block-woocommerce-cart mark {
+  background: #ff0;
+  color: #000;
+}
+.wp-block-woocommerce-cart small {
+  font-size: 80%;
+}
+.wp-block-woocommerce-cart sub,
+.wp-block-woocommerce-cart sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+.wp-block-woocommerce-cart sup {
+  top: -0.5em;
+}
+.wp-block-woocommerce-cart sub {
+  bottom: -0.25em;
+}
+.wp-block-woocommerce-cart img {
+  border: 0;
+}
+.wp-block-woocommerce-cart svg:not(:root) {
+  overflow: hidden;
+}
+.wp-block-woocommerce-cart figure {
+  margin: 1em 40px;
+}
+.wp-block-woocommerce-cart hr {
+  box-sizing: content-box;
+  height: 0;
+}
+.wp-block-woocommerce-cart pre {
+  overflow: auto;
+}
+.wp-block-woocommerce-cart code,
+.wp-block-woocommerce-cart kbd,
+.wp-block-woocommerce-cart pre,
+.wp-block-woocommerce-cart samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+.wp-block-woocommerce-cart button,
+.wp-block-woocommerce-cart input,
+.wp-block-woocommerce-cart optgroup,
+.wp-block-woocommerce-cart select,
+.wp-block-woocommerce-cart textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+.wp-block-woocommerce-cart button {
+  overflow: visible;
+}
+.wp-block-woocommerce-cart button,
+.wp-block-woocommerce-cart select {
+  text-transform: none;
+}
+.wp-block-woocommerce-cart button,
+.wp-block-woocommerce-cart html input[type=button],
+.wp-block-woocommerce-cart input[type=reset],
+.wp-block-woocommerce-cart input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+.wp-block-woocommerce-cart button[disabled],
+.wp-block-woocommerce-cart html input[disabled] {
+  cursor: default;
+}
+.wp-block-woocommerce-cart button::-moz-focus-inner,
+.wp-block-woocommerce-cart input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+.wp-block-woocommerce-cart input {
+  line-height: normal;
+}
+.wp-block-woocommerce-cart input[type=checkbox],
+.wp-block-woocommerce-cart input[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+.wp-block-woocommerce-cart input[type=number]::-webkit-inner-spin-button,
+.wp-block-woocommerce-cart input[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+.wp-block-woocommerce-cart input[type=search] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box;
+}
+.wp-block-woocommerce-cart input[type=search]::-webkit-search-cancel-button,
+.wp-block-woocommerce-cart input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+.wp-block-woocommerce-cart fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+.wp-block-woocommerce-cart legend {
+  border: 0;
+  padding: 0;
+}
+.wp-block-woocommerce-cart textarea {
+  overflow: auto;
+}
+.wp-block-woocommerce-cart optgroup {
+  font-weight: bold;
+}
+.wp-block-woocommerce-cart table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.wp-block-woocommerce-cart td,
+.wp-block-woocommerce-cart th {
+  padding: 0;
+}
+.wp-block-woocommerce-cart body {
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+}
+.wp-block-woocommerce-cart body,
+.wp-block-woocommerce-cart button,
+.wp-block-woocommerce-cart input,
+.wp-block-woocommerce-cart textarea {
+  color: #43454b;
+  font-family: "Source Sans Pro", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  line-height: 1.618;
+  text-rendering: optimizeLegibility;
+  font-weight: 400;
+}
+.wp-block-woocommerce-cart select {
+  color: initial;
+  font-family: "Source Sans Pro", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  max-width: 100%;
+}
+.wp-block-woocommerce-cart summary {
+  display: list-item;
+}
+.wp-block-woocommerce-cart h1,
+.wp-block-woocommerce-cart h2,
+.wp-block-woocommerce-cart h3,
+.wp-block-woocommerce-cart h4,
+.wp-block-woocommerce-cart h5,
+.wp-block-woocommerce-cart h6 {
+  clear: both;
+  font-weight: 300;
+  margin: 0 0 0.5407911001em;
+  color: #131315;
+}
+.wp-block-woocommerce-cart h1 a,
+.wp-block-woocommerce-cart h2 a,
+.wp-block-woocommerce-cart h3 a,
+.wp-block-woocommerce-cart h4 a,
+.wp-block-woocommerce-cart h5 a,
+.wp-block-woocommerce-cart h6 a {
+  font-weight: 300;
+}
+.wp-block-woocommerce-cart h1,
+.wp-block-woocommerce-cart .alpha {
+  font-size: 2.617924em;
+  line-height: 1.214;
+  letter-spacing: -1px;
+}
+.wp-block-woocommerce-cart h2,
+.wp-block-woocommerce-cart .beta {
+  font-size: 2em;
+  line-height: 1.214;
+}
+.wp-block-woocommerce-cart h2 + h3,
+.wp-block-woocommerce-cart .beta + h3 {
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  padding-top: 0.5407911001em;
+}
+.wp-block-woocommerce-cart h3,
+.wp-block-woocommerce-cart .gamma {
+  font-size: 1.618em;
+}
+.wp-block-woocommerce-cart h4,
+.wp-block-woocommerce-cart .delta {
+  font-size: 1.41575em;
+}
+.wp-block-woocommerce-cart .alpha,
+.wp-block-woocommerce-cart .beta,
+.wp-block-woocommerce-cart .gamma,
+.wp-block-woocommerce-cart .delta {
+  display: block;
+}
+.wp-block-woocommerce-cart p + h2,
+.wp-block-woocommerce-cart p + header h2,
+.wp-block-woocommerce-cart p + h3,
+.wp-block-woocommerce-cart p + h4,
+.wp-block-woocommerce-cart ul + h2,
+.wp-block-woocommerce-cart ul + header h2,
+.wp-block-woocommerce-cart ul + h3,
+.wp-block-woocommerce-cart ul + h4,
+.wp-block-woocommerce-cart ol + h2,
+.wp-block-woocommerce-cart ol + header h2,
+.wp-block-woocommerce-cart ol + h3,
+.wp-block-woocommerce-cart ol + h4,
+.wp-block-woocommerce-cart table + h2,
+.wp-block-woocommerce-cart table + header h2,
+.wp-block-woocommerce-cart table + h3,
+.wp-block-woocommerce-cart table + h4,
+.wp-block-woocommerce-cart blockquote + h2,
+.wp-block-woocommerce-cart blockquote + header h2,
+.wp-block-woocommerce-cart blockquote + h3,
+.wp-block-woocommerce-cart blockquote + h4,
+.wp-block-woocommerce-cart form + h2,
+.wp-block-woocommerce-cart form + header h2,
+.wp-block-woocommerce-cart form + h3,
+.wp-block-woocommerce-cart form + h4 {
+  margin-top: 2.2906835em;
+}
+.wp-block-woocommerce-cart hr {
+  background-color: #ccc;
+  border: 0;
+  height: 1px;
+  margin: 0 0 1.41575em;
+}
+.wp-block-woocommerce-cart p {
+  margin: 0 0 1.41575em;
+}
+.wp-block-woocommerce-cart ul,
+.wp-block-woocommerce-cart ol {
+  margin: 0 0 1.41575em 3em;
+  padding: 0;
+}
+.wp-block-woocommerce-cart ul {
+  list-style: disc;
+}
+.wp-block-woocommerce-cart ol {
+  list-style: decimal;
+}
+.wp-block-woocommerce-cart li > ul,
+.wp-block-woocommerce-cart li > ol {
+  margin-bottom: 0;
+  margin-left: 1em;
+}
+.wp-block-woocommerce-cart dt {
+  font-weight: 600;
+}
+.wp-block-woocommerce-cart dd {
+  margin: 0 0 1.618em;
+}
+.wp-block-woocommerce-cart b,
+.wp-block-woocommerce-cart strong {
+  font-weight: 600;
+}
+.wp-block-woocommerce-cart dfn,
+.wp-block-woocommerce-cart cite,
+.wp-block-woocommerce-cart em,
+.wp-block-woocommerce-cart i {
+  font-style: italic;
+}
+.wp-block-woocommerce-cart blockquote {
+  padding: 0 1em;
+  border-left: 3px solid rgba(0, 0, 0, 0.05);
+  font-style: italic;
+}
+.wp-block-woocommerce-cart address {
+  margin: 0 0 1.41575em;
+}
+.wp-block-woocommerce-cart pre {
+  background: rgba(0, 0, 0, 0.1);
+  font-family: "Courier 10 Pitch", Courier, monospace;
+  margin-bottom: 1.618em;
+  padding: 1.618em;
+  overflow: auto;
+  max-width: 100%;
+}
+.wp-block-woocommerce-cart code,
+.wp-block-woocommerce-cart kbd,
+.wp-block-woocommerce-cart tt,
+.wp-block-woocommerce-cart var {
+  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 0.202em 0.5407911001em;
+}
+.wp-block-woocommerce-cart abbr,
+.wp-block-woocommerce-cart acronym {
+  border-bottom: 1px dotted #666;
+  cursor: help;
+}
+.wp-block-woocommerce-cart mark,
+.wp-block-woocommerce-cart ins {
+  text-decoration: none;
+  font-weight: 600;
+  background: rgba(0, 0, 0, 0);
+}
+.wp-block-woocommerce-cart sup,
+.wp-block-woocommerce-cart sub {
+  font-size: 75%;
+  height: 0;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+.wp-block-woocommerce-cart sup {
+  bottom: 1ex;
+}
+.wp-block-woocommerce-cart sub {
+  top: 0.5ex;
+}
+.wp-block-woocommerce-cart small {
+  font-size: 75%;
+}
+.wp-block-woocommerce-cart big {
+  font-size: 125%;
+}
+.wp-block-woocommerce-cart figure {
+  margin: 0;
+}
+.wp-block-woocommerce-cart img {
+  height: auto;
+  max-width: 100%;
+  display: block;
+  border-radius: 3px;
+}
+.wp-block-woocommerce-cart a {
+  color: #2c2d33;
+  text-decoration: none;
+}
+.wp-block-woocommerce-cart a:focus,
+.wp-block-woocommerce-cart input:focus,
+.wp-block-woocommerce-cart textarea:focus,
+.wp-block-woocommerce-cart button:focus {
+  outline: 2px solid #7f54b3;
+}
+.wp-block-woocommerce-cart * {
+  box-sizing: border-box;
+}
+.wp-block-woocommerce-cart body {
+  background-color: #fff;
+  overflow-x: hidden;
+}
+.wp-block-woocommerce-cart .site {
+  overflow-x: hidden;
+}
+.wp-block-woocommerce-cart .site-content,
+.wp-block-woocommerce-cart .header-widget-region {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.wp-block-woocommerce-cart .site-header {
+  background-color: #2c2d33;
+  padding-top: 1.618em;
+  padding-bottom: 1.618em;
+  color: #9aa0a7;
+  background-position: center center;
+  position: relative;
+  z-index: 999;
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
+}
+.wp-block-woocommerce-cart .site-header .site-logo-anchor,
+.wp-block-woocommerce-cart .site-header .site-logo-link,
+.wp-block-woocommerce-cart .site-header .custom-logo-link {
+  display: block;
+  margin-bottom: 0;
+}
+.wp-block-woocommerce-cart .site-header .site-logo-anchor img,
+.wp-block-woocommerce-cart .site-header .site-logo-link img,
+.wp-block-woocommerce-cart .site-header .custom-logo-link img {
+  width: 100%;
+  max-width: 210px;
+}
+.wp-block-woocommerce-cart .site-header .widget {
+  margin-bottom: 0;
+}
+.wp-block-woocommerce-cart .home.blog .site-header,
+.wp-block-woocommerce-cart .home.page:not(.page-template-template-homepage) .site-header,
+.wp-block-woocommerce-cart .home.post-type-archive-product .site-header {
+  margin-bottom: 4.235801032em;
+}
+.wp-block-woocommerce-cart .no-wc-breadcrumb .site-header {
+  margin-bottom: 4.235801032em;
+}
+.wp-block-woocommerce-cart .no-wc-breadcrumb.page-template-template-homepage .site-header {
+  margin-bottom: 0;
+}
+.wp-block-woocommerce-cart .header-widget-region {
+  position: relative;
+  z-index: 99;
+}
+.wp-block-woocommerce-cart .header-widget-region::before,
+.wp-block-woocommerce-cart .header-widget-region::after {
+  content: "";
+  display: table;
+}
+.wp-block-woocommerce-cart .header-widget-region::after {
+  clear: both;
+}
+.wp-block-woocommerce-cart .header-widget-region .widget {
+  margin: 0;
+  padding: 1em 0;
+  font-size: 0.875em;
+}
+.wp-block-woocommerce-cart .site-branding {
+  float: left;
+  margin-bottom: 0;
+  width: calc(100% - 120px);
+}
+.wp-block-woocommerce-cart .site-branding .site-title {
+  font-size: 2em;
+  letter-spacing: -1px;
+  margin: 0;
+}
+.wp-block-woocommerce-cart .site-branding .site-title a {
+  font-weight: 700;
+}
+.wp-block-woocommerce-cart .site-branding .site-description {
+  font-size: 0.875em;
+  display: none;
+}
+.wp-block-woocommerce-cart .site-branding .logo {
+  margin: 0;
+}
+.wp-block-woocommerce-cart .site-main {
+  margin-bottom: 2.617924em;
+}
+.wp-block-woocommerce-cart .site-content {
+  outline: none;
+}
+.wp-block-woocommerce-cart .page-template-template-homepage:not(.has-post-thumbnail) .site-main {
+  padding-top: 4.235801032em;
+}
+.wp-block-woocommerce-cart .page-template-template-homepage .type-page {
+  padding-top: 2.617924em;
+  padding-bottom: 2.617924em;
+  position: relative;
+}
+.wp-block-woocommerce-cart .page-template-template-homepage .type-page .storefront-hero__button-edit {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  font-size: 0.875em;
+}
+.wp-block-woocommerce-cart .page-template-template-homepage .wc-block-cart {
+  font-size: 1.1em;
+}
+.wp-block-woocommerce-cart .page-template-template-homepage .wc-block-cart p:last-child {
+  margin-bottom: 0;
+}
+.wp-block-woocommerce-cart .page-template-template-homepage .entry-header h1 {
+  font-size: 3.706325903em;
+  margin-bottom: 0.2360828548em;
+}
+.wp-block-woocommerce-cart .page-template-template-homepage .wc-block-cart,
+.wp-block-woocommerce-cart .page-template-template-homepage .entry-header {
+  max-width: 41.0994671405em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.wp-block-woocommerce-cart .page-template-template-homepage.has-post-thumbnail .type-page.has-post-thumbnail {
+  background-size: cover;
+  background-position: center center;
+  padding-top: 6.8535260698em;
+  padding-bottom: 6.8535260698em;
+}
+.wp-block-woocommerce-cart .page-template-template-homepage.has-post-thumbnail .type-page.has-post-thumbnail .wc-block-cart,
+.wp-block-woocommerce-cart .page-template-template-homepage.has-post-thumbnail .type-page.has-post-thumbnail .entry-title {
+  opacity: 0;
+  transition: all, ease, 0.5s;
+}
+.wp-block-woocommerce-cart .page-template-template-homepage.has-post-thumbnail .type-page.has-post-thumbnail .wc-block-cart.loaded,
+.wp-block-woocommerce-cart .page-template-template-homepage.has-post-thumbnail .type-page.has-post-thumbnail .entry-title.loaded {
+  opacity: 1;
+}
+.wp-block-woocommerce-cart .site-footer {
+  background-color: #f3f3f3;
+  color: #3b3c3f;
+  padding: 1.618em 0 3.706325903em;
+}
+.wp-block-woocommerce-cart .site-footer h1,
+.wp-block-woocommerce-cart .site-footer h2,
+.wp-block-woocommerce-cart .site-footer h3,
+.wp-block-woocommerce-cart .site-footer h4,
+.wp-block-woocommerce-cart .site-footer h5,
+.wp-block-woocommerce-cart .site-footer h6 {
+  color: #333437;
+}
+.wp-block-woocommerce-cart .site-footer a {
+  color: #2c2d33;
+  text-decoration: underline;
+}
+.wp-block-woocommerce-cart .site-footer a:hover {
+  text-decoration: none;
+}
+.wp-block-woocommerce-cart .site-footer a.button,
+.wp-block-woocommerce-cart .site-footer a.components-button:not(.is-link),
+.wp-block-woocommerce-cart .site-footer a.wp-block-button__link {
+  text-decoration: none;
+}
+.wp-block-woocommerce-cart .site-info {
+  padding: 2.617924em 0;
+}
+.wp-block-woocommerce-cart .site-info span[role=separator] {
+  padding: 0 0.2360828548em 0 0.3342343017em;
+}
+.wp-block-woocommerce-cart .site-info span[role=separator]::before {
+  content: "|";
+}
+.wp-block-woocommerce-cart .alignleft {
+  display: inline;
+  float: left;
+  margin-right: 1em;
+}
+.wp-block-woocommerce-cart .alignright {
+  display: inline;
+  float: right;
+  margin-left: 1em;
+}
+.wp-block-woocommerce-cart .aligncenter {
+  clear: both;
+  display: block;
+  margin: 0 auto;
+}
+.wp-block-woocommerce-cart .screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal !important;
+}
+.wp-block-woocommerce-cart .screen-reader-text:focus {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  display: block;
+  font-weight: 700;
+  height: auto;
+  left: 0;
+  line-height: normal;
+  padding: 1em 1.618em;
+  text-decoration: none;
+  top: 0;
+  width: auto;
+  z-index: 100000;
+  outline: none;
+}
+.wp-block-woocommerce-cart .screen-reader-text.skip-link:focus {
+  clip-path: none;
+}
+.wp-block-woocommerce-cart .clear::before,
+.wp-block-woocommerce-cart .clear::after,
+.wp-block-woocommerce-cart .wc-block-cart::before,
+.wp-block-woocommerce-cart .wc-block-cart::after,
+.wp-block-woocommerce-cart .comment-content::before,
+.wp-block-woocommerce-cart .comment-content::after,
+.wp-block-woocommerce-cart .site-header::before,
+.wp-block-woocommerce-cart .site-header::after,
+.wp-block-woocommerce-cart .site-content::before,
+.wp-block-woocommerce-cart .site-content::after,
+.wp-block-woocommerce-cart .site-footer::before,
+.wp-block-woocommerce-cart .site-footer::after {
+  content: "";
+  display: table;
+}
+.wp-block-woocommerce-cart .clear::after,
+.wp-block-woocommerce-cart .wc-block-cart::after,
+.wp-block-woocommerce-cart .comment-content::after,
+.wp-block-woocommerce-cart .site-header::after,
+.wp-block-woocommerce-cart .site-content::after,
+.wp-block-woocommerce-cart .site-footer::after {
+  clear: both;
+}
+.wp-block-woocommerce-cart table {
+  border-spacing: 0;
+  width: 100%;
+  margin: 0 0 1.41575em;
+  border-collapse: separate;
+}
+.wp-block-woocommerce-cart table caption {
+  padding: 1em 0;
+  font-weight: 600;
+}
+.wp-block-woocommerce-cart table td,
+.wp-block-woocommerce-cart table th {
+  padding: 1em 1.41575em;
+  text-align: left;
+  vertical-align: top;
+}
+.wp-block-woocommerce-cart table td p:last-child,
+.wp-block-woocommerce-cart table th p:last-child {
+  margin-bottom: 0;
+}
+.wp-block-woocommerce-cart table th {
+  font-weight: 600;
+}
+.wp-block-woocommerce-cart table thead th {
+  padding: 1.41575em;
+  vertical-align: middle;
+}
+.wp-block-woocommerce-cart table tbody h2 {
+  font-size: 1em;
+  letter-spacing: normal;
+  font-weight: 400;
+}
+.wp-block-woocommerce-cart table tbody h2 a {
+  font-weight: 400;
+}
+.wp-block-woocommerce-cart .error404 .site-content .widget_product_search {
+  padding: 1.618em;
+  background-color: rgba(0, 0, 0, 0.025);
+}
+.wp-block-woocommerce-cart .error404 .site-content .widget_product_search form {
+  margin: 0;
+}
+.wp-block-woocommerce-cart .error404.right-sidebar .content-area,
+.wp-block-woocommerce-cart .error404.left-sidebar .content-area {
+  width: 100%;
+}
+.wp-block-woocommerce-cart .error404 .fourohfour-columns-2 {
+  padding: 2.617924em 0;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-width: 1px 0;
+  margin-bottom: 2.617924em;
+}
+.wp-block-woocommerce-cart .error404 .fourohfour-columns-2::before,
+.wp-block-woocommerce-cart .error404 .fourohfour-columns-2::after {
+  content: "";
+  display: table;
+}
+.wp-block-woocommerce-cart .error404 .fourohfour-columns-2::after {
+  clear: both;
+}
+.wp-block-woocommerce-cart .error404 .fourohfour-columns-2 ul.products li.product,
+.wp-block-woocommerce-cart .error404 .fourohfour-columns-2 .widget {
+  margin-bottom: 0;
+}
+.wp-block-woocommerce-cart .error404 .fourohfour-columns-2 .col-1 ul.products {
+  margin-bottom: 2.2906835em;
+}
+.wp-block-woocommerce-cart .error404 .fourohfour-columns-2 .col-1 ul.products li.product {
+  width: 45.4545454545%;
+  float: left;
+  margin-right: 9.0909090909%;
+}
+.wp-block-woocommerce-cart .error404 .fourohfour-columns-2 .col-1 ul.products li.product:last-child {
+  margin-right: 0;
+}
+.wp-block-woocommerce-cart .error404 .fourohfour-columns-2 .col-2 {
+  padding: 1.618em;
+  background-color: rgba(0, 0, 0, 0.025);
+}
+.wp-block-woocommerce-cart #comments {
+  padding-top: 2.617924em;
+}
+.wp-block-woocommerce-cart #comments .comments-title {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  padding-bottom: 0.5407911001em;
+  margin-bottom: 1.618em;
+}
+.wp-block-woocommerce-cart #comments .comment-list {
+  list-style: none;
+  margin-left: 0;
+}
+.wp-block-woocommerce-cart #comments .comment-list .comment-body::before,
+.wp-block-woocommerce-cart #comments .comment-list .comment-body::after {
+  content: "";
+  display: table;
+}
+.wp-block-woocommerce-cart #comments .comment-list .comment-body::after {
+  clear: both;
+}
+.wp-block-woocommerce-cart #comments .comment-list .comment-content {
+  padding-bottom: 1.618em;
+  margin-bottom: 1.618em;
+}
+.wp-block-woocommerce-cart #comments .comment-list .comment-content .comment-text {
+  padding: 1.618em;
+  border-radius: 3px;
+}
+.wp-block-woocommerce-cart #comments .comment-list .comment-content .comment-text p:last-child {
+  margin-bottom: 0;
+}
+.wp-block-woocommerce-cart #comments .comment-list .comment-meta {
+  margin-bottom: 1em;
+}
+.wp-block-woocommerce-cart #comments .comment-list .comment-meta .avatar {
+  margin-bottom: 1em;
+  max-width: 64px;
+  height: auto;
+}
+.wp-block-woocommerce-cart #comments .comment-list .comment-meta a.comment-date {
+  font-size: 0.875em;
+}
+.wp-block-woocommerce-cart #comments .comment-list .comment-meta cite {
+  font-style: normal;
+  clear: both;
+  display: block;
+}
+.wp-block-woocommerce-cart #comments .comment-list .reply {
+  margin-bottom: 1.618em;
+  padding-top: 0.6180469716em;
+}
+.wp-block-woocommerce-cart #comments .comment-list .reply::before,
+.wp-block-woocommerce-cart #comments .comment-list .reply::after {
+  content: "";
+  display: table;
+}
+.wp-block-woocommerce-cart #comments .comment-list .reply::after {
+  clear: both;
+}
+.wp-block-woocommerce-cart #comments .comment-list .reply a {
+  display: inline-block;
+  margin-right: 1em;
+}
+.wp-block-woocommerce-cart #comments .comment-list .reply a:last-child {
+  margin-right: 0;
+}
+.wp-block-woocommerce-cart #comments .comment-list .children {
+  list-style: none;
+}
+.wp-block-woocommerce-cart .comment-content a {
+  word-wrap: break-word;
+}
+.wp-block-woocommerce-cart #respond {
+  clear: both;
+  padding: 1.618em;
+  background-color: rgba(0, 0, 0, 0.0125);
+  position: relative;
+}
+.wp-block-woocommerce-cart #respond .comment-form-author input,
+.wp-block-woocommerce-cart #respond .comment-form-email input,
+.wp-block-woocommerce-cart #respond .comment-form-url input {
+  width: 100%;
+}
+.wp-block-woocommerce-cart #respond .form-submit,
+.wp-block-woocommerce-cart #respond form {
+  margin-bottom: 0;
+}
+.wp-block-woocommerce-cart #respond #cancel-comment-reply-link {
+  position: absolute;
+  top: 0.5407911001em;
+  right: 0.5407911001em;
+  display: block;
+  height: 1em;
+  width: 1em;
+  overflow: hidden;
+  line-height: 1;
+  font-size: 1.41575em;
+  text-align: center;
+  transition: transform, ease, 0.3s;
+}
+.wp-block-woocommerce-cart #respond #cancel-comment-reply-link:hover {
+  transform: scale(1.3);
+}
+.wp-block-woocommerce-cart .wp-post-image {
+  margin-bottom: 1.618em;
+  margin-left: auto;
+  margin-right: auto;
+}
+.wp-block-woocommerce-cart .entry-header {
+  margin-bottom: 1em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+.wp-block-woocommerce-cart .entry-header .posted-on,
+.wp-block-woocommerce-cart .entry-header .post-author,
+.wp-block-woocommerce-cart .entry-header .post-comments,
+.wp-block-woocommerce-cart .entry-header .byline {
+  font-size: 0.875em;
+}
+.wp-block-woocommerce-cart .entry-header .posted-on a,
+.wp-block-woocommerce-cart .entry-header .post-author a,
+.wp-block-woocommerce-cart .entry-header .post-comments a,
+.wp-block-woocommerce-cart .entry-header .byline a {
+  font-weight: 600;
+  text-decoration: underline;
+}
+.wp-block-woocommerce-cart .entry-header .posted-on a:hover,
+.wp-block-woocommerce-cart .entry-header .post-author a:hover,
+.wp-block-woocommerce-cart .entry-header .post-comments a:hover,
+.wp-block-woocommerce-cart .entry-header .byline a:hover {
+  text-decoration: none;
+}
+.wp-block-woocommerce-cart .wc-block-cart a {
+  text-decoration: underline;
+}
+.wp-block-woocommerce-cart .wc-block-cart a:hover {
+  text-decoration: none;
+}
+.wp-block-woocommerce-cart .wc-block-cart a.button,
+.wp-block-woocommerce-cart .wc-block-cart a.components-button:not(.is-link),
+.wp-block-woocommerce-cart .wc-block-cart a.wp-block-button__link {
+  text-decoration: none;
+}
+.wp-block-woocommerce-cart .entry-taxonomy {
+  margin: 1.41575em 0 0;
+  padding-top: 1em;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+.wp-block-woocommerce-cart .type-page .entry-header {
+  border-bottom: 0;
+  margin-bottom: 0;
+}
+.wp-block-woocommerce-cart .cat-links,
+.wp-block-woocommerce-cart .tags-links {
+  font-size: 0.875em;
+}
+.wp-block-woocommerce-cart .cat-links a,
+.wp-block-woocommerce-cart .tags-links a {
+  color: #727272;
+  font-weight: 600;
+  text-decoration: underline;
+}
+.wp-block-woocommerce-cart .byline,
+.wp-block-woocommerce-cart .updated:not(.published) {
+  display: none;
+}
+.wp-block-woocommerce-cart .single .byline,
+.wp-block-woocommerce-cart .group-blog .byline {
+  display: inline;
+}
+.wp-block-woocommerce-cart .page-links {
+  clear: both;
+  margin: 0 0 1em;
+}
+.wp-block-woocommerce-cart form {
+  margin-bottom: 1.618em;
+}
+.wp-block-woocommerce-cart button,
+.wp-block-woocommerce-cart input,
+.wp-block-woocommerce-cart select,
+.wp-block-woocommerce-cart textarea {
+  font-size: 100%;
+  margin: 0;
+}
+.wp-block-woocommerce-cart button,
+.wp-block-woocommerce-cart input[type=button],
+.wp-block-woocommerce-cart input[type=reset],
+.wp-block-woocommerce-cart input[type=submit],
+.wp-block-woocommerce-cart .button,
+.wp-block-woocommerce-cart .wc-block-grid__products .wc-block-grid__product .wp-block-button__link,
+.wp-block-woocommerce-cart .added_to_cart {
+  border: 0;
+  border-radius: 0;
+  background: none;
+  background-color: #43454b;
+  border-color: #43454b;
+  color: #fff;
+  cursor: pointer;
+  padding: 0.6180469716em 1.41575em;
+  text-decoration: none;
+  font-weight: 600;
+  text-shadow: none;
+  display: inline-block;
+  -webkit-appearance: none;
+}
+.wp-block-woocommerce-cart button::after,
+.wp-block-woocommerce-cart input[type=button]::after,
+.wp-block-woocommerce-cart input[type=reset]::after,
+.wp-block-woocommerce-cart input[type=submit]::after,
+.wp-block-woocommerce-cart .button::after,
+.wp-block-woocommerce-cart .wc-block-grid__products .wc-block-grid__product .wp-block-button__link::after,
+.wp-block-woocommerce-cart .added_to_cart::after {
+  display: none;
+}
+.wp-block-woocommerce-cart button.cta,
+.wp-block-woocommerce-cart button.alt,
+.wp-block-woocommerce-cart input[type=button].cta,
+.wp-block-woocommerce-cart input[type=button].alt,
+.wp-block-woocommerce-cart input[type=reset].cta,
+.wp-block-woocommerce-cart input[type=reset].alt,
+.wp-block-woocommerce-cart input[type=submit].cta,
+.wp-block-woocommerce-cart input[type=submit].alt,
+.wp-block-woocommerce-cart .button.cta,
+.wp-block-woocommerce-cart .button.alt,
+.wp-block-woocommerce-cart .wc-block-grid__products .wc-block-grid__product .wp-block-button__link.cta,
+.wp-block-woocommerce-cart .wc-block-grid__products .wc-block-grid__product .wp-block-button__link.alt,
+.wp-block-woocommerce-cart .added_to_cart.cta,
+.wp-block-woocommerce-cart .added_to_cart.alt {
+  background-color: #2c2d33;
+  border-color: #2c2d33;
+}
+.wp-block-woocommerce-cart button.cta:hover,
+.wp-block-woocommerce-cart button.alt:hover,
+.wp-block-woocommerce-cart input[type=button].cta:hover,
+.wp-block-woocommerce-cart input[type=button].alt:hover,
+.wp-block-woocommerce-cart input[type=reset].cta:hover,
+.wp-block-woocommerce-cart input[type=reset].alt:hover,
+.wp-block-woocommerce-cart input[type=submit].cta:hover,
+.wp-block-woocommerce-cart input[type=submit].alt:hover,
+.wp-block-woocommerce-cart .button.cta:hover,
+.wp-block-woocommerce-cart .button.alt:hover,
+.wp-block-woocommerce-cart .wc-block-grid__products .wc-block-grid__product .wp-block-button__link.cta:hover,
+.wp-block-woocommerce-cart .wc-block-grid__products .wc-block-grid__product .wp-block-button__link.alt:hover,
+.wp-block-woocommerce-cart .added_to_cart.cta:hover,
+.wp-block-woocommerce-cart .added_to_cart.alt:hover {
+  background-color: #2c2d33;
+}
+.wp-block-woocommerce-cart button:hover,
+.wp-block-woocommerce-cart input[type=button]:hover,
+.wp-block-woocommerce-cart input[type=reset]:hover,
+.wp-block-woocommerce-cart input[type=submit]:hover,
+.wp-block-woocommerce-cart .button:hover,
+.wp-block-woocommerce-cart .wc-block-grid__products .wc-block-grid__product .wp-block-button__link:hover,
+.wp-block-woocommerce-cart .added_to_cart:hover {
+  color: #fff;
+}
+.wp-block-woocommerce-cart button.loading,
+.wp-block-woocommerce-cart input[type=button].loading,
+.wp-block-woocommerce-cart input[type=reset].loading,
+.wp-block-woocommerce-cart input[type=submit].loading,
+.wp-block-woocommerce-cart .button.loading,
+.wp-block-woocommerce-cart .wc-block-grid__products .wc-block-grid__product .wp-block-button__link.loading,
+.wp-block-woocommerce-cart .added_to_cart.loading {
+  opacity: 0.5;
+}
+.wp-block-woocommerce-cart button.small,
+.wp-block-woocommerce-cart input[type=button].small,
+.wp-block-woocommerce-cart input[type=reset].small,
+.wp-block-woocommerce-cart input[type=submit].small,
+.wp-block-woocommerce-cart .button.small,
+.wp-block-woocommerce-cart .wc-block-grid__products .wc-block-grid__product .wp-block-button__link.small,
+.wp-block-woocommerce-cart .added_to_cart.small {
+  padding: 0.5407911001em 0.875em;
+  font-size: 0.875em;
+}
+.wp-block-woocommerce-cart button.disabled,
+.wp-block-woocommerce-cart button:disabled,
+.wp-block-woocommerce-cart input[type=button].disabled,
+.wp-block-woocommerce-cart input[type=button]:disabled,
+.wp-block-woocommerce-cart input[type=reset].disabled,
+.wp-block-woocommerce-cart input[type=reset]:disabled,
+.wp-block-woocommerce-cart input[type=submit].disabled,
+.wp-block-woocommerce-cart input[type=submit]:disabled,
+.wp-block-woocommerce-cart .button.disabled,
+.wp-block-woocommerce-cart .button:disabled,
+.wp-block-woocommerce-cart .wc-block-grid__products .wc-block-grid__product .wp-block-button__link.disabled,
+.wp-block-woocommerce-cart .wc-block-grid__products .wc-block-grid__product .wp-block-button__link:disabled,
+.wp-block-woocommerce-cart .added_to_cart.disabled,
+.wp-block-woocommerce-cart .added_to_cart:disabled {
+  opacity: 0.5 !important;
+  cursor: not-allowed;
+}
+.wp-block-woocommerce-cart button.disabled:hover,
+.wp-block-woocommerce-cart button:disabled:hover,
+.wp-block-woocommerce-cart input[type=button].disabled:hover,
+.wp-block-woocommerce-cart input[type=button]:disabled:hover,
+.wp-block-woocommerce-cart input[type=reset].disabled:hover,
+.wp-block-woocommerce-cart input[type=reset]:disabled:hover,
+.wp-block-woocommerce-cart input[type=submit].disabled:hover,
+.wp-block-woocommerce-cart input[type=submit]:disabled:hover,
+.wp-block-woocommerce-cart .button.disabled:hover,
+.wp-block-woocommerce-cart .button:disabled:hover,
+.wp-block-woocommerce-cart .wc-block-grid__products .wc-block-grid__product .wp-block-button__link.disabled:hover,
+.wp-block-woocommerce-cart .wc-block-grid__products .wc-block-grid__product .wp-block-button__link:disabled:hover,
+.wp-block-woocommerce-cart .added_to_cart.disabled:hover,
+.wp-block-woocommerce-cart .added_to_cart:disabled:hover {
+  opacity: 0.5 !important;
+}
+.wp-block-woocommerce-cart .button.woocommerce-MyAccount-downloads-file {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  -ms-word-break: break-all;
+}
+.wp-block-woocommerce-cart .wc-block-components-button:not(.is-link).disabled,
+.wp-block-woocommerce-cart .wc-block-components-button:not(.is-link):disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.wp-block-woocommerce-cart .wc-block-components-button:not(.is-link).disabled:hover,
+.wp-block-woocommerce-cart .wc-block-components-button:not(.is-link):disabled:hover {
+  opacity: 0.5;
+}
+.wp-block-woocommerce-cart input[type=checkbox],
+.wp-block-woocommerce-cart input[type=radio] {
+  padding: 0;
+}
+.wp-block-woocommerce-cart input[type=checkbox] + label,
+.wp-block-woocommerce-cart input[type=radio] + label {
+  margin: 0 0 0 0.3819820591em;
+}
+.wp-block-woocommerce-cart input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+.wp-block-woocommerce-cart input[type=search] {
+  box-sizing: border-box;
+}
+.wp-block-woocommerce-cart input[type=search]::-moz-placeholder {
+  color: #616161;
+}
+.wp-block-woocommerce-cart input[type=search]::placeholder {
+  color: #616161;
+}
+.wp-block-woocommerce-cart button::-moz-focus-inner,
+.wp-block-woocommerce-cart input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+.wp-block-woocommerce-cart input[type=text],
+.wp-block-woocommerce-cart input[type=number],
+.wp-block-woocommerce-cart input[type=email],
+.wp-block-woocommerce-cart input[type=tel],
+.wp-block-woocommerce-cart input[type=url],
+.wp-block-woocommerce-cart input[type=password],
+.wp-block-woocommerce-cart input[type=search],
+.wp-block-woocommerce-cart textarea,
+.wp-block-woocommerce-cart .input-text {
+  padding: 0.6180469716em;
+  background-color: #f2f2f2;
+  color: #43454b;
+  border: 0;
+  -webkit-appearance: none;
+  box-sizing: border-box;
+  font-weight: 400;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.125);
+}
+.wp-block-woocommerce-cart input[type=text]:focus,
+.wp-block-woocommerce-cart input[type=number]:focus,
+.wp-block-woocommerce-cart input[type=email]:focus,
+.wp-block-woocommerce-cart input[type=tel]:focus,
+.wp-block-woocommerce-cart input[type=url]:focus,
+.wp-block-woocommerce-cart input[type=password]:focus,
+.wp-block-woocommerce-cart input[type=search]:focus,
+.wp-block-woocommerce-cart textarea:focus,
+.wp-block-woocommerce-cart .input-text:focus {
+  background-color: #ededed;
+}
+.wp-block-woocommerce-cart textarea {
+  overflow: auto;
+  padding-left: 0.875em;
+  vertical-align: top;
+  width: 100%;
+}
+.wp-block-woocommerce-cart label {
+  font-weight: 400;
+}
+.wp-block-woocommerce-cart label.inline input {
+  width: auto;
+}
+.wp-block-woocommerce-cart fieldset {
+  padding: 1.618em;
+  padding-top: 1em;
+  border: 0;
+  margin: 0;
+  margin-bottom: 1.618em;
+  margin-top: 1.618em;
+}
+.wp-block-woocommerce-cart fieldset legend {
+  font-weight: 600;
+  padding: 0.6180469716em 1em;
+  margin-left: -1em;
+}
+.wp-block-woocommerce-cart [placeholder]:focus::-webkit-input-placeholder {
+  -webkit-transition: opacity 0.5s 0.5s ease;
+  transition: opacity 0.5s 0.5s ease;
+  opacity: 0;
+}
+.wp-block-woocommerce-cart .page-content img.wp-smiley,
+.wp-block-woocommerce-cart .wc-block-cart img.wp-smiley,
+.wp-block-woocommerce-cart .comment-content img.wp-smiley {
+  border: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0;
+  display: inline-block;
+  border-radius: 0;
+}
+.wp-block-woocommerce-cart .wp-caption {
+  margin-bottom: 1em;
+  max-width: 100%;
+}
+.wp-block-woocommerce-cart .wp-caption img[class*=wp-image-] {
+  display: block;
+  margin: 0 auto;
+}
+.wp-block-woocommerce-cart .wp-caption .wp-caption-text {
+  text-align: left;
+  font-style: italic;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+  padding: 1em 0;
+}
+.wp-block-woocommerce-cart .gallery {
+  margin-bottom: 1em;
+}
+.wp-block-woocommerce-cart .gallery::before,
+.wp-block-woocommerce-cart .gallery::after {
+  content: "";
+  display: table;
+}
+.wp-block-woocommerce-cart .gallery::after {
+  clear: both;
+}
+.wp-block-woocommerce-cart .gallery .gallery-item {
+  float: left;
+}
+.wp-block-woocommerce-cart .gallery .gallery-item .gallery-icon a {
+  display: block;
+}
+.wp-block-woocommerce-cart .gallery .gallery-item .gallery-icon img {
+  border: none;
+  height: auto;
+  margin: 0 auto;
+}
+.wp-block-woocommerce-cart .gallery .gallery-item .gallery-caption {
+  margin: 0;
+  text-align: center;
+}
+.wp-block-woocommerce-cart .gallery.gallery-columns-1 .gallery-item {
+  width: 100%;
+}
+.wp-block-woocommerce-cart .gallery.gallery-columns-2 .gallery-item {
+  width: 50%;
+}
+.wp-block-woocommerce-cart .gallery.gallery-columns-3 .gallery-item {
+  width: 33.3%;
+}
+.wp-block-woocommerce-cart .gallery.gallery-columns-4 .gallery-item {
+  width: 25%;
+}
+.wp-block-woocommerce-cart .gallery.gallery-columns-5 .gallery-item {
+  width: 20%;
+}
+.wp-block-woocommerce-cart .gallery.gallery-columns-6 .gallery-item {
+  width: 16.666666667%;
+}
+.wp-block-woocommerce-cart .gallery.gallery-columns-7 .gallery-item {
+  width: 14.285714286%;
+}
+.wp-block-woocommerce-cart .gallery.gallery-columns-8 .gallery-item {
+  width: 12.5%;
+}
+.wp-block-woocommerce-cart .gallery.gallery-columns-9 .gallery-item {
+  width: 11.111111111%;
+}
+.wp-block-woocommerce-cart embed,
+.wp-block-woocommerce-cart iframe,
+.wp-block-woocommerce-cart object,
+.wp-block-woocommerce-cart video {
+  max-width: 100%;
+}
+.wp-block-woocommerce-cart .secondary-navigation {
+  display: none;
+}
+.wp-block-woocommerce-cart button.menu-toggle {
+  cursor: pointer;
+  text-align: left;
+  float: right;
+  position: relative;
+  border: 2px solid rgba(0, 0, 0, 0);
+  box-shadow: none;
+  border-radius: 2px;
+  background-image: none;
+  padding: 0.6180469716em 0.875em 0.6180469716em 2.617924em;
+  font-size: 0.875em;
+  max-width: 120px;
+}
+.wp-block-woocommerce-cart button.menu-toggle:hover {
+  background-image: none;
+}
+.wp-block-woocommerce-cart button.menu-toggle span::before {
+  transition: all, ease, 0.2s;
+}
+.wp-block-woocommerce-cart button.menu-toggle::before,
+.wp-block-woocommerce-cart button.menu-toggle::after,
+.wp-block-woocommerce-cart button.menu-toggle span::before {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 14px;
+  position: absolute;
+  top: 50%;
+  left: 1em;
+  margin-top: -1px;
+  transition: all, ease, 0.2s;
+  border-radius: 3px;
+}
+.wp-block-woocommerce-cart button.menu-toggle::before {
+  transform: translateY(-4px);
+}
+.wp-block-woocommerce-cart button.menu-toggle::after {
+  transform: translateY(4px);
+}
+.wp-block-woocommerce-cart .toggled button.menu-toggle::before,
+.wp-block-woocommerce-cart .toggled button.menu-toggle::after {
+  transform: rotate(45deg);
+}
+.wp-block-woocommerce-cart .toggled button.menu-toggle::after {
+  transform: rotate(-45deg);
+}
+.wp-block-woocommerce-cart .toggled button.menu-toggle span::before {
+  opacity: 0;
+}
+.wp-block-woocommerce-cart .primary-navigation {
+  display: none;
+}
+.wp-block-woocommerce-cart .main-navigation::before,
+.wp-block-woocommerce-cart .main-navigation::after {
+  content: "";
+  display: table;
+}
+.wp-block-woocommerce-cart .main-navigation::after {
+  clear: both;
+}
+.wp-block-woocommerce-cart .main-navigation div.menu {
+  display: none;
+}
+.wp-block-woocommerce-cart .main-navigation div.menu:last-child {
+  display: block;
+}
+.wp-block-woocommerce-cart .main-navigation .menu {
+  clear: both;
+}
+.wp-block-woocommerce-cart .handheld-navigation,
+.wp-block-woocommerce-cart .nav-menu,
+.wp-block-woocommerce-cart .main-navigation div.menu > ul:not(.nav-menu) {
+  overflow: hidden;
+  max-height: 0;
+  transition: all, ease, 0.8s;
+}
+.wp-block-woocommerce-cart .handheld-navigation {
+  clear: both;
+}
+.wp-block-woocommerce-cart .handheld-navigation ul {
+  margin: 0;
+}
+.wp-block-woocommerce-cart .handheld-navigation ul.menu li {
+  position: relative;
+}
+.wp-block-woocommerce-cart .handheld-navigation ul.menu li button::after {
+  transition: all, ease, 0.9s;
+}
+.wp-block-woocommerce-cart .handheld-navigation ul.menu li button.toggled-on::after {
+  transform: rotate(180deg);
+}
+.wp-block-woocommerce-cart .handheld-navigation ul.menu .sub-menu {
+  visibility: hidden;
+  opacity: 0;
+  max-height: 0;
+  transition: all, ease, 0.9s;
+}
+.wp-block-woocommerce-cart .handheld-navigation ul.menu .sub-menu.toggled-on {
+  visibility: visible;
+  max-height: 9999px;
+  opacity: 1;
+}
+.wp-block-woocommerce-cart .handheld-navigation .dropdown-toggle {
+  background: rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+}
+.wp-block-woocommerce-cart .main-navigation.toggled .handheld-navigation,
+.wp-block-woocommerce-cart .main-navigation.toggled .menu > ul:not(.nav-menu),
+.wp-block-woocommerce-cart .main-navigation.toggled ul[aria-expanded=true] {
+  max-height: 9999px;
+}
+.wp-block-woocommerce-cart .main-navigation ul {
+  margin-left: 0;
+  list-style: none;
+  margin-bottom: 0;
+}
+.wp-block-woocommerce-cart .main-navigation ul ul {
+  display: block;
+  margin-left: 1.41575em;
+}
+.wp-block-woocommerce-cart .main-navigation ul li a {
+  padding: 0.875em 0;
+  display: block;
+}
+.wp-block-woocommerce-cart .main-navigation ul li a:hover {
+  color: #e6e6e6;
+}
+.wp-block-woocommerce-cart .site-main nav.navigation {
+  clear: both;
+  padding: 2.617924em 0;
+}
+.wp-block-woocommerce-cart .site-main nav.navigation::before,
+.wp-block-woocommerce-cart .site-main nav.navigation::after {
+  content: "";
+  display: table;
+}
+.wp-block-woocommerce-cart .site-main nav.navigation::after {
+  clear: both;
+}
+.wp-block-woocommerce-cart .site-main nav.navigation .nav-previous a,
+.wp-block-woocommerce-cart .site-main nav.navigation .nav-next a {
+  display: inline-block;
+}
+.wp-block-woocommerce-cart .site-main nav.navigation .nav-previous {
+  float: left;
+  width: 50%;
+}
+.wp-block-woocommerce-cart .site-main nav.navigation .nav-next {
+  float: right;
+  text-align: right;
+  width: 50%;
+}
+.wp-block-woocommerce-cart .pagination,
+.wp-block-woocommerce-cart .woocommerce-pagination {
+  padding: 1em 0;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-width: 1px 0;
+  text-align: center;
+  clear: both;
+}
+.wp-block-woocommerce-cart .pagination ul.page-numbers::before,
+.wp-block-woocommerce-cart .pagination ul.page-numbers::after,
+.wp-block-woocommerce-cart .woocommerce-pagination ul.page-numbers::before,
+.wp-block-woocommerce-cart .woocommerce-pagination ul.page-numbers::after {
+  content: "";
+  display: table;
+}
+.wp-block-woocommerce-cart .pagination ul.page-numbers::after,
+.wp-block-woocommerce-cart .woocommerce-pagination ul.page-numbers::after {
+  clear: both;
+}
+.wp-block-woocommerce-cart .pagination .page-numbers,
+.wp-block-woocommerce-cart .woocommerce-pagination .page-numbers {
+  list-style: none;
+  margin: 0;
+  vertical-align: middle;
+}
+.wp-block-woocommerce-cart .pagination .page-numbers li,
+.wp-block-woocommerce-cart .woocommerce-pagination .page-numbers li {
+  display: inline-block;
+}
+.wp-block-woocommerce-cart .pagination .page-numbers li .page-numbers,
+.wp-block-woocommerce-cart .woocommerce-pagination .page-numbers li .page-numbers {
+  border-left-width: 0;
+  display: inline-block;
+  padding: 0.3342343017em 0.875em;
+  background-color: rgba(0, 0, 0, 0.025);
+  color: #43454b;
+}
+.wp-block-woocommerce-cart .pagination .page-numbers li .page-numbers.current,
+.wp-block-woocommerce-cart .woocommerce-pagination .page-numbers li .page-numbers.current {
+  background-color: #2c2d33;
+  border-color: #2c2d33;
+}
+.wp-block-woocommerce-cart .pagination .page-numbers li .page-numbers.dots,
+.wp-block-woocommerce-cart .woocommerce-pagination .page-numbers li .page-numbers.dots {
+  background-color: rgba(0, 0, 0, 0);
+}
+.wp-block-woocommerce-cart .pagination .page-numbers li .page-numbers.prev,
+.wp-block-woocommerce-cart .pagination .page-numbers li .page-numbers.next,
+.wp-block-woocommerce-cart .woocommerce-pagination .page-numbers li .page-numbers.prev,
+.wp-block-woocommerce-cart .woocommerce-pagination .page-numbers li .page-numbers.next {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.wp-block-woocommerce-cart .pagination .page-numbers li a.page-numbers:hover,
+.wp-block-woocommerce-cart .woocommerce-pagination .page-numbers li a.page-numbers:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.wp-block-woocommerce-cart .rtl .pagination a.next,
+.wp-block-woocommerce-cart .rtl .pagination a.prev,
+.wp-block-woocommerce-cart .rtl .woocommerce-pagination a.next,
+.wp-block-woocommerce-cart .rtl .woocommerce-pagination a.prev {
+  transform: rotateY(180deg);
+}
+.wp-block-woocommerce-cart .widget {
+  margin: 0 0 3.706325903em;
+}
+.wp-block-woocommerce-cart .widget select {
+  max-width: 100%;
+}
+.wp-block-woocommerce-cart .widget .widget-search .search-submit {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal !important;
+}
+.wp-block-woocommerce-cart .widget .widget-title,
+.wp-block-woocommerce-cart .widget .widgettitle {
+  font-size: 1.41575em;
+  letter-spacing: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 0 0 1em;
+  margin-bottom: 1em;
+  font-weight: 300;
+}
+.wp-block-woocommerce-cart .widget ul {
+  margin-left: 0;
+  list-style: none;
+}
+.wp-block-woocommerce-cart .widget ul ul {
+  margin-left: 1.618em;
+}
+.wp-block-woocommerce-cart .widget-area .widget {
+  font-size: 0.875em;
+  font-weight: 400;
+}
+.wp-block-woocommerce-cart .widget-area .widget h1.widget-title {
+  font-size: 1.41575em;
+}
+.wp-block-woocommerce-cart .widget-area .widget a {
+  font-weight: 600;
+  text-decoration: underline;
+}
+.wp-block-woocommerce-cart .widget-area .widget a:hover {
+  text-decoration: none;
+}
+.wp-block-woocommerce-cart .widget-area .widget a.button,
+.wp-block-woocommerce-cart .widget-area .widget a.components-button:not(.is-link),
+.wp-block-woocommerce-cart .widget-area .widget a.wp-block-button__link {
+  text-decoration: none;
+}
+.wp-block-woocommerce-cart .widget-area .widget a.button {
+  font-weight: 600 !important;
+}
+.wp-block-woocommerce-cart .widget_search form:not(.wp-block-search),
+.wp-block-woocommerce-cart .widget_product_search form:not(.wp-block-search) {
+  position: relative;
+}
+.wp-block-woocommerce-cart .widget_search form:not(.wp-block-search) input[type=text],
+.wp-block-woocommerce-cart .widget_search form:not(.wp-block-search) input[type=search],
+.wp-block-woocommerce-cart .widget_product_search form:not(.wp-block-search) input[type=text],
+.wp-block-woocommerce-cart .widget_product_search form:not(.wp-block-search) input[type=search] {
+  width: 100%;
+}
+.wp-block-woocommerce-cart .widget_search form:not(.wp-block-search) input[type=submit],
+.wp-block-woocommerce-cart .widget_search form:not(.wp-block-search) button[type=submit],
+.wp-block-woocommerce-cart .widget_product_search form:not(.wp-block-search) input[type=submit],
+.wp-block-woocommerce-cart .widget_product_search form:not(.wp-block-search) button[type=submit] {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal !important;
+  top: 0;
+  left: 0;
+}
+.wp-block-woocommerce-cart .widget_recent_entries ul,
+.wp-block-woocommerce-cart .widget_pages ul,
+.wp-block-woocommerce-cart .widget_categories ul,
+.wp-block-woocommerce-cart .widget_archive ul,
+.wp-block-woocommerce-cart .widget_recent_comments ul,
+.wp-block-woocommerce-cart .widget_nav_menu ul,
+.wp-block-woocommerce-cart .widget_links ul,
+.wp-block-woocommerce-cart .widget_product_categories ul,
+.wp-block-woocommerce-cart .widget_layered_nav ul,
+.wp-block-woocommerce-cart .widget_layered_nav_filters ul {
+  margin: 0;
+}
+.wp-block-woocommerce-cart .widget_recent_entries ul li,
+.wp-block-woocommerce-cart .widget_pages ul li,
+.wp-block-woocommerce-cart .widget_categories ul li,
+.wp-block-woocommerce-cart .widget_archive ul li,
+.wp-block-woocommerce-cart .widget_recent_comments ul li,
+.wp-block-woocommerce-cart .widget_nav_menu ul li,
+.wp-block-woocommerce-cart .widget_links ul li,
+.wp-block-woocommerce-cart .widget_product_categories ul li,
+.wp-block-woocommerce-cart .widget_layered_nav ul li,
+.wp-block-woocommerce-cart .widget_layered_nav_filters ul li {
+  list-style: none;
+  margin-bottom: 1em;
+  line-height: 1.41575em;
+}
+.wp-block-woocommerce-cart .widget_recent_entries ul .children,
+.wp-block-woocommerce-cart .widget_pages ul .children,
+.wp-block-woocommerce-cart .widget_categories ul .children,
+.wp-block-woocommerce-cart .widget_archive ul .children,
+.wp-block-woocommerce-cart .widget_recent_comments ul .children,
+.wp-block-woocommerce-cart .widget_nav_menu ul .children,
+.wp-block-woocommerce-cart .widget_links ul .children,
+.wp-block-woocommerce-cart .widget_product_categories ul .children,
+.wp-block-woocommerce-cart .widget_layered_nav ul .children,
+.wp-block-woocommerce-cart .widget_layered_nav_filters ul .children {
+  margin-left: 0;
+  margin-top: 1em;
+}
+.wp-block-woocommerce-cart #wp-calendar th,
+.wp-block-woocommerce-cart #wp-calendar td,
+.wp-block-woocommerce-cart .wp-calendar-table th,
+.wp-block-woocommerce-cart .wp-calendar-table td {
+  padding: 0.236em;
+  text-align: center;
+}
+.wp-block-woocommerce-cart .widget_recent_entries ul ul.children,
+.wp-block-woocommerce-cart .widget_pages ul ul.children {
+  margin: 0.6180469716em 0 0 1.41575em;
+}
+.wp-block-woocommerce-cart .widget_rating_filter .wc-layered-nav-rating {
+  margin-bottom: 0.6180469716em;
+}
+.wp-block-woocommerce-cart .widget_rating_filter .wc-layered-nav-rating a {
+  text-decoration: none !important;
+}
+.wp-block-woocommerce-cart .widget_rating_filter .wc-layered-nav-rating .star-rating {
+  display: inline-block;
+  height: 1em;
+  line-height: 1;
+}
+@media (min-width: 768px) {
+  .wp-block-woocommerce-cart table.shop_table_responsive tbody tr td,
+  .wp-block-woocommerce-cart table.shop_table_responsive tbody tr th {
+    text-align: left;
+  }
+  .wp-block-woocommerce-cart .site-header {
+    padding-top: 2.617924em;
+    padding-bottom: 0;
+  }
+  .wp-block-woocommerce-cart .site-header .site-branding {
+    display: block;
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    clear: both;
+  }
+  .wp-block-woocommerce-cart .site-header .site-branding img {
+    height: auto;
+    max-width: 230px;
+    max-height: none;
+  }
+  .wp-block-woocommerce-cart .woocommerce-active .site-header .site-branding {
+    width: 73.9130434783%;
+    float: left;
+    margin-right: 4.347826087%;
+  }
+  .wp-block-woocommerce-cart .woocommerce-active .site-header .site-search {
+    width: 21.7391304348%;
+    float: right;
+    margin-right: 0;
+    clear: none;
+  }
+  .wp-block-woocommerce-cart .woocommerce-active .site-header .main-navigation {
+    width: 73.9130434783%;
+    float: left;
+    margin-right: 4.347826087%;
+    clear: both;
+  }
+  .wp-block-woocommerce-cart .woocommerce-active .site-header .site-header-cart {
+    width: 21.7391304348%;
+    float: right;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+  .wp-block-woocommerce-cart .storefront-secondary-navigation .site-header .site-branding {
+    width: 39.1304347826%;
+    float: left;
+    margin-right: 4.347826087%;
+  }
+  .wp-block-woocommerce-cart .storefront-secondary-navigation .site-header .secondary-navigation {
+    width: 56.5217391304%;
+    float: right;
+    margin-right: 0;
+  }
+  .wp-block-woocommerce-cart .storefront-secondary-navigation.woocommerce-active .site-header .site-branding {
+    width: 21.7391304348%;
+    float: left;
+    margin-right: 4.347826087%;
+  }
+  .wp-block-woocommerce-cart .storefront-secondary-navigation.woocommerce-active .site-header .secondary-navigation {
+    width: 47.8260869565%;
+    float: left;
+    margin-right: 4.347826087%;
+  }
+  .wp-block-woocommerce-cart .site-branding .site-description {
+    margin-bottom: 0;
+    display: block;
+  }
+  .wp-block-woocommerce-cart .site-branding,
+  .wp-block-woocommerce-cart .site-search,
+  .wp-block-woocommerce-cart .site-header-cart,
+  .wp-block-woocommerce-cart .site-logo-anchor,
+  .wp-block-woocommerce-cart .site-logo-link,
+  .wp-block-woocommerce-cart .custom-logo-link {
+    margin-bottom: 1.41575em;
+  }
+  .wp-block-woocommerce-cart .site-header .subscribe-and-connect-connect {
+    float: right;
+    margin-bottom: 1em;
+  }
+  .wp-block-woocommerce-cart .site-header .subscribe-and-connect-connect .icons {
+    list-style: none;
+    margin: 0;
+  }
+  .wp-block-woocommerce-cart .site-header .subscribe-and-connect-connect .icons a {
+    font-size: 1em !important;
+  }
+  .wp-block-woocommerce-cart .site-header .subscribe-and-connect-connect .icons li {
+    margin: 0 0 0 0.5407911001em !important;
+    display: inline-block;
+  }
+  .wp-block-woocommerce-cart .col-full {
+    max-width: 66.4989378333em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 2.617924em;
+    box-sizing: content-box;
+  }
+  .wp-block-woocommerce-cart .col-full::before,
+  .wp-block-woocommerce-cart .col-full::after {
+    content: "";
+    display: table;
+  }
+  .wp-block-woocommerce-cart .col-full::after {
+    clear: both;
+  }
+  .wp-block-woocommerce-cart .col-full:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+  .wp-block-woocommerce-cart .site-content::before,
+  .wp-block-woocommerce-cart .site-content::after {
+    content: "";
+    display: table;
+  }
+  .wp-block-woocommerce-cart .site-content::after {
+    clear: both;
+  }
+  .wp-block-woocommerce-cart .content-area {
+    width: 73.9130434783%;
+    float: left;
+    margin-right: 4.347826087%;
+  }
+  .wp-block-woocommerce-cart .widget-area {
+    width: 21.7391304348%;
+    float: right;
+    margin-right: 0;
+  }
+  .wp-block-woocommerce-cart .right-sidebar .content-area {
+    width: 73.9130434783%;
+    float: left;
+    margin-right: 4.347826087%;
+  }
+  .wp-block-woocommerce-cart .right-sidebar .widget-area {
+    width: 21.7391304348%;
+    float: right;
+    margin-right: 0;
+  }
+  .wp-block-woocommerce-cart .left-sidebar .content-area {
+    width: 73.9130434783%;
+    float: right;
+    margin-right: 0;
+  }
+  .wp-block-woocommerce-cart .left-sidebar .widget-area {
+    width: 21.7391304348%;
+    float: left;
+    margin-right: 4.347826087%;
+  }
+  .wp-block-woocommerce-cart .storefront-full-width-content .content-area {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .wp-block-woocommerce-cart .content-area,
+  .wp-block-woocommerce-cart .widget-area {
+    margin-bottom: 2.617924em;
+  }
+  .wp-block-woocommerce-cart .page-template-template-fullwidth-php .content-area,
+  .wp-block-woocommerce-cart .page-template-template-homepage-php .content-area {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .wp-block-woocommerce-cart .footer-widgets {
+    padding-top: 4.235801032em;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  }
+  .wp-block-woocommerce-cart .footer-widgets::before,
+  .wp-block-woocommerce-cart .footer-widgets::after {
+    content: "";
+    display: table;
+  }
+  .wp-block-woocommerce-cart .footer-widgets::after {
+    clear: both;
+  }
+  .wp-block-woocommerce-cart .footer-widgets.col-2 .block {
+    width: 47.8260869565%;
+    float: left;
+    margin-right: 4.347826087%;
+  }
+  .wp-block-woocommerce-cart .footer-widgets.col-2 .block.footer-widget-2 {
+    float: right;
+    margin-right: 0;
+  }
+  .wp-block-woocommerce-cart .footer-widgets.col-3 .block {
+    width: 30.4347826087%;
+    float: left;
+    margin-right: 4.347826087%;
+  }
+  .wp-block-woocommerce-cart .footer-widgets.col-3 .block.footer-widget-3 {
+    float: right;
+    margin-right: 0;
+  }
+  .wp-block-woocommerce-cart .footer-widgets.col-4 .block {
+    width: 21.7391304348%;
+    float: left;
+    margin-right: 4.347826087%;
+  }
+  .wp-block-woocommerce-cart .footer-widgets.col-4 .block.footer-widget-4 {
+    float: right;
+    margin-right: 0;
+  }
+  .wp-block-woocommerce-cart .comment-list::before,
+  .wp-block-woocommerce-cart .comment-list::after {
+    content: "";
+    display: table;
+  }
+  .wp-block-woocommerce-cart .comment-list::after {
+    clear: both;
+  }
+  .wp-block-woocommerce-cart .comment-list .comment {
+    clear: both;
+  }
+  .wp-block-woocommerce-cart .comment-list .comment-meta {
+    width: 17.6470588235%;
+    float: left;
+    margin-right: 5.8823529412%;
+    text-align: right;
+  }
+  .wp-block-woocommerce-cart .comment-list .comment-meta .avatar {
+    float: right;
+  }
+  .wp-block-woocommerce-cart .comment-list .comment-content {
+    padding-bottom: 3.706325903em;
+    margin-bottom: 3.706325903em;
+  }
+  .wp-block-woocommerce-cart .comment-list .comment-content,
+  .wp-block-woocommerce-cart .comment-list #respond {
+    width: 76.4705882353%;
+    float: right;
+    margin-right: 0;
+  }
+  .wp-block-woocommerce-cart .comment-list #respond {
+    float: right;
+  }
+  .wp-block-woocommerce-cart .comment-list #respond .comment-form-author,
+  .wp-block-woocommerce-cart .comment-list #respond .comment-form-email,
+  .wp-block-woocommerce-cart .comment-list #respond .comment-form-url {
+    width: 100%;
+    margin-right: 0;
+  }
+  .wp-block-woocommerce-cart .comment-list .comment-body #respond {
+    box-shadow: 0 6px 2em rgba(0, 0, 0, 0.2);
+    margin-bottom: 2.617924em;
+    margin-top: -1.618em;
+  }
+  .wp-block-woocommerce-cart .comment-list .reply {
+    clear: both;
+    text-align: right;
+  }
+  .wp-block-woocommerce-cart .comment-list ol.children {
+    width: 88.2352941176%;
+    float: right;
+    margin-right: 0;
+    list-style: none;
+  }
+  .wp-block-woocommerce-cart .comment-list ol.children .comment-meta {
+    width: 20%;
+    float: left;
+    margin-right: 6.6666666667%;
+  }
+  .wp-block-woocommerce-cart .comment-list ol.children .comment-content,
+  .wp-block-woocommerce-cart .comment-list ol.children #respond {
+    width: 73.3333333333%;
+    float: right;
+    margin-right: 0;
+  }
+  .wp-block-woocommerce-cart .comment-list ol.children ol.children {
+    width: 86.6666666667%;
+    float: right;
+    margin-right: 0;
+  }
+  .wp-block-woocommerce-cart .comment-list ol.children ol.children .comment-meta {
+    width: 23.0769230769%;
+    float: left;
+    margin-right: 7.6923076923%;
+  }
+  .wp-block-woocommerce-cart .comment-list ol.children ol.children .comment-content,
+  .wp-block-woocommerce-cart .comment-list ol.children ol.children #respond {
+    width: 69.2307692308%;
+    float: right;
+    margin-right: 0;
+  }
+  .wp-block-woocommerce-cart .comment-list ol.children ol.children ol.children {
+    width: 84.6153846154%;
+    float: right;
+    margin-right: 0;
+  }
+  .wp-block-woocommerce-cart .comment-list ol.children ol.children ol.children .comment-meta {
+    width: 27.2727272727%;
+    float: left;
+    margin-right: 9.0909090909%;
+  }
+  .wp-block-woocommerce-cart .comment-list ol.children ol.children ol.children .comment-content,
+  .wp-block-woocommerce-cart .comment-list ol.children ol.children ol.children #respond {
+    width: 63.6363636364%;
+    float: right;
+    margin-right: 0;
+  }
+  .wp-block-woocommerce-cart .comment-list ol.children ol.children ol.children ol.children {
+    width: 81.8181818182%;
+    float: right;
+    margin-right: 0;
+  }
+  .wp-block-woocommerce-cart .comment-list ol.children ol.children ol.children ol.children .comment-meta {
+    width: 33.3333333333%;
+    float: left;
+    margin-right: 11.1111111111%;
+  }
+  .wp-block-woocommerce-cart .comment-list ol.children ol.children ol.children ol.children .comment-content,
+  .wp-block-woocommerce-cart .comment-list ol.children ol.children ol.children ol.children #respond {
+    width: 55.5555555556%;
+    float: right;
+    margin-right: 0;
+  }
+  .wp-block-woocommerce-cart #respond {
+    padding: 2.617924em;
+  }
+  .wp-block-woocommerce-cart #respond .comment-form-author,
+  .wp-block-woocommerce-cart #respond .comment-form-email,
+  .wp-block-woocommerce-cart #respond .comment-form-url {
+    width: 29.4117647059%;
+    float: left;
+    margin-right: 5.8823529412%;
+  }
+  .wp-block-woocommerce-cart #respond .comment-form-url {
+    float: right;
+    margin-right: 0;
+  }
+  .wp-block-woocommerce-cart #respond .comment-form-comment {
+    clear: both;
+  }
+  .wp-block-woocommerce-cart .entry-header {
+    margin-bottom: 2.617924em;
+  }
+  .wp-block-woocommerce-cart .menu-toggle,
+  .wp-block-woocommerce-cart .handheld-navigation,
+  .wp-block-woocommerce-cart .main-navigation.toggled .handheld-navigation,
+  .wp-block-woocommerce-cart .main-navigation.toggled div.menu {
+    display: none;
+  }
+  .wp-block-woocommerce-cart .primary-navigation {
+    display: block;
+  }
+  .wp-block-woocommerce-cart .main-navigation,
+  .wp-block-woocommerce-cart .secondary-navigation {
+    clear: both;
+    display: block;
+    width: 100%;
+  }
+  .wp-block-woocommerce-cart .main-navigation ul,
+  .wp-block-woocommerce-cart .secondary-navigation ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    display: block;
+  }
+  .wp-block-woocommerce-cart .main-navigation ul li,
+  .wp-block-woocommerce-cart .secondary-navigation ul li {
+    position: relative;
+    display: inline-block;
+    text-align: left;
+  }
+  .wp-block-woocommerce-cart .main-navigation ul li a,
+  .wp-block-woocommerce-cart .secondary-navigation ul li a {
+    display: block;
+  }
+  .wp-block-woocommerce-cart .main-navigation ul li a::before,
+  .wp-block-woocommerce-cart .secondary-navigation ul li a::before {
+    display: none;
+  }
+  .wp-block-woocommerce-cart .main-navigation ul li:hover > ul,
+  .wp-block-woocommerce-cart .main-navigation ul li.focus > ul,
+  .wp-block-woocommerce-cart .secondary-navigation ul li:hover > ul,
+  .wp-block-woocommerce-cart .secondary-navigation ul li.focus > ul {
+    left: 0;
+    display: block;
+  }
+  .wp-block-woocommerce-cart .main-navigation ul li:hover > ul li > ul,
+  .wp-block-woocommerce-cart .main-navigation ul li.focus > ul li > ul,
+  .wp-block-woocommerce-cart .secondary-navigation ul li:hover > ul li > ul,
+  .wp-block-woocommerce-cart .secondary-navigation ul li.focus > ul li > ul {
+    left: -9999px;
+  }
+  .wp-block-woocommerce-cart .main-navigation ul li:hover > ul li > ul.sub-menu--is-touch-device,
+  .wp-block-woocommerce-cart .main-navigation ul li.focus > ul li > ul.sub-menu--is-touch-device,
+  .wp-block-woocommerce-cart .secondary-navigation ul li:hover > ul li > ul.sub-menu--is-touch-device,
+  .wp-block-woocommerce-cart .secondary-navigation ul li.focus > ul li > ul.sub-menu--is-touch-device {
+    display: none;
+    left: 0;
+  }
+  .wp-block-woocommerce-cart .main-navigation ul li:hover > ul li:hover > ul,
+  .wp-block-woocommerce-cart .main-navigation ul li:hover > ul li.focus > ul,
+  .wp-block-woocommerce-cart .main-navigation ul li.focus > ul li:hover > ul,
+  .wp-block-woocommerce-cart .main-navigation ul li.focus > ul li.focus > ul,
+  .wp-block-woocommerce-cart .secondary-navigation ul li:hover > ul li:hover > ul,
+  .wp-block-woocommerce-cart .secondary-navigation ul li:hover > ul li.focus > ul,
+  .wp-block-woocommerce-cart .secondary-navigation ul li.focus > ul li:hover > ul,
+  .wp-block-woocommerce-cart .secondary-navigation ul li.focus > ul li.focus > ul {
+    left: 100%;
+    top: 0;
+    display: block;
+  }
+  .wp-block-woocommerce-cart .main-navigation ul ul,
+  .wp-block-woocommerce-cart .secondary-navigation ul ul {
+    float: left;
+    position: absolute;
+    top: 100%;
+    z-index: 99999;
+    left: -9999px;
+  }
+  .wp-block-woocommerce-cart .main-navigation ul ul.sub-menu--is-touch-device,
+  .wp-block-woocommerce-cart .secondary-navigation ul ul.sub-menu--is-touch-device {
+    display: none;
+    left: 0;
+  }
+  .wp-block-woocommerce-cart .main-navigation ul ul li,
+  .wp-block-woocommerce-cart .secondary-navigation ul ul li {
+    display: block;
+  }
+  .wp-block-woocommerce-cart .main-navigation ul ul li a,
+  .wp-block-woocommerce-cart .secondary-navigation ul ul li a {
+    width: 200px;
+  }
+  .wp-block-woocommerce-cart ul.menu li.current-menu-item > a {
+    color: #43454b;
+  }
+  .wp-block-woocommerce-cart .storefront-primary-navigation {
+    clear: both;
+  }
+  .wp-block-woocommerce-cart .storefront-primary-navigation::before,
+  .wp-block-woocommerce-cart .storefront-primary-navigation::after {
+    content: "";
+    display: table;
+  }
+  .wp-block-woocommerce-cart .storefront-primary-navigation::after {
+    clear: both;
+  }
+  .wp-block-woocommerce-cart .main-navigation div.menu {
+    display: block;
+  }
+  .wp-block-woocommerce-cart .main-navigation ul.menu,
+  .wp-block-woocommerce-cart .main-navigation ul.nav-menu {
+    max-height: none;
+    overflow: visible;
+    margin-left: -1em;
+    transition: none;
+  }
+  .wp-block-woocommerce-cart .main-navigation ul.menu > li > a,
+  .wp-block-woocommerce-cart .main-navigation ul.nav-menu > li > a {
+    padding: 1.618em 1em;
+  }
+  .wp-block-woocommerce-cart .main-navigation ul.menu > li.menu-item-has-children:hover::after,
+  .wp-block-woocommerce-cart .main-navigation ul.menu > li.page_item_has_children:hover::after,
+  .wp-block-woocommerce-cart .main-navigation ul.nav-menu > li.menu-item-has-children:hover::after,
+  .wp-block-woocommerce-cart .main-navigation ul.nav-menu > li.page_item_has_children:hover::after {
+    display: block;
+  }
+  .wp-block-woocommerce-cart .main-navigation ul.menu ul,
+  .wp-block-woocommerce-cart .main-navigation ul.nav-menu ul {
+    margin-left: 0;
+  }
+  .wp-block-woocommerce-cart .main-navigation ul.menu ul li a,
+  .wp-block-woocommerce-cart .main-navigation ul.nav-menu ul li a {
+    padding: 0.875em 1.41575em;
+    font-weight: 400;
+    font-size: 0.875em;
+  }
+  .wp-block-woocommerce-cart .main-navigation ul.menu ul li:last-child,
+  .wp-block-woocommerce-cart .main-navigation ul.nav-menu ul li:last-child {
+    border-bottom: 0;
+  }
+  .wp-block-woocommerce-cart .main-navigation ul.menu ul ul,
+  .wp-block-woocommerce-cart .main-navigation ul.nav-menu ul ul {
+    margin-left: 0;
+    box-shadow: none;
+  }
+  .wp-block-woocommerce-cart .main-navigation ul.menu ul a:hover,
+  .wp-block-woocommerce-cart .main-navigation ul.menu ul li:hover > a,
+  .wp-block-woocommerce-cart .main-navigation ul.menu ul li.focus,
+  .wp-block-woocommerce-cart .main-navigation ul.nav-menu ul a:hover,
+  .wp-block-woocommerce-cart .main-navigation ul.nav-menu ul li:hover > a,
+  .wp-block-woocommerce-cart .main-navigation ul.nav-menu ul li.focus {
+    background-color: rgba(0, 0, 0, 0.025);
+  }
+  .wp-block-woocommerce-cart .main-navigation a {
+    padding: 0 1em 2.2906835em;
+  }
+  .wp-block-woocommerce-cart .secondary-navigation {
+    margin: 0 0 1.618em;
+    width: auto;
+    clear: none;
+    line-height: 1;
+  }
+  .wp-block-woocommerce-cart .secondary-navigation .menu {
+    font-size: 0.875em;
+    width: auto;
+    float: right;
+  }
+  .wp-block-woocommerce-cart .secondary-navigation .menu > li:hover > a {
+    text-decoration: none;
+  }
+  .wp-block-woocommerce-cart .secondary-navigation .menu ul a {
+    padding: 0.326em 0.875em;
+    background: rgba(0, 0, 0, 0.05);
+  }
+  .wp-block-woocommerce-cart .secondary-navigation .menu ul li:first-child a {
+    padding-top: 1em;
+  }
+  .wp-block-woocommerce-cart .secondary-navigation .menu ul li:last-child a {
+    padding-bottom: 1em;
+  }
+  .wp-block-woocommerce-cart .secondary-navigation .menu ul ul {
+    margin-top: -0.6180469716em;
+  }
+  .wp-block-woocommerce-cart .secondary-navigation .menu a {
+    padding: 1em 0.875em;
+    color: #737781;
+    font-weight: 400;
+  }
+  .wp-block-woocommerce-cart .secondary-navigation .menu a:hover {
+    text-decoration: none;
+  }
+  .wp-block-woocommerce-cart .error404 .fourohfour-columns-2 .col-1 {
+    width: 47.8260869565%;
+    float: left;
+    margin-right: 4.347826087%;
+  }
+  .wp-block-woocommerce-cart .error404 .fourohfour-columns-2 .col-1 ul.products {
+    margin-bottom: 0;
+  }
+  .wp-block-woocommerce-cart .error404 .fourohfour-columns-2 .col-2 {
+    width: 47.8260869565%;
+    float: right;
+    margin-right: 0;
+  }
+}
+@media (max-width: 66.4989378333em) {
+  .wp-block-woocommerce-cart .col-full {
+    margin-left: 2.617924em;
+    margin-right: 2.617924em;
+    padding: 0;
+  }
+}
+@media (max-width: 568px) {
+  .wp-block-woocommerce-cart .col-full {
+    margin-left: 1.41575em;
+    margin-right: 1.41575em;
+    padding: 0;
+  }
+}
+
+h1.terminal-header {
+  font-family: "Vultura", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #000;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.wc-block-components-shipping-rates-control__package__description--free {
+  display: none;
+}
+
+.karlha-jewels-store-front-dashboard .hentry .entry-content * {
+  font-family: "Vultura", sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-size: 16px;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content article,
+.karlha-jewels-store-front-dashboard .hentry .entry-content aside,
+.karlha-jewels-store-front-dashboard .hentry .entry-content details,
+.karlha-jewels-store-front-dashboard .hentry .entry-content figcaption,
+.karlha-jewels-store-front-dashboard .hentry .entry-content figure,
+.karlha-jewels-store-front-dashboard .hentry .entry-content footer,
+.karlha-jewels-store-front-dashboard .hentry .entry-content header,
+.karlha-jewels-store-front-dashboard .hentry .entry-content hgroup,
+.karlha-jewels-store-front-dashboard .hentry .entry-content main,
+.karlha-jewels-store-front-dashboard .hentry .entry-content menu,
+.karlha-jewels-store-front-dashboard .hentry .entry-content nav,
+.karlha-jewels-store-front-dashboard .hentry .entry-content section,
+.karlha-jewels-store-front-dashboard .hentry .entry-content summary {
+  display: block;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content audio,
+.karlha-jewels-store-front-dashboard .hentry .entry-content canvas,
+.karlha-jewels-store-front-dashboard .hentry .entry-content progress,
+.karlha-jewels-store-front-dashboard .hentry .entry-content video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content [hidden],
+.karlha-jewels-store-front-dashboard .hentry .entry-content template {
+  display: none;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content a {
+  background-color: rgba(0, 0, 0, 0);
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content a:active,
+.karlha-jewels-store-front-dashboard .hentry .entry-content a:hover {
+  outline: 0;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content abbr[title] {
+  border-bottom: 1px dotted;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content b,
+.karlha-jewels-store-front-dashboard .hentry .entry-content strong {
+  font-weight: bold;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content dfn {
+  font-style: italic;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content mark {
+  background: #ff0;
+  color: #000;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content small {
+  font-size: 80%;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content sub,
+.karlha-jewels-store-front-dashboard .hentry .entry-content sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content sup {
+  top: -0.5em;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content sub {
+  bottom: -0.25em;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content img {
+  border: 0;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content svg:not(:root) {
+  overflow: hidden;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content figure {
+  margin: 1em 40px;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content hr {
+  box-sizing: content-box;
+  height: 0;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content pre {
+  overflow: auto;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content code,
+.karlha-jewels-store-front-dashboard .hentry .entry-content kbd,
+.karlha-jewels-store-front-dashboard .hentry .entry-content pre,
+.karlha-jewels-store-front-dashboard .hentry .entry-content samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content button,
+.karlha-jewels-store-front-dashboard .hentry .entry-content input,
+.karlha-jewels-store-front-dashboard .hentry .entry-content optgroup,
+.karlha-jewels-store-front-dashboard .hentry .entry-content select,
+.karlha-jewels-store-front-dashboard .hentry .entry-content textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content button {
+  overflow: visible;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content button,
+.karlha-jewels-store-front-dashboard .hentry .entry-content select {
+  text-transform: none;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content button,
+.karlha-jewels-store-front-dashboard .hentry .entry-content html input[type=button],
+.karlha-jewels-store-front-dashboard .hentry .entry-content input[type=reset],
+.karlha-jewels-store-front-dashboard .hentry .entry-content input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content button[disabled],
+.karlha-jewels-store-front-dashboard .hentry .entry-content html input[disabled] {
+  cursor: default;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content button::-moz-focus-inner,
+.karlha-jewels-store-front-dashboard .hentry .entry-content input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content input {
+  line-height: normal;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content input[type=checkbox],
+.karlha-jewels-store-front-dashboard .hentry .entry-content input[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content input[type=number]::-webkit-inner-spin-button,
+.karlha-jewels-store-front-dashboard .hentry .entry-content input[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content input[type=search] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content input[type=search]::-webkit-search-cancel-button,
+.karlha-jewels-store-front-dashboard .hentry .entry-content input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content legend {
+  border: 0;
+  padding: 0;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content textarea {
+  overflow: auto;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content optgroup {
+  font-weight: bold;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content td,
+.karlha-jewels-store-front-dashboard .hentry .entry-content th {
+  padding: 0;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content body {
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content body,
+.karlha-jewels-store-front-dashboard .hentry .entry-content button,
+.karlha-jewels-store-front-dashboard .hentry .entry-content input,
+.karlha-jewels-store-front-dashboard .hentry .entry-content textarea {
+  color: #43454b;
+  font-family: "Source Sans Pro", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  line-height: 1.618;
+  text-rendering: optimizeLegibility;
+  font-weight: 400;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content select {
+  color: initial;
+  font-family: "Source Sans Pro", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  max-width: 100%;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content summary {
+  display: list-item;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content h1,
+.karlha-jewels-store-front-dashboard .hentry .entry-content h2,
+.karlha-jewels-store-front-dashboard .hentry .entry-content h3,
+.karlha-jewels-store-front-dashboard .hentry .entry-content h4,
+.karlha-jewels-store-front-dashboard .hentry .entry-content h5,
+.karlha-jewels-store-front-dashboard .hentry .entry-content h6 {
+  clear: both;
+  font-weight: 300;
+  margin: 0 0 0.5407911001em;
+  color: #131315;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content h1 a,
+.karlha-jewels-store-front-dashboard .hentry .entry-content h2 a,
+.karlha-jewels-store-front-dashboard .hentry .entry-content h3 a,
+.karlha-jewels-store-front-dashboard .hentry .entry-content h4 a,
+.karlha-jewels-store-front-dashboard .hentry .entry-content h5 a,
+.karlha-jewels-store-front-dashboard .hentry .entry-content h6 a {
+  font-weight: 300;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content h1,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .alpha {
+  font-size: 2.617924em;
+  line-height: 1.214;
+  letter-spacing: -1px;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content h2,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .beta {
+  font-size: 2em;
+  line-height: 1.214;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content h2 + h3,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .beta + h3 {
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  padding-top: 0.5407911001em;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content h3,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .gamma {
+  font-size: 1.618em;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content h4,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .delta {
+  font-size: 1.41575em;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content p a {
+  color: #e38430;
+  text-decoration: underline;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content ul {
+  outline: none;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content li a:hover {
+  outline: none;
+  color: #e38430;
+  text-decoration: underline;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content li.is-active a {
+  color: #e38430;
+  text-decoration: underline;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .alpha,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .beta,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .gamma,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .delta {
+  display: block;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content p + h2,
+.karlha-jewels-store-front-dashboard .hentry .entry-content p + header h2,
+.karlha-jewels-store-front-dashboard .hentry .entry-content p + h3,
+.karlha-jewels-store-front-dashboard .hentry .entry-content p + h4,
+.karlha-jewels-store-front-dashboard .hentry .entry-content ul + h2,
+.karlha-jewels-store-front-dashboard .hentry .entry-content ul + header h2,
+.karlha-jewels-store-front-dashboard .hentry .entry-content ul + h3,
+.karlha-jewels-store-front-dashboard .hentry .entry-content ul + h4,
+.karlha-jewels-store-front-dashboard .hentry .entry-content ol + h2,
+.karlha-jewels-store-front-dashboard .hentry .entry-content ol + header h2,
+.karlha-jewels-store-front-dashboard .hentry .entry-content ol + h3,
+.karlha-jewels-store-front-dashboard .hentry .entry-content ol + h4,
+.karlha-jewels-store-front-dashboard .hentry .entry-content table + h2,
+.karlha-jewels-store-front-dashboard .hentry .entry-content table + header h2,
+.karlha-jewels-store-front-dashboard .hentry .entry-content table + h3,
+.karlha-jewels-store-front-dashboard .hentry .entry-content table + h4,
+.karlha-jewels-store-front-dashboard .hentry .entry-content blockquote + h2,
+.karlha-jewels-store-front-dashboard .hentry .entry-content blockquote + header h2,
+.karlha-jewels-store-front-dashboard .hentry .entry-content blockquote + h3,
+.karlha-jewels-store-front-dashboard .hentry .entry-content blockquote + h4,
+.karlha-jewels-store-front-dashboard .hentry .entry-content form + h2,
+.karlha-jewels-store-front-dashboard .hentry .entry-content form + header h2,
+.karlha-jewels-store-front-dashboard .hentry .entry-content form + h3,
+.karlha-jewels-store-front-dashboard .hentry .entry-content form + h4 {
+  margin-top: 2.2906835em;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content hr {
+  background-color: #ccc;
+  border: 0;
+  height: 1px;
+  margin: 0 0 1.41575em;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content p {
+  margin: 0 0 1.41575em;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content ul,
+.karlha-jewels-store-front-dashboard .hentry .entry-content ol {
+  margin: 0 0 1.41575em 3em;
+  padding: 0;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content ul {
+  list-style: disc;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content ol {
+  list-style: decimal;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content li > ul,
+.karlha-jewels-store-front-dashboard .hentry .entry-content li > ol {
+  margin-bottom: 0;
+  margin-left: 1em;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content dt {
+  font-weight: 600;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content dd {
+  margin: 0 0 1.618em;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content b,
+.karlha-jewels-store-front-dashboard .hentry .entry-content strong {
+  font-weight: 600;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content dfn,
+.karlha-jewels-store-front-dashboard .hentry .entry-content cite,
+.karlha-jewels-store-front-dashboard .hentry .entry-content em,
+.karlha-jewels-store-front-dashboard .hentry .entry-content i {
+  font-style: italic;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content blockquote {
+  padding: 0 1em;
+  border-left: 3px solid rgba(0, 0, 0, 0.05);
+  font-style: italic;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content address {
+  margin: 0 0 1.41575em;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content pre {
+  background: rgba(0, 0, 0, 0.1);
+  font-family: "Courier 10 Pitch", Courier, monospace;
+  margin-bottom: 1.618em;
+  padding: 1.618em;
+  overflow: auto;
+  max-width: 100%;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content code,
+.karlha-jewels-store-front-dashboard .hentry .entry-content kbd,
+.karlha-jewels-store-front-dashboard .hentry .entry-content tt,
+.karlha-jewels-store-front-dashboard .hentry .entry-content var {
+  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 0.202em 0.5407911001em;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content abbr,
+.karlha-jewels-store-front-dashboard .hentry .entry-content acronym {
+  border-bottom: 1px dotted #666;
+  cursor: help;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content mark,
+.karlha-jewels-store-front-dashboard .hentry .entry-content ins {
+  text-decoration: none;
+  font-weight: 600;
+  background: rgba(0, 0, 0, 0);
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content sup,
+.karlha-jewels-store-front-dashboard .hentry .entry-content sub {
+  font-size: 75%;
+  height: 0;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content sup {
+  bottom: 1ex;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content sub {
+  top: 0.5ex;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content small {
+  font-size: 75%;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content big {
+  font-size: 125%;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content figure {
+  margin: 0;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content img {
+  height: auto;
+  max-width: 100%;
+  display: block;
+  border-radius: 3px;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content a {
+  color: #2c2d33;
+  text-decoration: none;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content a:focus,
+.karlha-jewels-store-front-dashboard .hentry .entry-content input:focus,
+.karlha-jewels-store-front-dashboard .hentry .entry-content textarea:focus,
+.karlha-jewels-store-front-dashboard .hentry .entry-content button:focus {
+  outline: 2px solid #7f54b3;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .storefront-cute * {
+  font-family: "Comic Sans MS", sans-serif;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content * {
+  box-sizing: border-box;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content body {
+  background-color: #fff;
+  overflow-x: hidden;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .site {
+  overflow-x: hidden;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .site-content,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .header-widget-region {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .site-header {
+  background-color: #2c2d33;
+  padding-top: 1.618em;
+  padding-bottom: 1.618em;
+  color: #9aa0a7;
+  background-position: center center;
+  position: relative;
+  z-index: 999;
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .site-header .site-logo-anchor,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .site-header .site-logo-link,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .site-header .custom-logo-link {
+  display: block;
+  margin-bottom: 0;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .site-header .site-logo-anchor img,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .site-header .site-logo-link img,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .site-header .custom-logo-link img {
+  width: 100%;
+  max-width: 210px;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .site-header .widget {
+  margin-bottom: 0;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .home.blog .site-header,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .home.page:not(.page-template-template-homepage) .site-header,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .home.post-type-archive-product .site-header {
+  margin-bottom: 4.235801032em;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .no-wc-breadcrumb .site-header {
+  margin-bottom: 4.235801032em;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .no-wc-breadcrumb.page-template-template-homepage .site-header {
+  margin-bottom: 0;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .header-widget-region {
+  position: relative;
+  z-index: 99;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .header-widget-region::before,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .header-widget-region::after {
+  content: "";
+  display: table;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .header-widget-region::after {
+  clear: both;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .header-widget-region .widget {
+  margin: 0;
+  padding: 1em 0;
+  font-size: 0.875em;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .site-branding {
+  float: left;
+  margin-bottom: 0;
+  width: calc(100% - 120px);
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .site-branding .site-title {
+  font-size: 2em;
+  letter-spacing: -1px;
+  margin: 0;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .site-branding .site-title a {
+  font-weight: 700;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .site-branding .site-description {
+  font-size: 0.875em;
+  display: none;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .site-branding .logo {
+  margin: 0;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .site-main {
+  margin-bottom: 2.617924em;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .site-content {
+  outline: none;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .page-template-template-homepage:not(.has-post-thumbnail) .site-main {
+  padding-top: 4.235801032em;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .page-template-template-homepage .type-page {
+  padding-top: 2.617924em;
+  padding-bottom: 2.617924em;
+  position: relative;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .page-template-template-homepage .type-page .storefront-hero__button-edit {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  font-size: 0.875em;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .page-template-template-homepage .entry-content {
+  font-size: 1.1em;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .page-template-template-homepage .entry-content p:last-child {
+  margin-bottom: 0;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .page-template-template-homepage .entry-header h1 {
+  font-size: 3.706325903em;
+  margin-bottom: 0.2360828548em;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .page-template-template-homepage .entry-content,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .page-template-template-homepage .entry-header {
+  max-width: 41.0994671405em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .page-template-template-homepage.has-post-thumbnail .type-page.has-post-thumbnail {
+  background-size: cover;
+  background-position: center center;
+  padding-top: 6.8535260698em;
+  padding-bottom: 6.8535260698em;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .page-template-template-homepage.has-post-thumbnail .type-page.has-post-thumbnail .entry-content,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .page-template-template-homepage.has-post-thumbnail .type-page.has-post-thumbnail .entry-title {
+  opacity: 0;
+  transition: all, ease, 0.5s;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .page-template-template-homepage.has-post-thumbnail .type-page.has-post-thumbnail .entry-content.loaded,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .page-template-template-homepage.has-post-thumbnail .type-page.has-post-thumbnail .entry-title.loaded {
+  opacity: 1;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .site-footer {
+  background-color: #f3f3f3;
+  color: #3b3c3f;
+  padding: 1.618em 0 3.706325903em;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .site-footer h1,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .site-footer h2,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .site-footer h3,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .site-footer h4,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .site-footer h5,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .site-footer h6 {
+  color: #333437;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .site-footer a {
+  color: #2c2d33;
+  text-decoration: underline;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .site-footer a:hover {
+  text-decoration: none;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .site-footer a.button,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .site-footer a.components-button:not(.is-link),
+.karlha-jewels-store-front-dashboard .hentry .entry-content .site-footer a.wp-block-button__link {
+  text-decoration: none;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .site-info {
+  padding: 2.617924em 0;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .site-info span[role=separator] {
+  padding: 0 0.2360828548em 0 0.3342343017em;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .site-info span[role=separator]::before {
+  content: "|";
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .alignleft {
+  display: inline;
+  float: left;
+  margin-right: 1em;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .alignright {
+  display: inline;
+  float: right;
+  margin-left: 1em;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .aligncenter {
+  clear: both;
+  display: block;
+  margin: 0 auto;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal !important;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .screen-reader-text:focus {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  display: block;
+  font-weight: 700;
+  height: auto;
+  left: 0;
+  line-height: normal;
+  padding: 1em 1.618em;
+  text-decoration: none;
+  top: 0;
+  width: auto;
+  z-index: 100000;
+  outline: none;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .screen-reader-text.skip-link:focus {
+  clip-path: none;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .clear::before,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .clear::after,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .entry-content::before,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .entry-content::after,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .comment-content::before,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .comment-content::after,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .site-header::before,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .site-header::after,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .site-content::before,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .site-content::after,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .site-footer::before,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .site-footer::after {
+  content: "";
+  display: table;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .clear::after,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .entry-content::after,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .comment-content::after,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .site-header::after,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .site-content::after,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .site-footer::after {
+  clear: both;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content table {
+  border-spacing: 0;
+  width: 100%;
+  margin: 0 0 1.41575em;
+  border-collapse: separate;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content table caption {
+  padding: 1em 0;
+  font-weight: 600;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content table td,
+.karlha-jewels-store-front-dashboard .hentry .entry-content table th {
+  padding: 1em 1.41575em;
+  text-align: left;
+  vertical-align: top;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content table td p:last-child,
+.karlha-jewels-store-front-dashboard .hentry .entry-content table th p:last-child {
+  margin-bottom: 0;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content table th {
+  font-weight: 600;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content table thead th {
+  padding: 1.41575em;
+  vertical-align: middle;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content table tbody h2 {
+  font-size: 1em;
+  letter-spacing: normal;
+  font-weight: 400;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content table tbody h2 a {
+  font-weight: 400;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .error404 .site-content .widget_product_search {
+  padding: 1.618em;
+  background-color: rgba(0, 0, 0, 0.025);
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .error404 .site-content .widget_product_search form {
+  margin: 0;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .error404.right-sidebar .content-area,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .error404.left-sidebar .content-area {
+  width: 100%;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .error404 .fourohfour-columns-2 {
+  padding: 2.617924em 0;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-width: 1px 0;
+  margin-bottom: 2.617924em;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .error404 .fourohfour-columns-2::before,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .error404 .fourohfour-columns-2::after {
+  content: "";
+  display: table;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .error404 .fourohfour-columns-2::after {
+  clear: both;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .error404 .fourohfour-columns-2 ul.products li.product,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .error404 .fourohfour-columns-2 .widget {
+  margin-bottom: 0;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .error404 .fourohfour-columns-2 .col-1 ul.products {
+  margin-bottom: 2.2906835em;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .error404 .fourohfour-columns-2 .col-1 ul.products li.product {
+  width: 45.4545454545%;
+  float: left;
+  margin-right: 9.0909090909%;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .error404 .fourohfour-columns-2 .col-1 ul.products li.product:last-child {
+  margin-right: 0;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .error404 .fourohfour-columns-2 .col-2 {
+  padding: 1.618em;
+  background-color: rgba(0, 0, 0, 0.025);
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content #comments {
+  padding-top: 2.617924em;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content #comments .comments-title {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  padding-bottom: 0.5407911001em;
+  margin-bottom: 1.618em;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content #comments .comment-list {
+  list-style: none;
+  margin-left: 0;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content #comments .comment-list .comment-body::before,
+.karlha-jewels-store-front-dashboard .hentry .entry-content #comments .comment-list .comment-body::after {
+  content: "";
+  display: table;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content #comments .comment-list .comment-body::after {
+  clear: both;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content #comments .comment-list .comment-content {
+  padding-bottom: 1.618em;
+  margin-bottom: 1.618em;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content #comments .comment-list .comment-content .comment-text {
+  padding: 1.618em;
+  border-radius: 3px;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content #comments .comment-list .comment-content .comment-text p:last-child {
+  margin-bottom: 0;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content #comments .comment-list .comment-meta {
+  margin-bottom: 1em;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content #comments .comment-list .comment-meta .avatar {
+  margin-bottom: 1em;
+  max-width: 64px;
+  height: auto;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content #comments .comment-list .comment-meta a.comment-date {
+  font-size: 0.875em;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content #comments .comment-list .comment-meta cite {
+  font-style: normal;
+  clear: both;
+  display: block;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content #comments .comment-list .reply {
+  margin-bottom: 1.618em;
+  padding-top: 0.6180469716em;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content #comments .comment-list .reply::before,
+.karlha-jewels-store-front-dashboard .hentry .entry-content #comments .comment-list .reply::after {
+  content: "";
+  display: table;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content #comments .comment-list .reply::after {
+  clear: both;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content #comments .comment-list .reply a {
+  display: inline-block;
+  margin-right: 1em;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content #comments .comment-list .reply a:last-child {
+  margin-right: 0;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content #comments .comment-list .children {
+  list-style: none;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .comment-content a {
+  word-wrap: break-word;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content #respond {
+  clear: both;
+  padding: 1.618em;
+  background-color: rgba(0, 0, 0, 0.0125);
+  position: relative;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content #respond .comment-form-author input,
+.karlha-jewels-store-front-dashboard .hentry .entry-content #respond .comment-form-email input,
+.karlha-jewels-store-front-dashboard .hentry .entry-content #respond .comment-form-url input {
+  width: 100%;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content #respond .form-submit,
+.karlha-jewels-store-front-dashboard .hentry .entry-content #respond form {
+  margin-bottom: 0;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content #respond #cancel-comment-reply-link {
+  position: absolute;
+  top: 0.5407911001em;
+  right: 0.5407911001em;
+  display: block;
+  height: 1em;
+  width: 1em;
+  overflow: hidden;
+  line-height: 1;
+  font-size: 1.41575em;
+  text-align: center;
+  transition: transform, ease, 0.3s;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content #respond #cancel-comment-reply-link:hover {
+  transform: scale(1.3);
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .hentry {
+  margin: 0 0 4.235801032em;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .hentry .wp-post-image {
+  margin-bottom: 1.618em;
+  margin-left: auto;
+  margin-right: auto;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .hentry .entry-header {
+  margin-bottom: 1em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .hentry .entry-header .posted-on,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .hentry .entry-header .post-author,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .hentry .entry-header .post-comments,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .hentry .entry-header .byline {
+  font-size: 0.875em;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .hentry .entry-header .posted-on a,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .hentry .entry-header .post-author a,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .hentry .entry-header .post-comments a,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .hentry .entry-header .byline a {
+  font-weight: 600;
+  text-decoration: underline;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .hentry .entry-header .posted-on a:hover,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .hentry .entry-header .post-author a:hover,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .hentry .entry-header .post-comments a:hover,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .hentry .entry-header .byline a:hover {
+  text-decoration: none;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .hentry .entry-content a {
+  text-decoration: underline;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .hentry .entry-content a:hover {
+  text-decoration: none;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .hentry .entry-content a.button,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .hentry .entry-content a.components-button:not(.is-link),
+.karlha-jewels-store-front-dashboard .hentry .entry-content .hentry .entry-content a.wp-block-button__link {
+  text-decoration: none;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .hentry .entry-taxonomy {
+  margin: 1.41575em 0 0;
+  padding-top: 1em;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .hentry.type-page .entry-header {
+  border-bottom: 0;
+  margin-bottom: 0;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .cat-links,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .tags-links {
+  font-size: 0.875em;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .cat-links a,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .tags-links a {
+  color: #727272;
+  font-weight: 600;
+  text-decoration: underline;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .byline,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .updated:not(.published) {
+  display: none;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .single .byline,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .group-blog .byline {
+  display: inline;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .page-links {
+  clear: both;
+  margin: 0 0 1em;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content form {
+  margin-bottom: 1.618em;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content button,
+.karlha-jewels-store-front-dashboard .hentry .entry-content input,
+.karlha-jewels-store-front-dashboard .hentry .entry-content select,
+.karlha-jewels-store-front-dashboard .hentry .entry-content textarea {
+  font-size: 100%;
+  margin: 0;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content button,
+.karlha-jewels-store-front-dashboard .hentry .entry-content input[type=button],
+.karlha-jewels-store-front-dashboard .hentry .entry-content input[type=reset],
+.karlha-jewels-store-front-dashboard .hentry .entry-content input[type=submit],
+.karlha-jewels-store-front-dashboard .hentry .entry-content .button,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .wc-block-grid__products .wc-block-grid__product .wp-block-button__link,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .added_to_cart {
+  border: 0;
+  border-radius: 0;
+  background: none;
+  background-color: #43454b;
+  border-color: #43454b;
+  color: #fff;
+  cursor: pointer;
+  padding: 0.6180469716em 1.41575em;
+  text-decoration: none;
+  font-weight: 600;
+  text-shadow: none;
+  display: inline-block;
+  -webkit-appearance: none;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content button::after,
+.karlha-jewels-store-front-dashboard .hentry .entry-content input[type=button]::after,
+.karlha-jewels-store-front-dashboard .hentry .entry-content input[type=reset]::after,
+.karlha-jewels-store-front-dashboard .hentry .entry-content input[type=submit]::after,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .button::after,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .wc-block-grid__products .wc-block-grid__product .wp-block-button__link::after,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .added_to_cart::after {
+  display: none;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content button.cta,
+.karlha-jewels-store-front-dashboard .hentry .entry-content button.alt,
+.karlha-jewels-store-front-dashboard .hentry .entry-content input[type=button].cta,
+.karlha-jewels-store-front-dashboard .hentry .entry-content input[type=button].alt,
+.karlha-jewels-store-front-dashboard .hentry .entry-content input[type=reset].cta,
+.karlha-jewels-store-front-dashboard .hentry .entry-content input[type=reset].alt,
+.karlha-jewels-store-front-dashboard .hentry .entry-content input[type=submit].cta,
+.karlha-jewels-store-front-dashboard .hentry .entry-content input[type=submit].alt,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .button.cta,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .button.alt,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .wc-block-grid__products .wc-block-grid__product .wp-block-button__link.cta,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .wc-block-grid__products .wc-block-grid__product .wp-block-button__link.alt,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .added_to_cart.cta,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .added_to_cart.alt {
+  background-color: #2c2d33;
+  border-color: #2c2d33;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content button.cta:hover,
+.karlha-jewels-store-front-dashboard .hentry .entry-content button.alt:hover,
+.karlha-jewels-store-front-dashboard .hentry .entry-content input[type=button].cta:hover,
+.karlha-jewels-store-front-dashboard .hentry .entry-content input[type=button].alt:hover,
+.karlha-jewels-store-front-dashboard .hentry .entry-content input[type=reset].cta:hover,
+.karlha-jewels-store-front-dashboard .hentry .entry-content input[type=reset].alt:hover,
+.karlha-jewels-store-front-dashboard .hentry .entry-content input[type=submit].cta:hover,
+.karlha-jewels-store-front-dashboard .hentry .entry-content input[type=submit].alt:hover,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .button.cta:hover,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .button.alt:hover,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .wc-block-grid__products .wc-block-grid__product .wp-block-button__link.cta:hover,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .wc-block-grid__products .wc-block-grid__product .wp-block-button__link.alt:hover,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .added_to_cart.cta:hover,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .added_to_cart.alt:hover {
+  background-color: #2c2d33;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content button:hover,
+.karlha-jewels-store-front-dashboard .hentry .entry-content input[type=button]:hover,
+.karlha-jewels-store-front-dashboard .hentry .entry-content input[type=reset]:hover,
+.karlha-jewels-store-front-dashboard .hentry .entry-content input[type=submit]:hover,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .button:hover,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .wc-block-grid__products .wc-block-grid__product .wp-block-button__link:hover,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .added_to_cart:hover {
+  color: #fff;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content button.loading,
+.karlha-jewels-store-front-dashboard .hentry .entry-content input[type=button].loading,
+.karlha-jewels-store-front-dashboard .hentry .entry-content input[type=reset].loading,
+.karlha-jewels-store-front-dashboard .hentry .entry-content input[type=submit].loading,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .button.loading,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .wc-block-grid__products .wc-block-grid__product .wp-block-button__link.loading,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .added_to_cart.loading {
+  opacity: 0.5;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content button.small,
+.karlha-jewels-store-front-dashboard .hentry .entry-content input[type=button].small,
+.karlha-jewels-store-front-dashboard .hentry .entry-content input[type=reset].small,
+.karlha-jewels-store-front-dashboard .hentry .entry-content input[type=submit].small,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .button.small,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .wc-block-grid__products .wc-block-grid__product .wp-block-button__link.small,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .added_to_cart.small {
+  padding: 0.5407911001em 0.875em;
+  font-size: 0.875em;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content button.disabled,
+.karlha-jewels-store-front-dashboard .hentry .entry-content button:disabled,
+.karlha-jewels-store-front-dashboard .hentry .entry-content input[type=button].disabled,
+.karlha-jewels-store-front-dashboard .hentry .entry-content input[type=button]:disabled,
+.karlha-jewels-store-front-dashboard .hentry .entry-content input[type=reset].disabled,
+.karlha-jewels-store-front-dashboard .hentry .entry-content input[type=reset]:disabled,
+.karlha-jewels-store-front-dashboard .hentry .entry-content input[type=submit].disabled,
+.karlha-jewels-store-front-dashboard .hentry .entry-content input[type=submit]:disabled,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .button.disabled,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .button:disabled,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .wc-block-grid__products .wc-block-grid__product .wp-block-button__link.disabled,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .wc-block-grid__products .wc-block-grid__product .wp-block-button__link:disabled,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .added_to_cart.disabled,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .added_to_cart:disabled {
+  opacity: 0.5 !important;
+  cursor: not-allowed;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content button.disabled:hover,
+.karlha-jewels-store-front-dashboard .hentry .entry-content button:disabled:hover,
+.karlha-jewels-store-front-dashboard .hentry .entry-content input[type=button].disabled:hover,
+.karlha-jewels-store-front-dashboard .hentry .entry-content input[type=button]:disabled:hover,
+.karlha-jewels-store-front-dashboard .hentry .entry-content input[type=reset].disabled:hover,
+.karlha-jewels-store-front-dashboard .hentry .entry-content input[type=reset]:disabled:hover,
+.karlha-jewels-store-front-dashboard .hentry .entry-content input[type=submit].disabled:hover,
+.karlha-jewels-store-front-dashboard .hentry .entry-content input[type=submit]:disabled:hover,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .button.disabled:hover,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .button:disabled:hover,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .wc-block-grid__products .wc-block-grid__product .wp-block-button__link.disabled:hover,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .wc-block-grid__products .wc-block-grid__product .wp-block-button__link:disabled:hover,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .added_to_cart.disabled:hover,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .added_to_cart:disabled:hover {
+  opacity: 0.5 !important;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .button.woocommerce-MyAccount-downloads-file {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  -ms-word-break: break-all;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .wc-block-components-button:not(.is-link).disabled,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .wc-block-components-button:not(.is-link):disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .wc-block-components-button:not(.is-link).disabled:hover,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .wc-block-components-button:not(.is-link):disabled:hover {
+  opacity: 0.5;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content input[type=checkbox],
+.karlha-jewels-store-front-dashboard .hentry .entry-content input[type=radio] {
+  padding: 0;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content input[type=checkbox] + label,
+.karlha-jewels-store-front-dashboard .hentry .entry-content input[type=radio] + label {
+  margin: 0 0 0 0.3819820591em;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content input[type=search] {
+  box-sizing: border-box;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content input[type=search]::-moz-placeholder {
+  color: #616161;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content input[type=search]::placeholder {
+  color: #616161;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content button::-moz-focus-inner,
+.karlha-jewels-store-front-dashboard .hentry .entry-content input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content input[type=text],
+.karlha-jewels-store-front-dashboard .hentry .entry-content input[type=number],
+.karlha-jewels-store-front-dashboard .hentry .entry-content input[type=email],
+.karlha-jewels-store-front-dashboard .hentry .entry-content input[type=tel],
+.karlha-jewels-store-front-dashboard .hentry .entry-content input[type=url],
+.karlha-jewels-store-front-dashboard .hentry .entry-content input[type=password],
+.karlha-jewels-store-front-dashboard .hentry .entry-content input[type=search],
+.karlha-jewels-store-front-dashboard .hentry .entry-content textarea,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .input-text {
+  padding: 0.6180469716em;
+  background-color: #f2f2f2;
+  color: #43454b;
+  border: 0;
+  -webkit-appearance: none;
+  box-sizing: border-box;
+  font-weight: 400;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.125);
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content input[type=text]:focus,
+.karlha-jewels-store-front-dashboard .hentry .entry-content input[type=number]:focus,
+.karlha-jewels-store-front-dashboard .hentry .entry-content input[type=email]:focus,
+.karlha-jewels-store-front-dashboard .hentry .entry-content input[type=tel]:focus,
+.karlha-jewels-store-front-dashboard .hentry .entry-content input[type=url]:focus,
+.karlha-jewels-store-front-dashboard .hentry .entry-content input[type=password]:focus,
+.karlha-jewels-store-front-dashboard .hentry .entry-content input[type=search]:focus,
+.karlha-jewels-store-front-dashboard .hentry .entry-content textarea:focus,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .input-text:focus {
+  background-color: #ededed;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content textarea {
+  overflow: auto;
+  padding-left: 0.875em;
+  vertical-align: top;
+  width: 100%;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content label {
+  font-weight: 400;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content label.inline input {
+  width: auto;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content fieldset {
+  padding: 1.618em;
+  padding-top: 1em;
+  border: 0;
+  margin: 0;
+  margin-bottom: 1.618em;
+  margin-top: 1.618em;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content fieldset legend {
+  font-weight: 600;
+  padding: 0.6180469716em 1em;
+  margin-left: -1em;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content [placeholder]:focus::-webkit-input-placeholder {
+  -webkit-transition: opacity 0.5s 0.5s ease;
+  transition: opacity 0.5s 0.5s ease;
+  opacity: 0;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .page-content img.wp-smiley,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .entry-content img.wp-smiley,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .comment-content img.wp-smiley {
+  border: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0;
+  display: inline-block;
+  border-radius: 0;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .wp-caption {
+  margin-bottom: 1em;
+  max-width: 100%;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .wp-caption img[class*=wp-image-] {
+  display: block;
+  margin: 0 auto;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .wp-caption .wp-caption-text {
+  text-align: left;
+  font-style: italic;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+  padding: 1em 0;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .gallery {
+  margin-bottom: 1em;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .gallery::before,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .gallery::after {
+  content: "";
+  display: table;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .gallery::after {
+  clear: both;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .gallery .gallery-item {
+  float: left;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .gallery .gallery-item .gallery-icon a {
+  display: block;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .gallery .gallery-item .gallery-icon img {
+  border: none;
+  height: auto;
+  margin: 0 auto;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .gallery .gallery-item .gallery-caption {
+  margin: 0;
+  text-align: center;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .gallery.gallery-columns-1 .gallery-item {
+  width: 100%;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .gallery.gallery-columns-2 .gallery-item {
+  width: 50%;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .gallery.gallery-columns-3 .gallery-item {
+  width: 33.3%;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .gallery.gallery-columns-4 .gallery-item {
+  width: 25%;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .gallery.gallery-columns-5 .gallery-item {
+  width: 20%;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .gallery.gallery-columns-6 .gallery-item {
+  width: 16.666666667%;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .gallery.gallery-columns-7 .gallery-item {
+  width: 14.285714286%;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .gallery.gallery-columns-8 .gallery-item {
+  width: 12.5%;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .gallery.gallery-columns-9 .gallery-item {
+  width: 11.111111111%;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content embed,
+.karlha-jewels-store-front-dashboard .hentry .entry-content iframe,
+.karlha-jewels-store-front-dashboard .hentry .entry-content object,
+.karlha-jewels-store-front-dashboard .hentry .entry-content video {
+  max-width: 100%;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .secondary-navigation {
+  display: none;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content button.menu-toggle {
+  cursor: pointer;
+  text-align: left;
+  float: right;
+  position: relative;
+  border: 2px solid rgba(0, 0, 0, 0);
+  box-shadow: none;
+  border-radius: 2px;
+  background-image: none;
+  padding: 0.6180469716em 0.875em 0.6180469716em 2.617924em;
+  font-size: 0.875em;
+  max-width: 120px;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content button.menu-toggle:hover {
+  background-image: none;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content button.menu-toggle span::before {
+  transition: all, ease, 0.2s;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content button.menu-toggle::before,
+.karlha-jewels-store-front-dashboard .hentry .entry-content button.menu-toggle::after,
+.karlha-jewels-store-front-dashboard .hentry .entry-content button.menu-toggle span::before {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 14px;
+  position: absolute;
+  top: 50%;
+  left: 1em;
+  margin-top: -1px;
+  transition: all, ease, 0.2s;
+  border-radius: 3px;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content button.menu-toggle::before {
+  transform: translateY(-4px);
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content button.menu-toggle::after {
+  transform: translateY(4px);
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .toggled button.menu-toggle::before,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .toggled button.menu-toggle::after {
+  transform: rotate(45deg);
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .toggled button.menu-toggle::after {
+  transform: rotate(-45deg);
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .toggled button.menu-toggle span::before {
+  opacity: 0;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .primary-navigation {
+  display: none;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .main-navigation::before,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .main-navigation::after {
+  content: "";
+  display: table;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .main-navigation::after {
+  clear: both;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .main-navigation div.menu {
+  display: none;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .main-navigation div.menu:last-child {
+  display: block;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .main-navigation .menu {
+  clear: both;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .handheld-navigation,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .nav-menu,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .main-navigation div.menu > ul:not(.nav-menu) {
+  overflow: hidden;
+  max-height: 0;
+  transition: all, ease, 0.8s;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .handheld-navigation {
+  clear: both;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .handheld-navigation ul {
+  margin: 0;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .handheld-navigation ul.menu li {
+  position: relative;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .handheld-navigation ul.menu li button::after {
+  transition: all, ease, 0.9s;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .handheld-navigation ul.menu li button.toggled-on::after {
+  transform: rotate(180deg);
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .handheld-navigation ul.menu .sub-menu {
+  visibility: hidden;
+  opacity: 0;
+  max-height: 0;
+  transition: all, ease, 0.9s;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .handheld-navigation ul.menu .sub-menu.toggled-on {
+  visibility: visible;
+  max-height: 9999px;
+  opacity: 1;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .handheld-navigation .dropdown-toggle {
+  background: rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .main-navigation.toggled .handheld-navigation,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .main-navigation.toggled .menu > ul:not(.nav-menu),
+.karlha-jewels-store-front-dashboard .hentry .entry-content .main-navigation.toggled ul[aria-expanded=true] {
+  max-height: 9999px;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .main-navigation ul {
+  margin-left: 0;
+  list-style: none;
+  margin-bottom: 0;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .main-navigation ul ul {
+  display: block;
+  margin-left: 1.41575em;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .main-navigation ul li a {
+  padding: 0.875em 0;
+  display: block;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .main-navigation ul li a:hover {
+  color: #e6e6e6;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .site-main nav.navigation {
+  clear: both;
+  padding: 2.617924em 0;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .site-main nav.navigation::before,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .site-main nav.navigation::after {
+  content: "";
+  display: table;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .site-main nav.navigation::after {
+  clear: both;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .site-main nav.navigation .nav-previous a,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .site-main nav.navigation .nav-next a {
+  display: inline-block;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .site-main nav.navigation .nav-previous {
+  float: left;
+  width: 50%;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .site-main nav.navigation .nav-next {
+  float: right;
+  text-align: right;
+  width: 50%;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .pagination,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .woocommerce-pagination {
+  padding: 1em 0;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-width: 1px 0;
+  text-align: center;
+  clear: both;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .pagination ul.page-numbers::before,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .pagination ul.page-numbers::after,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .woocommerce-pagination ul.page-numbers::before,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .woocommerce-pagination ul.page-numbers::after {
+  content: "";
+  display: table;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .pagination ul.page-numbers::after,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .woocommerce-pagination ul.page-numbers::after {
+  clear: both;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .pagination .page-numbers,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .woocommerce-pagination .page-numbers {
+  list-style: none;
+  margin: 0;
+  vertical-align: middle;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .pagination .page-numbers li,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .woocommerce-pagination .page-numbers li {
+  display: inline-block;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .pagination .page-numbers li .page-numbers,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .woocommerce-pagination .page-numbers li .page-numbers {
+  border-left-width: 0;
+  display: inline-block;
+  padding: 0.3342343017em 0.875em;
+  background-color: rgba(0, 0, 0, 0.025);
+  color: #43454b;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .pagination .page-numbers li .page-numbers.current,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .woocommerce-pagination .page-numbers li .page-numbers.current {
+  background-color: #2c2d33;
+  border-color: #2c2d33;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .pagination .page-numbers li .page-numbers.dots,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .woocommerce-pagination .page-numbers li .page-numbers.dots {
+  background-color: rgba(0, 0, 0, 0);
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .pagination .page-numbers li .page-numbers.prev,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .pagination .page-numbers li .page-numbers.next,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .woocommerce-pagination .page-numbers li .page-numbers.prev,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .woocommerce-pagination .page-numbers li .page-numbers.next {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .pagination .page-numbers li a.page-numbers:hover,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .woocommerce-pagination .page-numbers li a.page-numbers:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .rtl .pagination a.next,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .rtl .pagination a.prev,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .rtl .woocommerce-pagination a.next,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .rtl .woocommerce-pagination a.prev {
+  transform: rotateY(180deg);
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .widget {
+  margin: 0 0 3.706325903em;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .widget select {
+  max-width: 100%;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .widget .widget-search .search-submit {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal !important;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .widget .widget-title,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .widget .widgettitle {
+  font-size: 1.41575em;
+  letter-spacing: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 0 0 1em;
+  margin-bottom: 1em;
+  font-weight: 300;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .widget ul {
+  margin-left: 0;
+  list-style: none;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .widget ul ul {
+  margin-left: 1.618em;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .widget-area .widget {
+  font-size: 0.875em;
+  font-weight: 400;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .widget-area .widget h1.widget-title {
+  font-size: 1.41575em;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .widget-area .widget a {
+  font-weight: 600;
+  text-decoration: underline;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .widget-area .widget a:hover {
+  text-decoration: none;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .widget-area .widget a.button,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .widget-area .widget a.components-button:not(.is-link),
+.karlha-jewels-store-front-dashboard .hentry .entry-content .widget-area .widget a.wp-block-button__link {
+  text-decoration: none;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .widget-area .widget a.button {
+  font-weight: 600 !important;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .widget_search form:not(.wp-block-search),
+.karlha-jewels-store-front-dashboard .hentry .entry-content .widget_product_search form:not(.wp-block-search) {
+  position: relative;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .widget_search form:not(.wp-block-search) input[type=text],
+.karlha-jewels-store-front-dashboard .hentry .entry-content .widget_search form:not(.wp-block-search) input[type=search],
+.karlha-jewels-store-front-dashboard .hentry .entry-content .widget_product_search form:not(.wp-block-search) input[type=text],
+.karlha-jewels-store-front-dashboard .hentry .entry-content .widget_product_search form:not(.wp-block-search) input[type=search] {
+  width: 100%;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .widget_search form:not(.wp-block-search) input[type=submit],
+.karlha-jewels-store-front-dashboard .hentry .entry-content .widget_search form:not(.wp-block-search) button[type=submit],
+.karlha-jewels-store-front-dashboard .hentry .entry-content .widget_product_search form:not(.wp-block-search) input[type=submit],
+.karlha-jewels-store-front-dashboard .hentry .entry-content .widget_product_search form:not(.wp-block-search) button[type=submit] {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal !important;
+  top: 0;
+  left: 0;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .widget_recent_entries ul,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .widget_pages ul,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .widget_categories ul,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .widget_archive ul,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .widget_recent_comments ul,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .widget_nav_menu ul,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .widget_links ul,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .widget_product_categories ul,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .widget_layered_nav ul,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .widget_layered_nav_filters ul {
+  margin: 0;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .widget_recent_entries ul li,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .widget_pages ul li,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .widget_categories ul li,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .widget_archive ul li,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .widget_recent_comments ul li,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .widget_nav_menu ul li,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .widget_links ul li,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .widget_product_categories ul li,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .widget_layered_nav ul li,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .widget_layered_nav_filters ul li {
+  list-style: none;
+  margin-bottom: 1em;
+  line-height: 1.41575em;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .widget_recent_entries ul .children,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .widget_pages ul .children,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .widget_categories ul .children,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .widget_archive ul .children,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .widget_recent_comments ul .children,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .widget_nav_menu ul .children,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .widget_links ul .children,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .widget_product_categories ul .children,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .widget_layered_nav ul .children,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .widget_layered_nav_filters ul .children {
+  margin-left: 0;
+  margin-top: 1em;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content #wp-calendar th,
+.karlha-jewels-store-front-dashboard .hentry .entry-content #wp-calendar td,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .wp-calendar-table th,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .wp-calendar-table td {
+  padding: 0.236em;
+  text-align: center;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .widget_recent_entries ul ul.children,
+.karlha-jewels-store-front-dashboard .hentry .entry-content .widget_pages ul ul.children {
+  margin: 0.6180469716em 0 0 1.41575em;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .widget_rating_filter .wc-layered-nav-rating {
+  margin-bottom: 0.6180469716em;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .widget_rating_filter .wc-layered-nav-rating a {
+  text-decoration: none !important;
+}
+.karlha-jewels-store-front-dashboard .hentry .entry-content .widget_rating_filter .wc-layered-nav-rating .star-rating {
+  display: inline-block;
+  height: 1em;
+  line-height: 1;
+}
+@media (min-width: 768px) {
+  .karlha-jewels-store-front-dashboard .hentry .entry-content table.shop_table_responsive tbody tr td,
+  .karlha-jewels-store-front-dashboard .hentry .entry-content table.shop_table_responsive tbody tr th {
+    text-align: left;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .site-header {
+    padding-top: 2.617924em;
+    padding-bottom: 0;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .site-header .site-branding {
+    display: block;
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    clear: both;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .site-header .site-branding img {
+    height: auto;
+    max-width: 230px;
+    max-height: none;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .woocommerce-active .site-header .site-branding {
+    width: 73.9130434783%;
+    float: left;
+    margin-right: 4.347826087%;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .woocommerce-active .site-header .site-search {
+    width: 21.7391304348%;
+    float: right;
+    margin-right: 0;
+    clear: none;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .woocommerce-active .site-header .main-navigation {
+    width: 73.9130434783%;
+    float: left;
+    margin-right: 4.347826087%;
+    clear: both;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .woocommerce-active .site-header .site-header-cart {
+    width: 21.7391304348%;
+    float: right;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .storefront-secondary-navigation .site-header .site-branding {
+    width: 39.1304347826%;
+    float: left;
+    margin-right: 4.347826087%;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .storefront-secondary-navigation .site-header .secondary-navigation {
+    width: 56.5217391304%;
+    float: right;
+    margin-right: 0;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .storefront-secondary-navigation.woocommerce-active .site-header .site-branding {
+    width: 21.7391304348%;
+    float: left;
+    margin-right: 4.347826087%;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .storefront-secondary-navigation.woocommerce-active .site-header .secondary-navigation {
+    width: 47.8260869565%;
+    float: left;
+    margin-right: 4.347826087%;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .site-branding .site-description {
+    margin-bottom: 0;
+    display: block;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .site-branding,
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .site-search,
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .site-header-cart,
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .site-logo-anchor,
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .site-logo-link,
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .custom-logo-link {
+    margin-bottom: 1.41575em;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .site-header .subscribe-and-connect-connect {
+    float: right;
+    margin-bottom: 1em;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .site-header .subscribe-and-connect-connect .icons {
+    list-style: none;
+    margin: 0;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .site-header .subscribe-and-connect-connect .icons a {
+    font-size: 1em !important;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .site-header .subscribe-and-connect-connect .icons li {
+    margin: 0 0 0 0.5407911001em !important;
+    display: inline-block;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .col-full {
+    max-width: 66.4989378333em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 2.617924em;
+    box-sizing: content-box;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .col-full::before,
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .col-full::after {
+    content: "";
+    display: table;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .col-full::after {
+    clear: both;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .col-full:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .site-content::before,
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .site-content::after {
+    content: "";
+    display: table;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .site-content::after {
+    clear: both;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .content-area {
+    width: 73.9130434783%;
+    float: left;
+    margin-right: 4.347826087%;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .widget-area {
+    width: 21.7391304348%;
+    float: right;
+    margin-right: 0;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .right-sidebar .content-area {
+    width: 73.9130434783%;
+    float: left;
+    margin-right: 4.347826087%;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .right-sidebar .widget-area {
+    width: 21.7391304348%;
+    float: right;
+    margin-right: 0;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .left-sidebar .content-area {
+    width: 73.9130434783%;
+    float: right;
+    margin-right: 0;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .left-sidebar .widget-area {
+    width: 21.7391304348%;
+    float: left;
+    margin-right: 4.347826087%;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .storefront-full-width-content .content-area {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .content-area,
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .widget-area {
+    margin-bottom: 2.617924em;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .page-template-template-fullwidth-php .content-area,
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .page-template-template-homepage-php .content-area {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .footer-widgets {
+    padding-top: 4.235801032em;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .footer-widgets::before,
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .footer-widgets::after {
+    content: "";
+    display: table;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .footer-widgets::after {
+    clear: both;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .footer-widgets.col-2 .block {
+    width: 47.8260869565%;
+    float: left;
+    margin-right: 4.347826087%;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .footer-widgets.col-2 .block.footer-widget-2 {
+    float: right;
+    margin-right: 0;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .footer-widgets.col-3 .block {
+    width: 30.4347826087%;
+    float: left;
+    margin-right: 4.347826087%;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .footer-widgets.col-3 .block.footer-widget-3 {
+    float: right;
+    margin-right: 0;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .footer-widgets.col-4 .block {
+    width: 21.7391304348%;
+    float: left;
+    margin-right: 4.347826087%;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .footer-widgets.col-4 .block.footer-widget-4 {
+    float: right;
+    margin-right: 0;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .comment-list::before,
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .comment-list::after {
+    content: "";
+    display: table;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .comment-list::after {
+    clear: both;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .comment-list .comment {
+    clear: both;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .comment-list .comment-meta {
+    width: 17.6470588235%;
+    float: left;
+    margin-right: 5.8823529412%;
+    text-align: right;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .comment-list .comment-meta .avatar {
+    float: right;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .comment-list .comment-content {
+    padding-bottom: 3.706325903em;
+    margin-bottom: 3.706325903em;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .comment-list .comment-content,
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .comment-list #respond {
+    width: 76.4705882353%;
+    float: right;
+    margin-right: 0;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .comment-list #respond {
+    float: right;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .comment-list #respond .comment-form-author,
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .comment-list #respond .comment-form-email,
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .comment-list #respond .comment-form-url {
+    width: 100%;
+    margin-right: 0;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .comment-list .comment-body #respond {
+    box-shadow: 0 6px 2em rgba(0, 0, 0, 0.2);
+    margin-bottom: 2.617924em;
+    margin-top: -1.618em;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .comment-list .reply {
+    clear: both;
+    text-align: right;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .comment-list ol.children {
+    width: 88.2352941176%;
+    float: right;
+    margin-right: 0;
+    list-style: none;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .comment-list ol.children .comment-meta {
+    width: 20%;
+    float: left;
+    margin-right: 6.6666666667%;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .comment-list ol.children .comment-content,
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .comment-list ol.children #respond {
+    width: 73.3333333333%;
+    float: right;
+    margin-right: 0;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .comment-list ol.children ol.children {
+    width: 86.6666666667%;
+    float: right;
+    margin-right: 0;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .comment-list ol.children ol.children .comment-meta {
+    width: 23.0769230769%;
+    float: left;
+    margin-right: 7.6923076923%;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .comment-list ol.children ol.children .comment-content,
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .comment-list ol.children ol.children #respond {
+    width: 69.2307692308%;
+    float: right;
+    margin-right: 0;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .comment-list ol.children ol.children ol.children {
+    width: 84.6153846154%;
+    float: right;
+    margin-right: 0;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .comment-list ol.children ol.children ol.children .comment-meta {
+    width: 27.2727272727%;
+    float: left;
+    margin-right: 9.0909090909%;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .comment-list ol.children ol.children ol.children .comment-content,
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .comment-list ol.children ol.children ol.children #respond {
+    width: 63.6363636364%;
+    float: right;
+    margin-right: 0;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .comment-list ol.children ol.children ol.children ol.children {
+    width: 81.8181818182%;
+    float: right;
+    margin-right: 0;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .comment-list ol.children ol.children ol.children ol.children .comment-meta {
+    width: 33.3333333333%;
+    float: left;
+    margin-right: 11.1111111111%;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .comment-list ol.children ol.children ol.children ol.children .comment-content,
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .comment-list ol.children ol.children ol.children ol.children #respond {
+    width: 55.5555555556%;
+    float: right;
+    margin-right: 0;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content #respond {
+    padding: 2.617924em;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content #respond .comment-form-author,
+  .karlha-jewels-store-front-dashboard .hentry .entry-content #respond .comment-form-email,
+  .karlha-jewels-store-front-dashboard .hentry .entry-content #respond .comment-form-url {
+    width: 29.4117647059%;
+    float: left;
+    margin-right: 5.8823529412%;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content #respond .comment-form-url {
+    float: right;
+    margin-right: 0;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content #respond .comment-form-comment {
+    clear: both;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .hentry .entry-header {
+    margin-bottom: 2.617924em;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .menu-toggle,
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .handheld-navigation,
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .main-navigation.toggled .handheld-navigation,
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .main-navigation.toggled div.menu {
+    display: none;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .primary-navigation {
+    display: block;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .main-navigation,
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .secondary-navigation {
+    clear: both;
+    display: block;
+    width: 100%;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .main-navigation ul,
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .secondary-navigation ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    display: block;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .main-navigation ul li,
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .secondary-navigation ul li {
+    position: relative;
+    display: inline-block;
+    text-align: left;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .main-navigation ul li a,
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .secondary-navigation ul li a {
+    display: block;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .main-navigation ul li a::before,
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .secondary-navigation ul li a::before {
+    display: none;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .main-navigation ul li:hover > ul,
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .main-navigation ul li.focus > ul,
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .secondary-navigation ul li:hover > ul,
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .secondary-navigation ul li.focus > ul {
+    left: 0;
+    display: block;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .main-navigation ul li:hover > ul li > ul,
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .main-navigation ul li.focus > ul li > ul,
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .secondary-navigation ul li:hover > ul li > ul,
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .secondary-navigation ul li.focus > ul li > ul {
+    left: -9999px;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .main-navigation ul li:hover > ul li > ul.sub-menu--is-touch-device,
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .main-navigation ul li.focus > ul li > ul.sub-menu--is-touch-device,
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .secondary-navigation ul li:hover > ul li > ul.sub-menu--is-touch-device,
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .secondary-navigation ul li.focus > ul li > ul.sub-menu--is-touch-device {
+    display: none;
+    left: 0;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .main-navigation ul li:hover > ul li:hover > ul,
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .main-navigation ul li:hover > ul li.focus > ul,
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .main-navigation ul li.focus > ul li:hover > ul,
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .main-navigation ul li.focus > ul li.focus > ul,
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .secondary-navigation ul li:hover > ul li:hover > ul,
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .secondary-navigation ul li:hover > ul li.focus > ul,
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .secondary-navigation ul li.focus > ul li:hover > ul,
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .secondary-navigation ul li.focus > ul li.focus > ul {
+    left: 100%;
+    top: 0;
+    display: block;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .main-navigation ul ul,
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .secondary-navigation ul ul {
+    float: left;
+    position: absolute;
+    top: 100%;
+    z-index: 99999;
+    left: -9999px;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .main-navigation ul ul.sub-menu--is-touch-device,
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .secondary-navigation ul ul.sub-menu--is-touch-device {
+    display: none;
+    left: 0;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .main-navigation ul ul li,
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .secondary-navigation ul ul li {
+    display: block;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .main-navigation ul ul li a,
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .secondary-navigation ul ul li a {
+    width: 200px;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content ul.menu li.current-menu-item > a {
+    color: #43454b;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .storefront-primary-navigation {
+    clear: both;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .storefront-primary-navigation::before,
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .storefront-primary-navigation::after {
+    content: "";
+    display: table;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .storefront-primary-navigation::after {
+    clear: both;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .main-navigation div.menu {
+    display: block;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .main-navigation ul.menu,
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .main-navigation ul.nav-menu {
+    max-height: none;
+    overflow: visible;
+    margin-left: -1em;
+    transition: none;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .main-navigation ul.menu > li > a,
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .main-navigation ul.nav-menu > li > a {
+    padding: 1.618em 1em;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .main-navigation ul.menu > li.menu-item-has-children:hover::after,
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .main-navigation ul.menu > li.page_item_has_children:hover::after,
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .main-navigation ul.nav-menu > li.menu-item-has-children:hover::after,
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .main-navigation ul.nav-menu > li.page_item_has_children:hover::after {
+    display: block;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .main-navigation ul.menu ul,
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .main-navigation ul.nav-menu ul {
+    margin-left: 0;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .main-navigation ul.menu ul li a,
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .main-navigation ul.nav-menu ul li a {
+    padding: 0.875em 1.41575em;
+    font-weight: 400;
+    font-size: 0.875em;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .main-navigation ul.menu ul li:last-child,
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .main-navigation ul.nav-menu ul li:last-child {
+    border-bottom: 0;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .main-navigation ul.menu ul ul,
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .main-navigation ul.nav-menu ul ul {
+    margin-left: 0;
+    box-shadow: none;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .main-navigation ul.menu ul a:hover,
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .main-navigation ul.menu ul li:hover > a,
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .main-navigation ul.menu ul li.focus,
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .main-navigation ul.nav-menu ul a:hover,
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .main-navigation ul.nav-menu ul li:hover > a,
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .main-navigation ul.nav-menu ul li.focus {
+    background-color: rgba(0, 0, 0, 0.025);
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .main-navigation a {
+    padding: 0 1em 2.2906835em;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .secondary-navigation {
+    margin: 0 0 1.618em;
+    width: auto;
+    clear: none;
+    line-height: 1;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .secondary-navigation .menu {
+    font-size: 0.875em;
+    width: auto;
+    float: right;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .secondary-navigation .menu > li:hover > a {
+    text-decoration: none;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .secondary-navigation .menu ul a {
+    padding: 0.326em 0.875em;
+    background: rgba(0, 0, 0, 0.05);
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .secondary-navigation .menu ul li:first-child a {
+    padding-top: 1em;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .secondary-navigation .menu ul li:last-child a {
+    padding-bottom: 1em;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .secondary-navigation .menu ul ul {
+    margin-top: -0.6180469716em;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .secondary-navigation .menu a {
+    padding: 1em 0.875em;
+    color: #737781;
+    font-weight: 400;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .secondary-navigation .menu a:hover {
+    text-decoration: none;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .error404 .fourohfour-columns-2 .col-1 {
+    width: 47.8260869565%;
+    float: left;
+    margin-right: 4.347826087%;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .error404 .fourohfour-columns-2 .col-1 ul.products {
+    margin-bottom: 0;
+  }
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .error404 .fourohfour-columns-2 .col-2 {
+    width: 47.8260869565%;
+    float: right;
+    margin-right: 0;
+  }
+}
+@media (max-width: 66.4989378333em) {
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .col-full {
+    margin-left: 2.617924em;
+    margin-right: 2.617924em;
+    padding: 0;
+  }
+}
+@media (max-width: 568px) {
+  .karlha-jewels-store-front-dashboard .hentry .entry-content .col-full {
     margin-left: 1.41575em;
     margin-right: 1.41575em;
     padding: 0;
@@ -7297,14 +11547,6 @@ body.swal2-toast-column .swal2-toast .swal2-validation-message {
   max-width: 100% !important;
 }
 
-.home-hero-header,
-.home-hero-text .OutlineElement,
-.home-hero-cta {
-  opacity: 0;
-  position: relative;
-  top: 20px;
-}
-
 .header-nav-link-block {
   width: 100%;
 }
@@ -7404,6 +11646,45 @@ body.swal2-toast-column .swal2-toast .swal2-validation-message {
   text-transform: capitalize;
 }
 
+.woocommerce-order-pay .woocommerce.wp-block-group.alignwide {
+  max-width: 100%;
+  padding: 0;
+}
+.woocommerce-order-pay .woocommerce.wp-block-group.alignwide * {
+  font-family: "Vultura", sans-serif;
+}
+.woocommerce-order-pay .woocommerce.wp-block-group.alignwide .order_details {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+.woocommerce-order-pay .woocommerce.wp-block-group.alignwide .order_details button {
+  background-color: #e38430;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+}
+.woocommerce-order-pay .woocommerce.wp-block-group.alignwide #yes-add {
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+.woocommerce-order-pay .woocommerce.wp-block-group.alignwide #terminal_africa_payment_form {
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 2rem;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+.woocommerce-order-pay .woocommerce.wp-block-group.alignwide #terminal_africa_payment_form button {
+  background-color: #e38430;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+}
+
 .karlha-jewels-store-front-account {
   width: 100%;
   max-width: 1200px;
@@ -7414,6 +11695,33 @@ body.swal2-toast-column .swal2-toast .swal2-validation-message {
 
 .footer-section {
   clear: both;
+}
+
+.khala-mobile-menu {
+  display: none;
+  height: 2741.51px;
+}
+.khala-mobile-menu .link-text {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+.khala-mobile-menu .link-text a {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0;
+}
+.khala-mobile-menu .mobile-dropdown-toggle {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.khala-mobile-menu .w-dropdown-list {
+  padding: 0px 21px;
+  background: rgba(221, 221, 221, 0.2901960784);
+}
+
+.product-strikethrough-price {
+  text-decoration: line-through;
 }
 
 /*# sourceMappingURL=karlhawptheme.css.map*/

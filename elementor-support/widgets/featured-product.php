@@ -183,9 +183,9 @@ class Featured_Product_Widget extends \Elementor\Widget_Base
                         <div id="product-sale-price" class="feature-product-price sale-price"></div>
                     </div>
                     <h1 class="details-header">Description &amp; Details</h1>
-                    <p class="details-text">
-                        <?php echo esc_html($product->get_description()); ?>
-                    </p>
+                    <div class="details-text">
+                        <?php echo wp_kses_post(wp_trim_words($product->get_description(), 10, '...')); ?>
+                    </div>
                     <!-- Variant area -->
                     <?php if ($product->is_type('variable')) :
                         $variations = $product->get_available_variations();
@@ -217,8 +217,25 @@ class Featured_Product_Widget extends \Elementor\Widget_Base
                             productVariations = <?php echo json_encode($variations); ?>;
                         </script>
                     <?php endif; ?>
-                    <a class="add-to-cart-button buy-now w-button" id="buy-button" data-product-id="<?php echo $product->get_id(); ?>" data-product-is-in-stock="<?php echo $product->is_in_stock(); ?>" data-is-buy-now="true">Buy it Now</a>
-                    <a class="add-to-cart-button w-button" id="add-item-cart" data-product-id="<?php echo $product->get_id(); ?>" data-product-is-in-stock="<?php echo $product->is_in_stock(); ?>" data-is-buy-now="false">Add to Cart</a>
+
+                    <?php
+                    //is stock
+                    $is_stock = 'false';
+                    //check if Stock management is enabled
+                    if ($product->managing_stock()) {
+                        //get stock quantity
+                        $stock_quantity = $product->get_stock_quantity();
+                        //check if stock quantity is greater than 0
+                        if ($stock_quantity > 0) {
+                            $is_stock = 'true';
+                        }
+                    } else {
+                        $is_stock = 'true';
+                    }
+                    ?>
+
+                    <a class="add-to-cart-button buy-now w-button" id="buy-button" data-product-id="<?php echo $product->get_id(); ?>" data-product-is-in-stock="<?php echo $is_stock; ?>" data-is-buy-now="true">Buy it Now</a>
+                    <a class="add-to-cart-button w-button" id="add-item-cart" data-product-id="<?php echo $product->get_id(); ?>" data-product-is-in-stock="<?php echo $is_stock; ?>" data-is-buy-now="false">Add to Cart</a>
                     <div class="feature-product-details-block">
                         <a href="<?php echo esc_url($product->get_permalink()); ?>" class="feature-product-link">Full Details</a>
                     </div>

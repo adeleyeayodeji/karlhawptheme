@@ -209,7 +209,23 @@ class Home_Banner_Widget extends \Elementor\Widget_Base
     protected function render()
     {
         $settings = $this->get_settings_for_display();
+        //check if current page is editor page
+        $is_editor = \Elementor\Plugin::$instance->editor->is_edit_mode();
+        //check if current page is editor page
+        if (!$is_editor) {
 ?>
+            <style type="text/css" id="home-banner-custom-css">
+                .home-hero-header,
+                .home-hero-text .OutlineElement,
+                .home-hero-cta {
+                    opacity: 0;
+                    position: relative;
+                    top: 20px;
+                }
+            </style>
+        <?php
+        }
+        ?>
         <div class="home-banner-section" style="background-size: cover; background-position: center center; background-repeat: no-repeat; background-image: url(<?php echo esc_url($settings['background_image']['url']); ?>);">
             <div class="hero-text-wrapper">
                 <h1 class="home-hero-header" data-w-id="36f626cd-e596-ff25-2ddb-fa311a28d675"><span style="caret-color: rgba(0, 0, 0, 0.847); color: rgba(0, 0, 0, 0.847); font-family: &quot;Times New Roman&quot;, &quot;Times New Roman_EmbeddedFont&quot;, &quot;Times New Roman_MSFontService&quot;, serif; font-size: 18.66666603088379px;"><i>

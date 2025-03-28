@@ -1,5 +1,6 @@
 @import "css/normalize";
 @import "css/store-front";
+@import "css/cart-style";
 @import "css/store-front-dashboard";
 @import "css/webflow";
 @import "css/style";
@@ -34,6 +35,51 @@
   }
 }
 
+.woocommerce-order-pay .woocommerce.wp-block-group.alignwide {
+  max-width: 100%;
+  padding: 0;
+
+  * {
+    font-family: "Vultura", sans-serif;
+  }
+
+  .order_details {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 2rem;
+
+    button {
+      background-color: #e38430;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+    }
+  }
+
+  #yes-add {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 2rem;
+    margin: 0 auto;
+  }
+
+  #terminal_africa_payment_form {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 2rem;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+
+    button {
+      background-color: #e38430;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+    }
+  }
+}
+
 .karlha-jewels-store-front-account {
   width: 100%;
   max-width: 1200px;
@@ -44,4 +90,34 @@
 
 .footer-section {
   clear: both;
+}
+
+.khala-mobile-menu {
+  display: none;
+  height: 2741.51px;
+
+  .link-text {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+
+    a {
+      width: fit-content;
+      margin: 0;
+    }
+  }
+
+  .mobile-dropdown-toggle {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .w-dropdown-list {
+    padding: 0px 21px;
+    background: #dddddd4a;
+  }
+}
+
+.product-strikethrough-price {
+  text-decoration: line-through;
 }

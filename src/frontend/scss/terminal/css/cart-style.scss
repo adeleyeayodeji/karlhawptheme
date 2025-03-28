@@ -1,6 +1,7 @@
-.karlha-jewels-store-front {
+.wp-block-woocommerce-cart {
   * {
     font-family: "Vultura", sans-serif;
+    font-size: 16px;
   }
 
   audio:not([controls]) {
@@ -159,14 +160,18 @@
   input,
   textarea {
     color: #43454b;
-    font-family: "Vultura", sans-serif;
+    font-family: "Source Sans Pro", "HelveticaNeue-Light",
+      "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial,
+      "Lucida Grande", sans-serif;
     line-height: 1.618;
     text-rendering: optimizeLegibility;
     font-weight: 400;
   }
   select {
     color: initial;
-    font-family: "Vultura", sans-serif;
+    font-family: "Source Sans Pro", "HelveticaNeue-Light",
+      "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial,
+      "Lucida Grande", sans-serif;
     max-width: 100%;
   }
   summary {
@@ -298,7 +303,7 @@
   }
   pre {
     background: rgba(0, 0, 0, 0.1);
-    font-family: "Vultura", sans-serif;
+    font-family: "Courier 10 Pitch", Courier, monospace;
     margin-bottom: 1.618em;
     padding: 1.618em;
     overflow: auto;
@@ -308,7 +313,7 @@
   kbd,
   tt,
   var {
-    font-family: "Vultura", sans-serif;
+    font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
     background-color: rgba(0, 0, 0, 0.05);
     padding: 0.202em 0.5407911001em;
   }
@@ -362,9 +367,7 @@
   button:focus {
     outline: 2px solid #7f54b3;
   }
-  .storefront-cute * {
-    font-family: "Vultura", sans-serif;
-  }
+
   * {
     box-sizing: border-box;
   }
@@ -472,17 +475,17 @@
     right: 1em;
     font-size: 0.875em;
   }
-  .page-template-template-homepage .entry-content {
+  .page-template-template-homepage .wc-block-cart {
     font-size: 1.1em;
   }
-  .page-template-template-homepage .entry-content p:last-child {
+  .page-template-template-homepage .wc-block-cart p:last-child {
     margin-bottom: 0;
   }
   .page-template-template-homepage .entry-header h1 {
     font-size: 3.706325903em;
     margin-bottom: 0.2360828548em;
   }
-  .page-template-template-homepage .entry-content,
+  .page-template-template-homepage .wc-block-cart,
   .page-template-template-homepage .entry-header {
     max-width: 41.0994671405em;
     margin-left: auto;
@@ -498,7 +501,7 @@
   }
   .page-template-template-homepage.has-post-thumbnail
     .type-page.has-post-thumbnail
-    .entry-content,
+    .wc-block-cart,
   .page-template-template-homepage.has-post-thumbnail
     .type-page.has-post-thumbnail
     .entry-title {
@@ -507,7 +510,7 @@
   }
   .page-template-template-homepage.has-post-thumbnail
     .type-page.has-post-thumbnail
-    .entry-content.loaded,
+    .wc-block-cart.loaded,
   .page-template-template-homepage.has-post-thumbnail
     .type-page.has-post-thumbnail
     .entry-title.loaded {
@@ -596,8 +599,8 @@
   }
   .clear::before,
   .clear::after,
-  .entry-content::before,
-  .entry-content::after,
+  .wc-block-cart::before,
+  .wc-block-cart::after,
   .comment-content::before,
   .comment-content::after,
   .site-header::before,
@@ -610,7 +613,7 @@
     display: table;
   }
   .clear::after,
-  .entry-content::after,
+  .wc-block-cart::after,
   .comment-content::after,
   .site-header::after,
   .site-content::after,
@@ -799,54 +802,52 @@
   #respond #cancel-comment-reply-link:hover {
     transform: scale(1.3);
   }
-  .hentry {
-    margin: 0 0 4.235801032em;
-  }
-  .hentry .wp-post-image {
+
+  .wp-post-image {
     margin-bottom: 1.618em;
     margin-left: auto;
     margin-right: auto;
   }
-  .hentry .entry-header {
+  .entry-header {
     margin-bottom: 1em;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   }
-  .hentry .entry-header .posted-on,
-  .hentry .entry-header .post-author,
-  .hentry .entry-header .post-comments,
-  .hentry .entry-header .byline {
+  .entry-header .posted-on,
+  .entry-header .post-author,
+  .entry-header .post-comments,
+  .entry-header .byline {
     font-size: 0.875em;
   }
-  .hentry .entry-header .posted-on a,
-  .hentry .entry-header .post-author a,
-  .hentry .entry-header .post-comments a,
-  .hentry .entry-header .byline a {
+  .entry-header .posted-on a,
+  .entry-header .post-author a,
+  .entry-header .post-comments a,
+  .entry-header .byline a {
     font-weight: 600;
     text-decoration: underline;
   }
-  .hentry .entry-header .posted-on a:hover,
-  .hentry .entry-header .post-author a:hover,
-  .hentry .entry-header .post-comments a:hover,
-  .hentry .entry-header .byline a:hover {
+  .entry-header .posted-on a:hover,
+  .entry-header .post-author a:hover,
+  .entry-header .post-comments a:hover,
+  .entry-header .byline a:hover {
     text-decoration: none;
   }
-  .hentry .entry-content a {
+  .wc-block-cart a {
     text-decoration: underline;
   }
-  .hentry .entry-content a:hover {
+  .wc-block-cart a:hover {
     text-decoration: none;
   }
-  .hentry .entry-content a.button,
-  .hentry .entry-content a.components-button:not(.is-link),
-  .hentry .entry-content a.wp-block-button__link {
+  .wc-block-cart a.button,
+  .wc-block-cart a.components-button:not(.is-link),
+  .wc-block-cart a.wp-block-button__link {
     text-decoration: none;
   }
-  .hentry .entry-taxonomy {
+  .entry-taxonomy {
     margin: 1.41575em 0 0;
     padding-top: 1em;
     border-top: 1px solid rgba(0, 0, 0, 0.05);
   }
-  .hentry.type-page .entry-header {
+  .type-page .entry-header {
     border-bottom: 0;
     margin-bottom: 0;
   }
@@ -1118,7 +1119,7 @@
     opacity: 0;
   }
   .page-content img.wp-smiley,
-  .entry-content img.wp-smiley,
+  .wc-block-cart img.wp-smiley,
   .comment-content img.wp-smiley {
     border: none;
     margin-bottom: 0;
@@ -1915,7 +1916,7 @@
     #respond .comment-form-comment {
       clear: both;
     }
-    .hentry .entry-header {
+    .entry-header {
       margin-bottom: 2.617924em;
     }
     .menu-toggle,
@@ -2134,4 +2135,17 @@
       padding: 0;
     }
   }
+}
+
+h1.terminal-header {
+  font-family: "Vultura", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #000;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.wc-block-components-shipping-rates-control__package__description--free {
+  display: none;
 }
