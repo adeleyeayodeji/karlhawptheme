@@ -14,6 +14,7 @@
  */
 
 get_header();
+
 /**
  * Display the home page content
  * 

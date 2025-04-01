@@ -47,6 +47,12 @@ class KarlhaElementor
         \Elementor\Plugin::instance()->widgets_manager->register(new About_Us_Widget());
         //register best sellers widget
         \Elementor\Plugin::instance()->widgets_manager->register(new Best_Sellers_Widget());
+        //register about us single widget
+        \Elementor\Plugin::instance()->widgets_manager->register(new About_Us_Single_Widget());
+        //register contact widget
+        \Elementor\Plugin::instance()->widgets_manager->register(new Contact_Widget());
+        //register generic content page widget
+        \Elementor\Plugin::instance()->widgets_manager->register(new Generic_Content_Page_Widget());
     }
 
     /**
