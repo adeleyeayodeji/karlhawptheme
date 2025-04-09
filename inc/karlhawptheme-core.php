@@ -22,6 +22,224 @@ class KarlhawpTheme
     {
         //init theme
         $this->init();
+        //import products
+        add_action('wp', array($this, 'import_products'));
+    }
+
+    /**
+     * Import image
+     * 
+     * @param string $url
+     * 
+     * @return mixed
+     */
+    public function import_image($url)
+    {
+        //upload image
+        $upload_dir = wp_upload_dir();
+        $image_data = file_get_contents($url);
+        $filename = basename($url);
+        if (wp_mkdir_p($upload_dir['path'])) {
+            $file = $upload_dir['path'] . '/' . $filename;
+        } else {
+            $file = $upload_dir['basedir'] . '/' . $filename;
+        }
+        file_put_contents($file, $image_data);
+        $wp_filetype = wp_check_filetype($filename, null);
+        $attachment = array(
+            'post_mime_type' => $wp_filetype['type'],
+            'post_title' => sanitize_file_name($filename),
+            'post_content' => '',
+            'post_status' => 'inherit'
+        );
+        $attach_id = wp_insert_attachment($attachment, $file);
+        require_once(ABSPATH . 'wp-admin/includes/image.php');
+        $attach_data = wp_generate_attachment_metadata($attach_id, $file);
+        wp_update_attachment_metadata($attach_id, $attach_data);
+        return $attach_id;
+    }
+
+    /**
+     * import_product_single
+     * 
+     * 
+     */
+    public function import_product_single($product)
+    {
+        try {
+            //get the product name
+            $product_name = $product['name'];
+            //get inventory
+            $inventory = $product['inventory'] ?: 10;
+            //get the product description
+            $product_description = $product['description'];
+            //get the weight
+            $weight = $product['weight'] ?: 0.5;
+            //gallery
+            $gallery = [];
+            //check if product image-1 is not empty
+            if (!empty($product['image-1'])) {
+                //get the product image
+                $product_image = $this->import_image($product['image-1']['original_file_url']);
+                $gallery[] = $product_image;
+            }
+            //check if product image-2 is not empty
+            if (!empty($product['image-2'])) {
+                //get the product image
+                $product_image_2 = $this->import_image($product['image-2']['original_file_url']);
+                $gallery[] = $product_image_2;
+            }
+
+            //check if product image-3 is not empty
+            if (!empty($product['image-3'])) {
+                //get the product image
+                $product_image_3 = $this->import_image($product['image-3']['original_file_url']);
+                $gallery[] = $product_image_3;
+            }
+
+            //check if product image-4 is not empty
+            if (!empty($product['image-4'])) {
+                //get the product image
+                $product_image_4 = $this->import_image($product['image-4']['original_file_url']);
+                $gallery[] = $product_image_4;
+            }
+
+            if (empty($product['variants'])) {
+                //create woocommerce product
+                $wc_product = new WC_Product_Simple();
+            } else {
+                //create woocommerce product
+                $wc_product = new WC_Product_Variable();
+            }
+            //set product name
+            $wc_product->set_name($product_name);
+            //set product category
+            $wc_product->set_category_ids([33]);
+            //set product description
+            $wc_product->set_description($product_description);
+            //check if sale-price is not empty
+            if (!empty($product['sale-price'])) {
+                //set product sale price
+                $wc_product->set_sale_price($product['sale-price']);
+                //set product regular price
+                $wc_product->set_regular_price($product['retail-price']);
+            } else {
+                //set product price
+                $wc_product->set_price($product['retail-price']);
+            }
+            //set product image
+            $wc_product->set_image_id($product_image);
+            //set product image 2
+            $wc_product->set_gallery_image_ids($gallery);
+            //set_status
+            $wc_product->set_status('publish');
+            //set_stock_status
+            $wc_product->set_stock_status('instock');
+            //set_stock_quantity
+            $wc_product->set_stock_quantity($inventory);
+            //set_manage_stock
+            $wc_product->set_manage_stock(true);
+            //set_weight
+            $wc_product->set_weight($weight);
+            //save product
+            $wc_product->save();
+
+            //check if its a variable product
+            if (!empty($product['variants'])) {
+                //create product attribute from variant_options
+                $variant_options = $product['variant_options'];
+                //loop through variant options
+                foreach ($variant_options as $variant_option) {
+                    //return only name from $variant_option['variants']
+                    $variant_options = array_map(function ($variant) {
+                        return $variant['name'];
+                    }, $variant_option['variants']);
+                    //remove spaces from $variant_options
+                    $str_name = preg_replace('/\s+/', '', $variant_option['name']);
+                    //create product attribute
+                    $attribute = new WC_Product_Attribute();
+                    $attribute->set_name($str_name);
+                    $attribute->set_options($variant_options);
+                    $attribute->set_position(0);
+                    $attribute->set_visible(true);
+                    $attribute->set_variation(true);
+                    //set product attribute
+                    $wc_product->set_attributes(array($attribute));
+                    //save product
+                    $wc_product->save();
+                }
+
+                //loop through variants
+                foreach ($product['variants'] as $variant) {
+                    $variation = new WC_Product_Variation();
+                    $variation->set_parent_id($wc_product->get_id());
+                    $variation->set_attributes(array('color' => ucfirst($variant['slug'])));
+                    //set_stock_status
+                    $variation->set_stock_status('instock');
+                    //set_manage_stock
+                    $variation->set_manage_stock(true);
+                    //image
+                    $variation->set_image_id($this->import_image($variant['image'][0]['original_file_url']));
+                    //set stock quantity
+                    $variation->set_stock_quantity($variant['inventory']);
+                    //check if salePrice is not empty
+                    if (!empty($variant['salePrice'])) {
+                        $variation->set_sale_price($variant['salePrice']);
+                        //set regular price
+                        $variation->set_regular_price($variant['price']);
+                    } else {
+                        $variation->set_price($variant['price']);
+                    }
+                    //save variation
+                    $variation->save();
+                }
+            }
+
+            //set import completed
+            $_SESSION['import_started'] = false;
+        } catch (\Throwable $th) {
+            throw $th;
+        }
+    }
+
+    /**
+     * Import Products from JSON
+     * 
+     */
+    public function import_products()
+    {
+        try {
+            //check if session started
+            if (session_status() === PHP_SESSION_NONE) {
+                session_start();
+            }
+
+            //check if import started
+            if (isset($_SESSION['import_started']) && $_SESSION['import_started'] === true) {
+                throw new \Exception('Import already started.');
+            }
+
+            //get products
+            $products = file_get_contents(KARLHA_ASSETS_URL . '/json/products.json');
+            //decode products
+            $products = json_decode($products, true);
+            //check if products exist
+            if (!$products) {
+                throw new \Exception('No products found.');
+            }
+
+            //set import started
+            $_SESSION['import_started'] = true;
+
+            //loop through products
+            foreach ($products as $product) {
+                //import product
+                // return  $this->import_product_single($product);
+            }
+        } catch (\Exception $e) {
+            //log error
+            error_log("Error importing products: " . $e->getMessage());
+        }
     }
 
     /**
