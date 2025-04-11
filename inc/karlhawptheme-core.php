@@ -23,9 +23,29 @@ class KarlhawpTheme
         //init theme
         $this->init();
         //import products
-        add_action('wp', array($this, 'import_products'));
+        // add_action('wp', array($this, 'import_products'));
     }
 
+    /**
+     * Delete all media with same title
+     * @param string $title
+     * @return void
+     */
+    public function delete_media_with_same_title($title)
+    {
+        try {
+            global $wpdb;
+            //get attachment with same title %like% and uploaded between April, 2025 and April, 2025
+            $attachmentid = $wpdb->get_col($wpdb->prepare("SELECT ID FROM $wpdb->posts WHERE post_title LIKE %s AND post_type = 'attachment' AND post_date BETWEEN '2025-04-01' AND '2025-04-30'", '%' . $title . '%'));
+            //loop through attachmentid
+            foreach ($attachmentid as $id) {
+                //delete attachment
+                wp_delete_attachment($id, true);
+            }
+        } catch (\Exception $e) {
+            throw $e;
+        }
+    }
     /**
      * Import image
      * 
@@ -35,10 +55,17 @@ class KarlhawpTheme
      */
     public function import_image($url)
     {
+        global $wpdb;
         //upload image
         $upload_dir = wp_upload_dir();
         $image_data = file_get_contents($url);
         $filename = basename($url);
+        //check if image exist with title like $filename
+        $attachmentid = $wpdb->get_col($wpdb->prepare("SELECT ID FROM $wpdb->posts WHERE post_title LIKE %s AND post_type = 'attachment'", '%' . $filename . '%'));
+        //check if attachmentid is not empty
+        if (!empty($attachmentid)) {
+            return $attachmentid[0];
+        }
         if (wp_mkdir_p($upload_dir['path'])) {
             $file = $upload_dir['path'] . '/' . $filename;
         } else {
@@ -67,6 +94,7 @@ class KarlhawpTheme
     public function import_product_single($product)
     {
         try {
+            global $wpdb;
             //get the product name
             $product_name = $product['name'];
             //get inventory
@@ -75,6 +103,40 @@ class KarlhawpTheme
             $product_description = $product['description'];
             //get the weight
             $weight = $product['weight'] ?: 0.5;
+
+            //check if product exist with same title like %product_name%
+            $product_exist = $wpdb->get_col($wpdb->prepare("SELECT ID FROM $wpdb->posts WHERE post_title LIKE %s AND post_type = 'product'", '%' . $product_name . '%'));
+            //check if product exist
+            if (!empty($product_exist)) {
+                //product exist
+                return;
+            }
+
+            if (empty($product['variants'])) {
+                //create woocommerce product
+                $wc_product = new WC_Product_Simple();
+            } else {
+                //create woocommerce product
+                $wc_product = new WC_Product_Variable();
+            }
+
+            //set product name
+            $wc_product->set_name($product_name);
+            //set product category
+            $wc_product->set_category_ids([33]);
+            //set product description
+            $wc_product->set_description($product_description);
+            //check if sale-price is not empty
+            if (!empty($product['sale-price'])) {
+                //set product sale price
+                $wc_product->set_sale_price($product['sale-price']);
+                //set product regular price
+                $wc_product->set_regular_price($product['retail-price']);
+            } else {
+                //set product price
+                $wc_product->set_regular_price($product['retail-price']);
+            }
+
             //gallery
             $gallery = [];
             //check if product image-1 is not empty
@@ -104,31 +166,8 @@ class KarlhawpTheme
                 $gallery[] = $product_image_4;
             }
 
-            if (empty($product['variants'])) {
-                //create woocommerce product
-                $wc_product = new WC_Product_Simple();
-            } else {
-                //create woocommerce product
-                $wc_product = new WC_Product_Variable();
-            }
-            //set product name
-            $wc_product->set_name($product_name);
-            //set product category
-            $wc_product->set_category_ids([33]);
-            //set product description
-            $wc_product->set_description($product_description);
-            //check if sale-price is not empty
-            if (!empty($product['sale-price'])) {
-                //set product sale price
-                $wc_product->set_sale_price($product['sale-price']);
-                //set product regular price
-                $wc_product->set_regular_price($product['retail-price']);
-            } else {
-                //set product price
-                $wc_product->set_price($product['retail-price']);
-            }
             //set product image
-            $wc_product->set_image_id($product_image);
+            $wc_product->set_image_id($gallery[0]);
             //set product image 2
             $wc_product->set_gallery_image_ids($gallery);
             //set_status
@@ -214,11 +253,6 @@ class KarlhawpTheme
                 session_start();
             }
 
-            //check if import started
-            if (isset($_SESSION['import_started']) && $_SESSION['import_started'] === true) {
-                throw new \Exception('Import already started.');
-            }
-
             //get products
             $products = file_get_contents(KARLHA_ASSETS_URL . '/json/products.json');
             //decode products
@@ -228,13 +262,10 @@ class KarlhawpTheme
                 throw new \Exception('No products found.');
             }
 
-            //set import started
-            $_SESSION['import_started'] = true;
-
             //loop through products
             foreach ($products as $product) {
                 //import product
-                // return  $this->import_product_single($product);
+                $this->import_product_single($product);
             }
         } catch (\Exception $e) {
             //log error
