@@ -22,9 +22,9 @@
 
 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.3/flatpickr.min.css">
-	<script src="https://www.terminal-app.com/adaptive.js" type="text/javascript"></script>
+	<!-- <script src="https://www.terminal-app.com/adaptive.js" type="text/javascript"></script> -->
 	<script src="https://ucarecdn.com/libs/blinkloader/3.x/blinkloader.min.js"></script>
-	<script src="https://www.terminal-app.com/utilities.js"></script>
+	<!-- <script src="https://www.terminal-app.com/utilities.js"></script> -->
 	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic%7CMontserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic%7CMartel+Sans:200,300,regular,600,700,800,900%7CMerriweather+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic" media="all">
 	<script type="text/javascript">

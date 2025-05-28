@@ -190,6 +190,7 @@ get_header('shop'); ?>
 </div>
 <script>
 	var productVariations = [];
+	var imageGallery = [];
 </script>
 <?php
 /**
@@ -209,7 +210,9 @@ get_header('shop'); ?>
 	//merge product images and product image
 	$product_images = array_merge($product_images, array($product_image));
 	?>
-
+	<script>
+		imageGallery = <?php echo json_encode(array_map('wp_get_attachment_url', $product_images)); ?>;
+	</script>
 	<div class="product-body-wrapper">
 		<div class="product-description-wrapper">
 			<div class="product-spread-image-block">

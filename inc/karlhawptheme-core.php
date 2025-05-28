@@ -525,7 +525,7 @@ class KarlhawpTheme
         //enqueue woocommerce shop styles
         wp_enqueue_style('karlha-jewels-woocommerce', KARLHA_ASSETS_URL . '/css/woocommerce.css', array(), KARLHA_THEME_VERSION);
         //enqueue woocommerce single product styles
-        wp_enqueue_style('karlha-jewels-woocommerce-single', KARLHA_ASSETS_URL . '/css/style.css', array(), KARLHA_THEME_VERSION);
+        // wp_enqueue_style('karlha-jewels-woocommerce-single', KARLHA_ASSETS_URL . '/css/style.css', array(), KARLHA_THEME_VERSION);
         //add localize script
         wp_localize_script('karlha-jewels-build', 'karlha_jewels', array(
             'ajax_url' => admin_url('admin-ajax.php'),

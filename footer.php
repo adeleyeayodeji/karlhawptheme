@@ -64,19 +64,24 @@ foreach ($menu_items as $item) {
 				var selectedVariant = $(this).val();
 				// Loop through variations to find the selected one
 				$.each(productVariations, function(index, variation) {
-					if (variation.attributes['attribute_color'] === selectedVariant) {
+					//get the first key and value of the attributes
+					const [
+						[firstKey, firstValue]
+					] = Object.entries(variation.attributes);
+					//check if the first value is the selected variant
+					if (firstValue === selectedVariant) {
 						//get first of .product-body-image
 						var image = $('.product-body-image').first();
 						//set the src to the selected variant image
-						image.attr('src', variation.image.full_src);
+						image.attr('src', imageGallery[index]);
 
 						//set the name to the selected variant
 						$('.product-name').text(variation.name);
 						// Update the price fields
-						$('#product-price').html(variation.display_price);
+						$('#product-price').html(variation.display_regular_price);
 
 						if (variation.display_regular_price !== variation.display_price) {
-							$('#product-sale-price').html(variation.display_regular_price).show();
+							$('#product-sale-price').html(variation.display_price).show();
 							//add product-strikethrough-price class
 							$('#product-price').addClass('product-strikethrough-price');
 						} else {
@@ -104,8 +109,14 @@ foreach ($menu_items as $item) {
 			});
 
 			try {
+				//get the first variation
+				var firstVariation = productVariations[0];
+				//get the first key and value of the attributes
+				const [
+					[firstSelectedKey, firstSelectedValue]
+				] = Object.entries(firstVariation.attributes);
 				//select the first variant on page load
-				$('.feature-product-variant-select').val(productVariations[0].attributes['attribute_color']).trigger('change');
+				$('.feature-product-variant-select').val(firstSelectedValue).trigger('change');
 			} catch (error) {
 				console.log(error);
 			}
