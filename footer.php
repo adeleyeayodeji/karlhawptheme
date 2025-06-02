@@ -57,66 +57,130 @@ foreach ($menu_items as $item) {
 
 <script>
 	jQuery(document).ready(function($) {
+
+		let updateProductVariant = (variation, index) => {
+			//log
+			console.log("updateProductVariant", variation, index);
+			//default image
+			var defaultImage = imageGallery[index];
+
+			//get the image for the variation
+			var variationImage = variation.image;
+			//check is variationImage is not null, undefined, or empty
+			if (variationImage != null && variationImage != undefined && variationImage != '') {
+				//get the full_src of the variationImage
+				var variationImageSrc = variationImage.full_src;
+				//check if image file name does not contain 'logo-full-1'
+				if (!variationImageSrc.includes('logo-full-1')) {
+					//set the src to the selected variant image
+					defaultImage = variationImageSrc;
+				}
+			}
+
+			//get first of .product-body-image
+			var image = $('.product-body-image').first();
+			//set the src to the selected variant image
+			image.attr('src', defaultImage);
+
+			//set the name to the selected variant
+			$('.product-name').text(variation.name);
+			// Update the price fields
+			$('#product-price').html(variation.display_regular_price);
+
+			if (variation.display_regular_price !== variation.display_price) {
+				$('#product-sale-price').html(variation.display_price).show();
+				//add product-strikethrough-price class
+				$('#product-price').addClass('product-strikethrough-price');
+			} else {
+				$('#product-sale-price').hide();
+				//remove product-strikethrough-price class
+				$('#product-price').removeClass('product-strikethrough-price');
+			}
+
+			//get buy-button
+			var buyButton = $('#buy-button');
+			//set the data-variation-id to the selected variant id
+			buyButton.data('variation-id', variation.variation_id);
+			//product-is-in-stock
+			buyButton.data('product-is-in-stock', variation.is_in_stock);
+
+
+			//get add-item-cart
+			var addItemCart = $('#add-item-cart');
+			//set the data-variation-id to the selected variant id
+			addItemCart.data('variation-id', variation.variation_id);
+			//product-is-in-stock
+			addItemCart.data('product-is-in-stock', variation.is_in_stock);
+		}
+
+		var areObjectsEqual = (obj1, obj2) => {
+			return (
+				Object.keys(obj1).length === Object.keys(obj2).length &&
+				Object.keys(obj1).every(key => obj2.hasOwnProperty(key) && obj1[key] === obj2[key])
+			);
+		}
+
 		//check if element exists
 		if ($('#product-variant-block').length > 0) {
-			// Listen for variant change
-			$('.feature-product-variant-select').on('change', function() {
-				var selectedVariant = $(this).val();
-				// Loop through variations to find the selected one
-				$.each(productVariations, function(index, variation) {
-					//get the first key and value of the attributes
-					const [
-						[firstKey, firstValue]
-					] = Object.entries(variation.attributes);
-					//check if the first value is the selected variant
-					if (firstValue === selectedVariant) {
-						//get first of .product-body-image
-						var image = $('.product-body-image').first();
-						//set the src to the selected variant image
-						image.attr('src', imageGallery[index]);
+			//each of $('.feature-product-variant-select')
+			$('.feature-product-variant-select').each(function() {
+				// Listen for variant change
+				$(this).on('change', function() {
+					var selectedVariant = $(this).val();
+					//get the data-attribute
+					var attribute = $(this).data('attribute');
 
-						//set the name to the selected variant
-						$('.product-name').text(variation.name);
-						// Update the price fields
-						$('#product-price').html(variation.display_regular_price);
-
-						if (variation.display_regular_price !== variation.display_price) {
-							$('#product-sale-price').html(variation.display_price).show();
-							//add product-strikethrough-price class
-							$('#product-price').addClass('product-strikethrough-price');
-						} else {
-							$('#product-sale-price').hide();
-							//remove product-strikethrough-price class
-							$('#product-price').removeClass('product-strikethrough-price');
+					// Loop through variations to find the selected one
+					$.each(productVariations, function(index, variation) {
+						var innerAttributes = variation.attributes;
+						//get the length of the innerAttributes
+						var innerAttributesLength = Object.keys(innerAttributes).length;
+						//if innerAttributesLength is 1
+						if (innerAttributesLength == 1) {
+							//get the first key and value of the attributes
+							const [
+								[firstKey, firstValue]
+							] = Object.entries(variation.attributes);
+							//check if the first value is the selected variant
+							if (firstValue === selectedVariant) {
+								//pass product for single attribute
+								updateProductVariant(variation, index);
+							}
+						} else if (innerAttributesLength > 1) {
+							//get all $('.feature-product-variant-select')
+							var featureProductVariantSelects = {};
+							// each of $('.feature-product-variant-select')
+							$('.feature-product-variant-select').each((index, element) => {
+								//get the data-attribute
+								var attribute = $(element).data('attribute');
+								//get the value
+								var value = $(element).val();
+								//add to featureProductVariantSelects
+								featureProductVariantSelects['attribute_' + attribute] = value;
+							});
+							//check if innerAttributes is equal to featureProductVariantSelects
+							if (areObjectsEqual(innerAttributes, featureProductVariantSelects)) {
+								//pass product for multiple attributes
+								updateProductVariant(variation, index);
+							}
 						}
-
-						//get buy-button
-						var buyButton = $('#buy-button');
-						//set the data-variation-id to the selected variant id
-						buyButton.data('variation-id', variation.variation_id);
-						//product-is-in-stock
-						buyButton.data('product-is-in-stock', variation.is_in_stock);
-
-
-						//get add-item-cart
-						var addItemCart = $('#add-item-cart');
-						//set the data-variation-id to the selected variant id
-						addItemCart.data('variation-id', variation.variation_id);
-						//product-is-in-stock
-						addItemCart.data('product-is-in-stock', variation.is_in_stock);
-					}
+					});
 				});
 			});
 
 			try {
-				//get the first variation
-				var firstVariation = productVariations[0];
-				//get the first key and value of the attributes
-				const [
-					[firstSelectedKey, firstSelectedValue]
-				] = Object.entries(firstVariation.attributes);
-				//select the first variant on page load
-				$('.feature-product-variant-select').val(firstSelectedValue).trigger('change');
+				//get all $('.feature-product-variant-select')
+				$('.feature-product-variant-select').each((index, element) => {
+					//get the data-attribute
+					var attribute = $(element).data('attribute');
+					//get the second option
+					var secondOption = $(element).find('option:nth-child(2)');
+					//check if firstOption is not null, undefined, or empty
+					if (secondOption != null && secondOption != undefined && secondOption != '') {
+						//set the first value
+						$(element).val(secondOption.val()).trigger('change');
+					}
+				});
 			} catch (error) {
 				console.log(error);
 			}

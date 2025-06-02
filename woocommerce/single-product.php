@@ -190,6 +190,7 @@ get_header('shop'); ?>
 </div>
 <script>
 	var productVariations = [];
+	var productAttributes = [];
 	var imageGallery = [];
 </script>
 <?php
@@ -285,7 +286,7 @@ get_header('shop'); ?>
 							<div class="product-variant-selector-block">
 								<div class="feature-product-variant-label"><?php echo wc_attribute_label($attribute_name); ?></div>
 								<div class="w-embed">
-									<select class="feature-product-variant-select" data-attribute="<?php echo esc_attr($attribute_name); ?>">
+									<select class="feature-product-variant-select" data-attribute="<?php echo esc_attr(strtolower($attribute_name)); ?>">
 										<option value="">Select <?php echo wc_attribute_label($attribute_name); ?></option>
 										<?php foreach ($options as $option) : ?>
 											<option value="<?php echo esc_attr($option); ?>"><?php echo esc_html($option); ?></option>
@@ -298,6 +299,7 @@ get_header('shop'); ?>
 
 					<script>
 						productVariations = <?php echo json_encode($variations); ?>;
+						productAttributes = <?php echo json_encode($attributes); ?>;
 					</script>
 				<?php endif; ?>
 
